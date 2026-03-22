@@ -50,7 +50,7 @@ Public Class TransactionContent
     End Sub
 
     'Show ProductName in tooltip when hovering
-    Private Sub dgv_transactions_CellMouseEnter(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_transactions.CellMouseEnter
+    Private Sub dgv_transactions_CellMouseEnter(sender As Object, e As DataGridViewCellEventArgs) 
         If e.RowIndex >= 0 AndAlso e.ColumnIndex >= 0 Then
             If dgv_transactions.Columns(e.ColumnIndex).Name = "ProductName" Then
                 Dim cellValue = dgv_transactions.Rows(e.RowIndex).Cells(e.ColumnIndex).Value
@@ -89,7 +89,7 @@ Public Class TransactionContent
     End Function
 
 
-    Private Sub dgv_transactions_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_transactions.CellDoubleClick
+    Private Sub dgv_transactions_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) 
         If e.RowIndex < 0 Then Exit Sub
 
         ' ✅ Get selected row data

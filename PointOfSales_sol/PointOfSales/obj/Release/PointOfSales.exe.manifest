@@ -162,14 +162,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PointOfSales.exe" size="408024">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PointOfSales.exe" size="409560">
       <assemblyIdentity name="PointOfSales" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>tbBxqa4p73XvN80ElnIClWO78A+ScZ/dweIQrYUUn0M=</dsig:DigestValue>
+        <dsig:DigestValue>etSr0uw3e8ZJV7mS7mr2+/cL9a9+RqtCy7XyelL6vNU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

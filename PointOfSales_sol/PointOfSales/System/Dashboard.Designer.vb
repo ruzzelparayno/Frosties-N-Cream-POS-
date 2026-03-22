@@ -33,18 +33,17 @@ Partial Class Dashboard
         Dim NavBarItem7 As SiticoneNetFrameworkUI.NavBarItem = New SiticoneNetFrameworkUI.NavBarItem()
         Dim NavBarItem8 As SiticoneNetFrameworkUI.NavBarItem = New SiticoneNetFrameworkUI.NavBarItem()
         Dim NavBarItem9 As SiticoneNetFrameworkUI.NavBarItem = New SiticoneNetFrameworkUI.NavBarItem()
-        Dim NavBarItem10 As SiticoneNetFrameworkUI.NavBarItem = New SiticoneNetFrameworkUI.NavBarItem()
         Dim LayoutState1 As SiticoneNetFrameworkUI.SiticoneFlowPanel.LayoutState = New SiticoneNetFrameworkUI.SiticoneFlowPanel.LayoutState()
         Me.MySiticoneLicenseSettings1 = New SiticoneNetFrameworkUI.MySiticoneLicenseSettings()
         Me.SiticoneAnimateForm1 = New SiticoneNetFrameworkUI.SiticoneAnimateForm(Me.components)
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.SiticoneDashboardCard1 = New SiticoneNetFrameworkUI.SiticoneDashboardCard()
+        Me.SiticoneDashboardCard = New SiticoneNetFrameworkUI.SiticoneDashboardCard()
         Me.ContentPanel = New SiticoneNetFrameworkUI.SiticoneContentPanel()
         SiticoneNavbar1 = New SiticoneNetFrameworkUI.SiticoneNavbar()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
-        Me.SiticoneDashboardCard1.SuspendLayout()
+        Me.SiticoneDashboardCard.SuspendLayout()
         Me.SuspendLayout()
         '
         'SiticoneNavbar1
@@ -132,7 +131,7 @@ Partial Class Dashboard
         NavBarItem6.SelectedBackColor = System.Drawing.Color.Empty
         NavBarItem6.SelectedBorderColor = System.Drawing.Color.Empty
         NavBarItem6.SelectedForeColor = System.Drawing.Color.Empty
-        NavBarItem6.Text = "Sales Report"
+        NavBarItem6.Text = "Transaction"
         NavBarItem7.BackColor = System.Drawing.Color.Empty
         NavBarItem7.BorderColor = System.Drawing.Color.Empty
         NavBarItem7.ForeColor = System.Drawing.Color.Empty
@@ -141,7 +140,7 @@ Partial Class Dashboard
         NavBarItem7.SelectedBackColor = System.Drawing.Color.Empty
         NavBarItem7.SelectedBorderColor = System.Drawing.Color.Empty
         NavBarItem7.SelectedForeColor = System.Drawing.Color.Empty
-        NavBarItem7.Text = "Transaction"
+        NavBarItem7.Text = "Account"
         NavBarItem8.BackColor = System.Drawing.Color.Empty
         NavBarItem8.BorderColor = System.Drawing.Color.Empty
         NavBarItem8.ForeColor = System.Drawing.Color.Empty
@@ -150,7 +149,7 @@ Partial Class Dashboard
         NavBarItem8.SelectedBackColor = System.Drawing.Color.Empty
         NavBarItem8.SelectedBorderColor = System.Drawing.Color.Empty
         NavBarItem8.SelectedForeColor = System.Drawing.Color.Empty
-        NavBarItem8.Text = "Account"
+        NavBarItem8.Text = "Shift"
         NavBarItem9.BackColor = System.Drawing.Color.Empty
         NavBarItem9.BorderColor = System.Drawing.Color.Empty
         NavBarItem9.ForeColor = System.Drawing.Color.Empty
@@ -159,16 +158,7 @@ Partial Class Dashboard
         NavBarItem9.SelectedBackColor = System.Drawing.Color.Empty
         NavBarItem9.SelectedBorderColor = System.Drawing.Color.Empty
         NavBarItem9.SelectedForeColor = System.Drawing.Color.Empty
-        NavBarItem9.Text = "Shift"
-        NavBarItem10.BackColor = System.Drawing.Color.Empty
-        NavBarItem10.BorderColor = System.Drawing.Color.Empty
-        NavBarItem10.ForeColor = System.Drawing.Color.Empty
-        NavBarItem10.HoverBackColor = System.Drawing.Color.White
-        NavBarItem10.PressBackColor = System.Drawing.Color.FromArgb(CType(CType(74, Byte), Integer), CType(CType(144, Byte), Integer), CType(CType(226, Byte), Integer))
-        NavBarItem10.SelectedBackColor = System.Drawing.Color.Empty
-        NavBarItem10.SelectedBorderColor = System.Drawing.Color.Empty
-        NavBarItem10.SelectedForeColor = System.Drawing.Color.Empty
-        NavBarItem10.Text = "Logout"
+        NavBarItem9.Text = "Logout"
         SiticoneNavbar1.Items.Add(NavBarItem1)
         SiticoneNavbar1.Items.Add(NavBarItem2)
         SiticoneNavbar1.Items.Add(NavBarItem3)
@@ -178,7 +168,6 @@ Partial Class Dashboard
         SiticoneNavbar1.Items.Add(NavBarItem7)
         SiticoneNavbar1.Items.Add(NavBarItem8)
         SiticoneNavbar1.Items.Add(NavBarItem9)
-        SiticoneNavbar1.Items.Add(NavBarItem10)
         SiticoneNavbar1.LimitButtonHeight = False
         SiticoneNavbar1.Location = New System.Drawing.Point(0, 0)
         SiticoneNavbar1.MaterialTabIndicatorPosition = SiticoneNetFrameworkUI.IndicatorPosition.Top
@@ -260,7 +249,7 @@ Partial Class Dashboard
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.White
-        Me.Panel2.Controls.Add(Me.SiticoneDashboardCard1)
+        Me.Panel2.Controls.Add(Me.SiticoneDashboardCard)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel2.Location = New System.Drawing.Point(300, 0)
         Me.Panel2.Name = "Panel2"
@@ -268,25 +257,25 @@ Partial Class Dashboard
         Me.Panel2.Size = New System.Drawing.Size(778, 658)
         Me.Panel2.TabIndex = 1
         '
-        'SiticoneDashboardCard1
+        'SiticoneDashboardCard
         '
-        Me.SiticoneDashboardCard1.AutoSize = True
-        Me.SiticoneDashboardCard1.BackColor = System.Drawing.Color.Transparent
-        Me.SiticoneDashboardCard1.BackgroundEndColor = System.Drawing.Color.Transparent
-        Me.SiticoneDashboardCard1.BackgroundStartColor = System.Drawing.Color.White
-        Me.SiticoneDashboardCard1.BorderColor = System.Drawing.Color.Transparent
-        Me.SiticoneDashboardCard1.BorderEndColor = System.Drawing.Color.Transparent
-        Me.SiticoneDashboardCard1.BorderStartColor = System.Drawing.Color.Transparent
-        Me.SiticoneDashboardCard1.Controls.Add(Me.ContentPanel)
-        Me.SiticoneDashboardCard1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.SiticoneDashboardCard1.Location = New System.Drawing.Point(10, 10)
-        Me.SiticoneDashboardCard1.Name = "SiticoneDashboardCard1"
-        Me.SiticoneDashboardCard1.Size = New System.Drawing.Size(758, 638)
-        Me.SiticoneDashboardCard1.TabIndex = 3
+        Me.SiticoneDashboardCard.AutoSize = True
+        Me.SiticoneDashboardCard.BackColor = System.Drawing.Color.Transparent
+        Me.SiticoneDashboardCard.BackgroundEndColor = System.Drawing.Color.Transparent
+        Me.SiticoneDashboardCard.BackgroundStartColor = System.Drawing.Color.White
+        Me.SiticoneDashboardCard.BorderColor = System.Drawing.Color.Transparent
+        Me.SiticoneDashboardCard.BorderEndColor = System.Drawing.Color.Transparent
+        Me.SiticoneDashboardCard.BorderStartColor = System.Drawing.Color.Transparent
+        Me.SiticoneDashboardCard.Controls.Add(Me.ContentPanel)
+        Me.SiticoneDashboardCard.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.SiticoneDashboardCard.Location = New System.Drawing.Point(10, 10)
+        Me.SiticoneDashboardCard.Name = "SiticoneDashboardCard"
+        Me.SiticoneDashboardCard.Size = New System.Drawing.Size(758, 638)
+        Me.SiticoneDashboardCard.TabIndex = 3
         LayoutState1.Location = New System.Drawing.Point(3, 3)
         LayoutState1.Size = New System.Drawing.Size(0, 0)
         LayoutState1.Visible = True
-        Me.SiticoneDashboardCard1.Tag = LayoutState1
+        Me.SiticoneDashboardCard.Tag = LayoutState1
         '
         'ContentPanel
         '
@@ -322,7 +311,7 @@ Partial Class Dashboard
         Me.Panel1.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
-        Me.SiticoneDashboardCard1.ResumeLayout(False)
+        Me.SiticoneDashboardCard.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -333,4 +322,5 @@ Partial Class Dashboard
     Friend WithEvents Panel2 As Panel
     Friend WithEvents SiticoneDashboardCard1 As SiticoneNetFrameworkUI.SiticoneDashboardCard
     Friend WithEvents ContentPanel As SiticoneNetFrameworkUI.SiticoneContentPanel
+    Friend WithEvents SiticoneDashboardCard As SiticoneDashboardCard
 End Class

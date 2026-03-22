@@ -131,8 +131,8 @@ Public Class PosControl
 
     Private Sub AddProductCard(productId As Integer, productName As String, productImage As Image, Optional productPrice As Decimal = 0D)
         Dim card As New Panel()
-        card.Size = New Size(160, 80)
-        card.BackColor = Color.MediumPurple
+        card.Size = New Size(235, 80) '160,80
+        card.BackColor = Color.FromArgb(89, 70, 141)
         card.BorderStyle = BorderStyle.FixedSingle
         card.Margin = New Padding(10)
         card.Tag = productId
@@ -147,17 +147,17 @@ Public Class PosControl
         Dim lbl As New Label()
         lbl.Text = productName
         lbl.ForeColor = Color.White
-        lbl.Font = New Font("Segoe UI", 9, FontStyle.Bold)
+        lbl.Font = New Font("Segoe UI", 12, FontStyle.Bold)
         lbl.AutoSize = True
-        lbl.Location = New Point(70, 15)
+        lbl.Location = New Point(90, 15)
         lbl.Tag = "name"
 
         Dim lblPrice As New Label()
         lblPrice.Text = "₱" & productPrice.ToString("N2")
         lblPrice.ForeColor = Color.White
-        lblPrice.Font = New Font("Segoe UI", 8, FontStyle.Regular)
+        lblPrice.Font = New Font("Segoe UI", 12, FontStyle.Regular)
         lblPrice.AutoSize = True
-        lblPrice.Location = New Point(70, 40)
+        lblPrice.Location = New Point(90, 45)
         lblPrice.Tag = "price"
 
         card.Controls.Add(pb)

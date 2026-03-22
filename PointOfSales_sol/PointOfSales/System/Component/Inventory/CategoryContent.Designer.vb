@@ -32,16 +32,16 @@ Partial Class CategoryContent
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.SiticoneTextBox1 = New SiticoneNetFrameworkUI.SiticoneTextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.SiticoneDashboardCard1 = New SiticoneNetFrameworkUI.SiticoneDashboardCard()
-        Me.SiticoneButton3 = New SiticoneNetFrameworkUI.SiticoneButton()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.SiticonePanel2 = New SiticoneNetFrameworkUI.SiticonePanel()
+        Me.SiticoneButton3 = New SiticoneNetFrameworkUI.SiticoneButton()
         Me.SiticoneDataGridView1 = New SiticoneNetFrameworkUI.SiticoneDataGridView()
         Me.Panel22.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.Panel6.SuspendLayout()
         Me.Panel5.SuspendLayout()
-        Me.SiticoneDashboardCard1.SuspendLayout()
         Me.Panel3.SuspendLayout()
+        Me.SiticonePanel2.SuspendLayout()
         CType(Me.SiticoneDataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -108,7 +108,7 @@ Partial Class CategoryContent
         Me.BtnSave.BadgeFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
         Me.BtnSave.BadgeValue = 0
         Me.BtnSave.BadgeValueForeColor = System.Drawing.Color.White
-        Me.BtnSave.BorderColor = System.Drawing.Color.Transparent
+        Me.BtnSave.BorderColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(120, Byte), Integer))
         Me.BtnSave.BorderWidth = 2
         Me.BtnSave.ButtonBackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(120, Byte), Integer))
         Me.BtnSave.ButtonImage = Nothing
@@ -137,9 +137,9 @@ Partial Class CategoryContent
         Me.BtnSave.GradientColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.BtnSave.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical
         Me.BtnSave.HintText = Nothing
-        Me.BtnSave.HoverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.BtnSave.HoverBackColor = System.Drawing.Color.White
         Me.BtnSave.HoverFontStyle = System.Drawing.FontStyle.Regular
-        Me.BtnSave.HoverTextColor = System.Drawing.Color.Black
+        Me.BtnSave.HoverTextColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(120, Byte), Integer))
         Me.BtnSave.HoverTransitionDuration = 250
         Me.BtnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.BtnSave.ImagePadding = 5
@@ -148,7 +148,7 @@ Partial Class CategoryContent
         Me.BtnSave.IsReadOnly = False
         Me.BtnSave.IsToggleButton = False
         Me.BtnSave.IsToggled = False
-        Me.BtnSave.Location = New System.Drawing.Point(224, 158)
+        Me.BtnSave.Location = New System.Drawing.Point(234, 157)
         Me.BtnSave.LongPressDurationMS = 1000
         Me.BtnSave.Margin = New System.Windows.Forms.Padding(0)
         Me.BtnSave.Name = "BtnSave"
@@ -156,7 +156,7 @@ Partial Class CategoryContent
         Me.BtnSave.ParticleColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
         Me.BtnSave.ParticleCount = 15
         Me.BtnSave.PressAnimationScale = 0.97!
-        Me.BtnSave.PressedBackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(120, Byte), Integer))
+        Me.BtnSave.PressedBackColor = System.Drawing.Color.Transparent
         Me.BtnSave.PressedFontStyle = System.Drawing.FontStyle.Regular
         Me.BtnSave.PressTransitionDuration = 150
         Me.BtnSave.ReadOnlyTextColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer))
@@ -164,7 +164,7 @@ Partial Class CategoryContent
         Me.BtnSave.RippleOpacity = 0.3!
         Me.BtnSave.RippleRadiusMultiplier = 0.6!
         Me.BtnSave.ShadowBlur = 5
-        Me.BtnSave.ShadowColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.BtnSave.ShadowColor = System.Drawing.Color.Transparent
         Me.BtnSave.ShadowOffset = New System.Drawing.Point(2, 2)
         Me.BtnSave.ShakeDuration = 500
         Me.BtnSave.ShakeIntensity = 5
@@ -262,30 +262,66 @@ Partial Class CategoryContent
         Me.Label1.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(22, 20)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(78, 21)
+        Me.Label1.Size = New System.Drawing.Size(125, 21)
         Me.Label1.TabIndex = 12
-        Me.Label1.Text = "Category"
+        Me.Label1.Text = "Category Name"
         '
-        'SiticoneDashboardCard1
+        'Panel3
         '
-        Me.SiticoneDashboardCard1.BackColor = System.Drawing.Color.Black
-        Me.SiticoneDashboardCard1.BackgroundEndColor = System.Drawing.Color.White
-        Me.SiticoneDashboardCard1.BackgroundStartColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.SiticoneDashboardCard1.BorderColor = System.Drawing.Color.Silver
-        Me.SiticoneDashboardCard1.BorderEndColor = System.Drawing.Color.Silver
-        Me.SiticoneDashboardCard1.BorderStartColor = System.Drawing.Color.Silver
-        Me.SiticoneDashboardCard1.Controls.Add(Me.SiticoneButton3)
-        Me.SiticoneDashboardCard1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.SiticoneDashboardCard1.Location = New System.Drawing.Point(0, 208)
-        Me.SiticoneDashboardCard1.Name = "SiticoneDashboardCard1"
-        Me.SiticoneDashboardCard1.Size = New System.Drawing.Size(758, 54)
-        Me.SiticoneDashboardCard1.TabIndex = 3
+        Me.Panel3.BackColor = System.Drawing.Color.White
+        Me.Panel3.Controls.Add(Me.SiticoneDataGridView1)
+        Me.Panel3.Controls.Add(Me.SiticonePanel2)
+        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel3.Location = New System.Drawing.Point(0, 208)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Padding = New System.Windows.Forms.Padding(10, 0, 10, 10)
+        Me.Panel3.Size = New System.Drawing.Size(758, 328)
+        Me.Panel3.TabIndex = 5
+        '
+        'SiticonePanel2
+        '
+        Me.SiticonePanel2.AcrylicTintColor = System.Drawing.Color.Transparent
+        Me.SiticonePanel2.BackColor = System.Drawing.Color.Transparent
+        Me.SiticonePanel2.BorderAlignment = System.Drawing.Drawing2D.PenAlignment.Center
+        Me.SiticonePanel2.BorderDashPattern = Nothing
+        Me.SiticonePanel2.BorderGradientEndColor = System.Drawing.Color.Transparent
+        Me.SiticonePanel2.BorderGradientStartColor = System.Drawing.Color.Transparent
+        Me.SiticonePanel2.BorderThickness = 2.0!
+        Me.SiticonePanel2.Controls.Add(Me.SiticoneButton3)
+        Me.SiticonePanel2.CornerRadiusBottomLeft = 16.0!
+        Me.SiticonePanel2.CornerRadiusBottomRight = 16.0!
+        Me.SiticonePanel2.CornerRadiusTopLeft = 16.0!
+        Me.SiticonePanel2.CornerRadiusTopRight = 16.0!
+        Me.SiticonePanel2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.SiticonePanel2.EnableAcrylicEffect = False
+        Me.SiticonePanel2.EnableMicaEffect = False
+        Me.SiticonePanel2.EnableRippleEffect = False
+        Me.SiticonePanel2.FillColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.SiticonePanel2.GradientColors = New System.Drawing.Color() {System.Drawing.Color.White, System.Drawing.Color.LightGray, System.Drawing.Color.Gray}
+        Me.SiticonePanel2.GradientPositions = New Single() {0!, 0.5!, 1.0!}
+        Me.SiticonePanel2.Location = New System.Drawing.Point(10, 0)
+        Me.SiticonePanel2.Name = "SiticonePanel2"
+        Me.SiticonePanel2.PatternStyle = System.Drawing.Drawing2D.HatchStyle.LargeGrid
+        Me.SiticonePanel2.RippleAlpha = 50
+        Me.SiticonePanel2.RippleAlphaDecrement = 3
+        Me.SiticonePanel2.RippleColor = System.Drawing.Color.Transparent
+        Me.SiticonePanel2.RippleMaxSize = 600.0!
+        Me.SiticonePanel2.RippleSpeed = 15.0!
+        Me.SiticonePanel2.ShowBorder = False
+        Me.SiticonePanel2.Size = New System.Drawing.Size(738, 54)
+        Me.SiticonePanel2.TabIndex = 11
+        Me.SiticonePanel2.TabStop = True
+        Me.SiticonePanel2.TrackSystemTheme = False
+        Me.SiticonePanel2.UseBorderGradient = False
+        Me.SiticonePanel2.UseMultiGradient = False
+        Me.SiticonePanel2.UsePatternTexture = False
+        Me.SiticonePanel2.UseRadialGradient = False
         '
         'SiticoneButton3
         '
         Me.SiticoneButton3.AccessibleDescription = "The default button control that accept input though the mouse, touch and keyboard" &
     ""
-        Me.SiticoneButton3.AccessibleName = "Edit"
+        Me.SiticoneButton3.AccessibleName = "Update"
         Me.SiticoneButton3.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.SiticoneButton3.AutoSizeBasedOnText = False
         Me.SiticoneButton3.BackColor = System.Drawing.Color.Transparent
@@ -293,7 +329,7 @@ Partial Class CategoryContent
         Me.SiticoneButton3.BadgeFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
         Me.SiticoneButton3.BadgeValue = 0
         Me.SiticoneButton3.BadgeValueForeColor = System.Drawing.Color.White
-        Me.SiticoneButton3.BorderColor = System.Drawing.Color.Transparent
+        Me.SiticoneButton3.BorderColor = System.Drawing.Color.FromArgb(CType(CType(74, Byte), Integer), CType(CType(144, Byte), Integer), CType(CType(226, Byte), Integer))
         Me.SiticoneButton3.BorderWidth = 2
         Me.SiticoneButton3.ButtonBackColor = System.Drawing.Color.FromArgb(CType(CType(74, Byte), Integer), CType(CType(144, Byte), Integer), CType(CType(226, Byte), Integer))
         Me.SiticoneButton3.ButtonImage = Nothing
@@ -322,9 +358,9 @@ Partial Class CategoryContent
         Me.SiticoneButton3.GradientColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.SiticoneButton3.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical
         Me.SiticoneButton3.HintText = Nothing
-        Me.SiticoneButton3.HoverBackColor = System.Drawing.Color.FromArgb(CType(CType(74, Byte), Integer), CType(CType(144, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.SiticoneButton3.HoverBackColor = System.Drawing.Color.White
         Me.SiticoneButton3.HoverFontStyle = System.Drawing.FontStyle.Regular
-        Me.SiticoneButton3.HoverTextColor = System.Drawing.Color.Black
+        Me.SiticoneButton3.HoverTextColor = System.Drawing.Color.FromArgb(CType(CType(74, Byte), Integer), CType(CType(144, Byte), Integer), CType(CType(226, Byte), Integer))
         Me.SiticoneButton3.HoverTransitionDuration = 250
         Me.SiticoneButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.SiticoneButton3.ImagePadding = 5
@@ -333,7 +369,7 @@ Partial Class CategoryContent
         Me.SiticoneButton3.IsReadOnly = False
         Me.SiticoneButton3.IsToggleButton = False
         Me.SiticoneButton3.IsToggled = False
-        Me.SiticoneButton3.Location = New System.Drawing.Point(605, 9)
+        Me.SiticoneButton3.Location = New System.Drawing.Point(606, 9)
         Me.SiticoneButton3.LongPressDurationMS = 1000
         Me.SiticoneButton3.Margin = New System.Windows.Forms.Padding(0)
         Me.SiticoneButton3.Name = "SiticoneButton3"
@@ -341,7 +377,7 @@ Partial Class CategoryContent
         Me.SiticoneButton3.ParticleColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
         Me.SiticoneButton3.ParticleCount = 15
         Me.SiticoneButton3.PressAnimationScale = 0.97!
-        Me.SiticoneButton3.PressedBackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(120, Byte), Integer))
+        Me.SiticoneButton3.PressedBackColor = System.Drawing.Color.Transparent
         Me.SiticoneButton3.PressedFontStyle = System.Drawing.FontStyle.Regular
         Me.SiticoneButton3.PressTransitionDuration = 150
         Me.SiticoneButton3.ReadOnlyTextColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer))
@@ -354,24 +390,13 @@ Partial Class CategoryContent
         Me.SiticoneButton3.ShakeDuration = 500
         Me.SiticoneButton3.ShakeIntensity = 5
         Me.SiticoneButton3.Size = New System.Drawing.Size(100, 35)
-        Me.SiticoneButton3.TabIndex = 16
-        Me.SiticoneButton3.Text = "Edit"
+        Me.SiticoneButton3.TabIndex = 17
+        Me.SiticoneButton3.Text = "Update"
         Me.SiticoneButton3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.SiticoneButton3.TextColor = System.Drawing.Color.White
         Me.SiticoneButton3.TooltipText = Nothing
         Me.SiticoneButton3.UseAdvancedRendering = True
         Me.SiticoneButton3.UseParticles = False
-        '
-        'Panel3
-        '
-        Me.Panel3.BackColor = System.Drawing.Color.White
-        Me.Panel3.Controls.Add(Me.SiticoneDataGridView1)
-        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel3.Location = New System.Drawing.Point(0, 262)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Padding = New System.Windows.Forms.Padding(10)
-        Me.Panel3.Size = New System.Drawing.Size(758, 274)
-        Me.Panel3.TabIndex = 5
         '
         'SiticoneDataGridView1
         '
@@ -382,19 +407,18 @@ Partial Class CategoryContent
         Me.SiticoneDataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.SiticoneDataGridView1.GridTheme = SiticoneNetFrameworkUI.GridTheme.Blue
         Me.SiticoneDataGridView1.HeaderFont = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.SiticoneDataGridView1.Location = New System.Drawing.Point(10, 10)
+        Me.SiticoneDataGridView1.Location = New System.Drawing.Point(10, 54)
         Me.SiticoneDataGridView1.Name = "SiticoneDataGridView1"
         Me.SiticoneDataGridView1.Padding = New System.Windows.Forms.Padding(0, 10, 0, 0)
         Me.SiticoneDataGridView1.ShowSampleData = True
-        Me.SiticoneDataGridView1.Size = New System.Drawing.Size(738, 254)
-        Me.SiticoneDataGridView1.TabIndex = 5
+        Me.SiticoneDataGridView1.Size = New System.Drawing.Size(738, 264)
+        Me.SiticoneDataGridView1.TabIndex = 12
         '
         'CategoryContent
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.Panel3)
-        Me.Controls.Add(Me.SiticoneDashboardCard1)
         Me.Controls.Add(Me.Panel22)
         Me.Name = "CategoryContent"
         Me.Size = New System.Drawing.Size(758, 536)
@@ -404,8 +428,8 @@ Partial Class CategoryContent
         Me.Panel6.PerformLayout()
         Me.Panel5.ResumeLayout(False)
         Me.Panel5.PerformLayout()
-        Me.SiticoneDashboardCard1.ResumeLayout(False)
         Me.Panel3.ResumeLayout(False)
+        Me.SiticonePanel2.ResumeLayout(False)
         CType(Me.SiticoneDataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
@@ -421,7 +445,8 @@ Partial Class CategoryContent
     Friend WithEvents Label1 As Label
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents SiticoneDashboardCard1 As SiticoneNetFrameworkUI.SiticoneDashboardCard
-    Friend WithEvents SiticoneButton3 As SiticoneNetFrameworkUI.SiticoneButton
     Friend WithEvents Panel3 As Panel
-    Friend WithEvents SiticoneDataGridView1 As SiticoneNetFrameworkUI.SiticoneDataGridView
+    Friend WithEvents SiticoneDataGridView1 As SiticoneDataGridView
+    Friend WithEvents SiticonePanel2 As SiticonePanel
+    Friend WithEvents SiticoneButton3 As SiticoneButton
 End Class

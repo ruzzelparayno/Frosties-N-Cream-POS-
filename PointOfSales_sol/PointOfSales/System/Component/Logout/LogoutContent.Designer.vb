@@ -86,14 +86,14 @@ Partial Class LogoutContent
         '
         Me.SiticoneButton2.AccessibleDescription = "The default button control that accept input though the mouse, touch and keyboard" &
     ""
-        Me.SiticoneButton2.AccessibleName = "NAHHH!"
+        Me.SiticoneButton2.AccessibleName = "No"
         Me.SiticoneButton2.AutoSizeBasedOnText = False
         Me.SiticoneButton2.BackColor = System.Drawing.Color.Transparent
         Me.SiticoneButton2.BadgeBackColor = System.Drawing.Color.Black
         Me.SiticoneButton2.BadgeFont = New System.Drawing.Font("Segoe UI", 8.0!, System.Drawing.FontStyle.Bold)
         Me.SiticoneButton2.BadgeValue = 0
         Me.SiticoneButton2.BadgeValueForeColor = System.Drawing.Color.White
-        Me.SiticoneButton2.BorderColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(49, Byte), Integer))
+        Me.SiticoneButton2.BorderColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(35, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.SiticoneButton2.BorderWidth = 2
         Me.SiticoneButton2.ButtonBackColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(69, Byte), Integer))
         Me.SiticoneButton2.ButtonImage = Nothing
@@ -121,9 +121,9 @@ Partial Class LogoutContent
         Me.SiticoneButton2.GradientColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.SiticoneButton2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical
         Me.SiticoneButton2.HintText = Nothing
-        Me.SiticoneButton2.HoverBackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.SiticoneButton2.HoverBackColor = System.Drawing.Color.White
         Me.SiticoneButton2.HoverFontStyle = System.Drawing.FontStyle.Regular
-        Me.SiticoneButton2.HoverTextColor = System.Drawing.Color.White
+        Me.SiticoneButton2.HoverTextColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(35, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.SiticoneButton2.HoverTransitionDuration = 250
         Me.SiticoneButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.SiticoneButton2.ImagePadding = 5
@@ -153,7 +153,7 @@ Partial Class LogoutContent
         Me.SiticoneButton2.ShakeIntensity = 5
         Me.SiticoneButton2.Size = New System.Drawing.Size(116, 40)
         Me.SiticoneButton2.TabIndex = 43
-        Me.SiticoneButton2.Text = "NAHHH!"
+        Me.SiticoneButton2.Text = "No"
         Me.SiticoneButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.SiticoneButton2.TextColor = System.Drawing.Color.White
         Me.SiticoneButton2.TooltipText = Nothing
@@ -164,7 +164,7 @@ Partial Class LogoutContent
         '
         Me.SiticoneButton1.AccessibleDescription = "The default button control that accept input though the mouse, touch and keyboard" &
     ""
-        Me.SiticoneButton1.AccessibleName = "HIYEZZ"
+        Me.SiticoneButton1.AccessibleName = "Yes"
         Me.SiticoneButton1.AutoSizeBasedOnText = False
         Me.SiticoneButton1.BackColor = System.Drawing.Color.Transparent
         Me.SiticoneButton1.BadgeBackColor = System.Drawing.Color.Black
@@ -199,9 +199,9 @@ Partial Class LogoutContent
         Me.SiticoneButton1.GradientColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.SiticoneButton1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical
         Me.SiticoneButton1.HintText = Nothing
-        Me.SiticoneButton1.HoverBackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.SiticoneButton1.HoverBackColor = System.Drawing.Color.White
         Me.SiticoneButton1.HoverFontStyle = System.Drawing.FontStyle.Regular
-        Me.SiticoneButton1.HoverTextColor = System.Drawing.Color.Black
+        Me.SiticoneButton1.HoverTextColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.SiticoneButton1.HoverTransitionDuration = 250
         Me.SiticoneButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.SiticoneButton1.ImagePadding = 5
@@ -217,7 +217,7 @@ Partial Class LogoutContent
         Me.SiticoneButton1.ParticleColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
         Me.SiticoneButton1.ParticleCount = 15
         Me.SiticoneButton1.PressAnimationScale = 0.97!
-        Me.SiticoneButton1.PressedBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.SiticoneButton1.PressedBackColor = System.Drawing.Color.Transparent
         Me.SiticoneButton1.PressedFontStyle = System.Drawing.FontStyle.Regular
         Me.SiticoneButton1.PressTransitionDuration = 150
         Me.SiticoneButton1.ReadOnlyTextColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer))
@@ -231,7 +231,7 @@ Partial Class LogoutContent
         Me.SiticoneButton1.ShakeIntensity = 5
         Me.SiticoneButton1.Size = New System.Drawing.Size(116, 40)
         Me.SiticoneButton1.TabIndex = 42
-        Me.SiticoneButton1.Text = "HIYEZZ"
+        Me.SiticoneButton1.Text = "Yes"
         Me.SiticoneButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.SiticoneButton1.TextColor = System.Drawing.Color.White
         Me.SiticoneButton1.TooltipText = Nothing

@@ -104,7 +104,7 @@ Partial Class Login
         '
         'Panel9
         '
-        Me.Panel9.BackColor = System.Drawing.Color.Gainsboro
+        Me.Panel9.BackColor = System.Drawing.Color.White
         Me.Panel9.Controls.Add(Me.Panel11)
         Me.Panel9.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel9.Location = New System.Drawing.Point(50, 96)

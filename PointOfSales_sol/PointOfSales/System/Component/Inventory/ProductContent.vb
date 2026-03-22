@@ -117,14 +117,14 @@ Public Class ProductContent
 
             ' ✅ Apply column formatting after loading data
             If dgv_inventory.Columns.Count > 0 Then
-                dgv_inventory.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None
+                dgv_inventory.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
 
-                dgv_inventory.Columns("ProductID").Width = 80
-                dgv_inventory.Columns("ProductName").Width = 200
-                dgv_inventory.Columns("Price").Width = 100
-                dgv_inventory.Columns("StockQuantity").Width = 120
-                dgv_inventory.Columns("CategoryName").Width = 150
-                dgv_inventory.Columns("Status").Width = 100
+                dgv_inventory.Columns("ProductID").AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
+                dgv_inventory.Columns("ProductName").AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
+                dgv_inventory.Columns("Price").AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
+                dgv_inventory.Columns("StockQuantity").AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
+                dgv_inventory.Columns("CategoryName").AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
+                dgv_inventory.Columns("Status").AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
 
                 ' ✅ Hide the ProductImage column (still usable in CellClick)
                 dgv_inventory.Columns("ProductImage").Visible = False
@@ -143,7 +143,7 @@ Public Class ProductContent
 
 
     ' ✅ CellClick event - loads selected row data into controls
-    Private Sub dgv_inventory_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_inventory.CellClick
+    Private Sub dgv_inventory_CellClick(sender As Object, e As DataGridViewCellEventArgs)
         If e.RowIndex >= 0 Then
             Dim row As DataGridViewRow = dgv_inventory.Rows(e.RowIndex)
 

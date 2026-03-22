@@ -56,7 +56,7 @@ Public Class UserContent
         End Try
     End Sub
 
-    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
         If e.RowIndex >= 0 Then
             Dim row = DataGridView1.Rows(e.RowIndex)
             SiticoneTextBox5.Text = row.Cells("username").Value.ToString

@@ -22,7 +22,7 @@ Partial Class DashboardContent
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim BarChartTheme3 As SiticoneNetFrameworkUI.SiticoneBarChart.BarChartTheme = New SiticoneNetFrameworkUI.SiticoneBarChart.BarChartTheme()
+        Dim BarChartTheme1 As SiticoneNetFrameworkUI.SiticoneBarChart.BarChartTheme = New SiticoneNetFrameworkUI.SiticoneBarChart.BarChartTheme()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.SiticonePanel4 = New SiticoneNetFrameworkUI.SiticonePanel()
@@ -43,9 +43,9 @@ Partial Class DashboardContent
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.Panel8 = New System.Windows.Forms.Panel()
+        Me.FlowLayoutPanel2 = New System.Windows.Forms.FlowLayoutPanel()
         Me.Panel9 = New System.Windows.Forms.Panel()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.FlowLayoutPanel2 = New System.Windows.Forms.FlowLayoutPanel()
         Me.Panel2.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.SiticonePanel4.SuspendLayout()
@@ -257,18 +257,20 @@ Partial Class DashboardContent
         '
         'FlowLayoutPanel1
         '
-        Me.FlowLayoutPanel1.Location = New System.Drawing.Point(5, 34)
+        Me.FlowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.FlowLayoutPanel1.Location = New System.Drawing.Point(2, 23)
         Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
-        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(243, 69)
+        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(249, 90)
         Me.FlowLayoutPanel1.TabIndex = 11
         Me.FlowLayoutPanel1.WrapContents = False
         '
         'Label7
         '
         Me.Label7.AutoSize = True
+        Me.Label7.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label7.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(11, 10)
+        Me.Label7.Location = New System.Drawing.Point(2, 2)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(151, 21)
         Me.Label7.TabIndex = 10
@@ -343,7 +345,7 @@ Partial Class DashboardContent
         '
         'Panel5
         '
-        Me.Panel5.BackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.Panel5.BackColor = System.Drawing.Color.White
         Me.Panel5.Controls.Add(Me.SiticoneBarChart1)
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel5.Location = New System.Drawing.Point(0, 72)
@@ -355,24 +357,24 @@ Partial Class DashboardContent
         'SiticoneBarChart1
         '
         Me.SiticoneBarChart1.AutoSize = True
-        Me.SiticoneBarChart1.BackColor = System.Drawing.Color.Transparent
+        Me.SiticoneBarChart1.BackColor = System.Drawing.SystemColors.Control
         Me.SiticoneBarChart1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.SiticoneBarChart1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.SiticoneBarChart1.ForeColor = System.Drawing.Color.White
-        Me.SiticoneBarChart1.LabelMember = "Week"
+        Me.SiticoneBarChart1.LabelMember = "Month"
         Me.SiticoneBarChart1.Location = New System.Drawing.Point(30, 30)
         Me.SiticoneBarChart1.Name = "SiticoneBarChart1"
         Me.SiticoneBarChart1.ShowValueOnBar = False
         Me.SiticoneBarChart1.Size = New System.Drawing.Size(320, 395)
         Me.SiticoneBarChart1.TabIndex = 2
-        BarChartTheme3.AxisLabelColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer))
-        BarChartTheme3.BackColor = System.Drawing.SystemColors.Control
-        BarChartTheme3.BarColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(204, Byte), Integer))
-        BarChartTheme3.BarHighlightColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(246, Byte), Integer))
-        BarChartTheme3.GridColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        BarChartTheme3.Name = "Default Blue"
-        BarChartTheme3.ValueLabelColor = System.Drawing.Color.Black
-        Me.SiticoneBarChart1.Theme = BarChartTheme3
+        BarChartTheme1.AxisLabelColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer))
+        BarChartTheme1.BackColor = System.Drawing.SystemColors.Control
+        BarChartTheme1.BarColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(204, Byte), Integer))
+        BarChartTheme1.BarHighlightColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(246, Byte), Integer))
+        BarChartTheme1.GridColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        BarChartTheme1.Name = "Default Blue"
+        BarChartTheme1.ValueLabelColor = System.Drawing.Color.Black
+        Me.SiticoneBarChart1.Theme = BarChartTheme1
         Me.SiticoneBarChart1.ValueMember = "Revenue"
         '
         'Panel6
@@ -418,6 +420,15 @@ Partial Class DashboardContent
         Me.Panel8.Size = New System.Drawing.Size(381, 455)
         Me.Panel8.TabIndex = 5
         '
+        'FlowLayoutPanel2
+        '
+        Me.FlowLayoutPanel2.AutoSize = True
+        Me.FlowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.FlowLayoutPanel2.Location = New System.Drawing.Point(30, 30)
+        Me.FlowLayoutPanel2.Name = "FlowLayoutPanel2"
+        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(321, 395)
+        Me.FlowLayoutPanel2.TabIndex = 2
+        '
         'Panel9
         '
         Me.Panel9.BackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(84, Byte), Integer))
@@ -439,15 +450,6 @@ Partial Class DashboardContent
         Me.Label8.Size = New System.Drawing.Size(227, 37)
         Me.Label8.TabIndex = 1
         Me.Label8.Text = "Top 5 Item Sales"
-        '
-        'FlowLayoutPanel2
-        '
-        Me.FlowLayoutPanel2.AutoSize = True
-        Me.FlowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.FlowLayoutPanel2.Location = New System.Drawing.Point(30, 30)
-        Me.FlowLayoutPanel2.Name = "FlowLayoutPanel2"
-        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(321, 395)
-        Me.FlowLayoutPanel2.TabIndex = 2
         '
         'DashboardContent
         '
