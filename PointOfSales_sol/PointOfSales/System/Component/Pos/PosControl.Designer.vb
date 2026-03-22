@@ -22,13 +22,14 @@ Partial Class PosControl
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Me.components = New System.ComponentModel.Container()
+        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.SiticonePanel1 = New SiticoneNetFrameworkUI.SiticonePanel()
         Me.cb_cate1 = New System.Windows.Forms.ComboBox()
         Me.SiticoneButtonTextbox1 = New SiticoneNetFrameworkUI.SiticoneButtonTextbox()
-        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.SiticoneOverlay1 = New SiticoneNetFrameworkUI.SiticoneOverlay(Me.components)
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.SiticonePanel4 = New SiticoneNetFrameworkUI.SiticonePanel()
         Me.Guna2DataGridView1 = New Guna.UI2.WinForms.Guna2DataGridView()
@@ -58,7 +59,6 @@ Partial Class PosControl
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
         Me.SiticonePanel1.SuspendLayout()
-        Me.TableLayoutPanel1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.SiticonePanel4.SuspendLayout()
         CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -171,23 +171,16 @@ Partial Class PosControl
         Me.SiticoneButtonTextbox1.TopRightCornerRadius = 20
         Me.SiticoneButtonTextbox1.ValidationEnabled = False
         '
-        'TableLayoutPanel1
+        'SiticoneOverlay1
         '
-        Me.TableLayoutPanel1.BackColor = System.Drawing.Color.White
-        Me.TableLayoutPanel1.ColumnCount = 2
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70.0!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.0!))
-        Me.TableLayoutPanel1.Controls.Add(Me.Panel1, 1, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.FlowLayoutPanel1, 0, 0)
-        Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 51)
-        Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
-        Me.TableLayoutPanel1.RowCount = 1
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 533.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 533.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(758, 536)
-        Me.TableLayoutPanel1.TabIndex = 13
+        Me.SiticoneOverlay1.IndicatorColor = System.Drawing.Color.Black
+        Me.SiticoneOverlay1.IndicatorSize = 50
+        Me.SiticoneOverlay1.IndicatorThickness = 10
+        Me.SiticoneOverlay1.MessageColor = System.Drawing.Color.Black
+        Me.SiticoneOverlay1.MessageFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SiticoneOverlay1.MessageText = "Please Wait ..."
+        Me.SiticoneOverlay1.OverlayColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.SiticoneOverlay1.OverlayTarget = Me
         '
         'Panel1
         '
@@ -197,11 +190,11 @@ Partial Class PosControl
         Me.Panel1.Controls.Add(Me.SiticonePanel2)
         Me.Panel1.Controls.Add(Me.Panel4)
         Me.Panel1.Controls.Add(Me.Panel2)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel1.Location = New System.Drawing.Point(533, 3)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Panel1.Location = New System.Drawing.Point(536, 51)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(222, 530)
-        Me.Panel1.TabIndex = 0
+        Me.Panel1.Size = New System.Drawing.Size(222, 536)
+        Me.Panel1.TabIndex = 10
         '
         'SiticonePanel4
         '
@@ -233,7 +226,7 @@ Partial Class PosControl
         Me.SiticonePanel4.RippleMaxSize = 600.0!
         Me.SiticonePanel4.RippleSpeed = 15.0!
         Me.SiticonePanel4.ShowBorder = False
-        Me.SiticonePanel4.Size = New System.Drawing.Size(222, 228)
+        Me.SiticonePanel4.Size = New System.Drawing.Size(222, 234)
         Me.SiticonePanel4.TabIndex = 16
         Me.SiticonePanel4.TabStop = True
         Me.SiticonePanel4.TrackSystemTheme = False
@@ -248,35 +241,35 @@ Partial Class PosControl
         Me.Guna2DataGridView1.AllowUserToDeleteRows = False
         Me.Guna2DataGridView1.AllowUserToResizeColumns = False
         Me.Guna2DataGridView1.AllowUserToResizeRows = False
-        DataGridViewCellStyle7.BackColor = System.Drawing.Color.White
-        Me.Guna2DataGridView1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle13.BackColor = System.Drawing.Color.White
+        Me.Guna2DataGridView1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle13
         Me.Guna2DataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(235, Byte), Integer))
-        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle8.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Guna2DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle8
+        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle14.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle14.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Guna2DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle14
         Me.Guna2DataGridView1.ColumnHeadersHeight = 4
         Me.Guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
         Me.Guna2DataGridView1.ColumnHeadersVisible = False
-        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle9.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.Guna2DataGridView1.DefaultCellStyle = DataGridViewCellStyle9
+        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle15.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle15.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.Guna2DataGridView1.DefaultCellStyle = DataGridViewCellStyle15
         Me.Guna2DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Guna2DataGridView1.Location = New System.Drawing.Point(0, 0)
         Me.Guna2DataGridView1.Name = "Guna2DataGridView1"
         Me.Guna2DataGridView1.ReadOnly = True
         Me.Guna2DataGridView1.RowHeadersVisible = False
-        Me.Guna2DataGridView1.Size = New System.Drawing.Size(222, 228)
+        Me.Guna2DataGridView1.Size = New System.Drawing.Size(222, 234)
         Me.Guna2DataGridView1.TabIndex = 1
         Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
         Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = Nothing
@@ -387,7 +380,7 @@ Partial Class PosControl
         Me.SiticonePanel2.FillColor = System.Drawing.Color.Transparent
         Me.SiticonePanel2.GradientColors = New System.Drawing.Color() {System.Drawing.Color.White, System.Drawing.Color.LightGray, System.Drawing.Color.Gray}
         Me.SiticonePanel2.GradientPositions = New Single() {0!, 0.5!, 1.0!}
-        Me.SiticonePanel2.Location = New System.Drawing.Point(0, 372)
+        Me.SiticonePanel2.Location = New System.Drawing.Point(0, 378)
         Me.SiticonePanel2.Name = "SiticonePanel2"
         Me.SiticonePanel2.PatternStyle = System.Drawing.Drawing2D.HatchStyle.LargeGrid
         Me.SiticonePanel2.RippleAlpha = 50
@@ -408,9 +401,9 @@ Partial Class PosControl
         'lbl_total
         '
         Me.lbl_total.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lbl_total.Location = New System.Drawing.Point(156, 80)
+        Me.lbl_total.Location = New System.Drawing.Point(124, 80)
         Me.lbl_total.Name = "lbl_total"
-        Me.lbl_total.Size = New System.Drawing.Size(54, 13)
+        Me.lbl_total.Size = New System.Drawing.Size(86, 13)
         Me.lbl_total.TabIndex = 22
         Me.lbl_total.Text = "100"
         Me.lbl_total.TextAlign = System.Drawing.ContentAlignment.TopRight
@@ -418,9 +411,9 @@ Partial Class PosControl
         'lbl_subtotal
         '
         Me.lbl_subtotal.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lbl_subtotal.Location = New System.Drawing.Point(156, 49)
+        Me.lbl_subtotal.Location = New System.Drawing.Point(124, 49)
         Me.lbl_subtotal.Name = "lbl_subtotal"
-        Me.lbl_subtotal.Size = New System.Drawing.Size(54, 13)
+        Me.lbl_subtotal.Size = New System.Drawing.Size(86, 13)
         Me.lbl_subtotal.TabIndex = 21
         Me.lbl_subtotal.Text = "100"
         Me.lbl_subtotal.TextAlign = System.Drawing.ContentAlignment.TopRight
@@ -428,9 +421,9 @@ Partial Class PosControl
         'lbl_vat
         '
         Me.lbl_vat.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lbl_vat.Location = New System.Drawing.Point(156, 18)
+        Me.lbl_vat.Location = New System.Drawing.Point(121, 18)
         Me.lbl_vat.Name = "lbl_vat"
-        Me.lbl_vat.Size = New System.Drawing.Size(54, 13)
+        Me.lbl_vat.Size = New System.Drawing.Size(89, 13)
         Me.lbl_vat.TabIndex = 20
         Me.lbl_vat.Text = "100"
         Me.lbl_vat.TextAlign = System.Drawing.ContentAlignment.TopRight
@@ -467,7 +460,7 @@ Partial Class PosControl
         Me.Panel4.BackColor = System.Drawing.Color.Transparent
         Me.Panel4.Controls.Add(Me.Panel5)
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel4.Location = New System.Drawing.Point(0, 482)
+        Me.Panel4.Location = New System.Drawing.Point(0, 488)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(222, 48)
         Me.Panel4.TabIndex = 2
@@ -643,23 +636,24 @@ Partial Class PosControl
         '
         'FlowLayoutPanel1
         '
+        Me.FlowLayoutPanel1.AutoScroll = True
         Me.FlowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.FlowLayoutPanel1.Location = New System.Drawing.Point(3, 3)
+        Me.FlowLayoutPanel1.Location = New System.Drawing.Point(0, 51)
         Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
-        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(524, 530)
-        Me.FlowLayoutPanel1.TabIndex = 1
+        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(536, 536)
+        Me.FlowLayoutPanel1.TabIndex = 11
         '
         'PosControl
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(250, Byte), Integer))
-        Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Controls.Add(Me.FlowLayoutPanel1)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.SiticonePanel1)
         Me.Name = "PosControl"
         Me.Size = New System.Drawing.Size(758, 587)
         Me.SiticonePanel1.ResumeLayout(False)
-        Me.TableLayoutPanel1.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
         Me.SiticonePanel4.ResumeLayout(False)
         CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -689,9 +683,12 @@ Partial Class PosControl
     Friend WithEvents Label1 As Label
     Friend WithEvents SiticonePanel1 As SiticonePanel
     Friend WithEvents SiticoneButtonTextbox1 As SiticoneButtonTextbox
-    Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
+    Friend WithEvents cb_cate1 As ComboBox
+    Friend WithEvents SiticoneOverlay1 As SiticoneOverlay
+    Friend WithEvents FlowLayoutPanel1 As FlowLayoutPanel
     Friend WithEvents Panel1 As Panel
     Friend WithEvents SiticonePanel4 As SiticonePanel
+    Friend WithEvents Guna2DataGridView1 As Guna.UI2.WinForms.Guna2DataGridView
     Friend WithEvents SiticonePanel3 As SiticonePanel
     Friend WithEvents lbl_dandt As Label
     Friend WithEvents lbl_tickets As Label
@@ -706,17 +703,14 @@ Partial Class PosControl
     Friend WithEvents Panel5 As Panel
     Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
     Friend WithEvents Panel8 As Panel
+    Friend WithEvents Guna2Button3 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Panel7 As Panel
+    Friend WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Panel6 As Panel
+    Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Panel2 As Panel
     Friend WithEvents SiticoneLabel2 As SiticoneLabel
     Friend WithEvents SiticoneLabel1 As SiticoneLabel
     Friend WithEvents Panel3 As Panel
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents FlowLayoutPanel1 As FlowLayoutPanel
-    Friend WithEvents cb_cate1 As ComboBox
-    Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2Button3 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2DataGridView1 As Guna.UI2.WinForms.Guna2DataGridView
 End Class

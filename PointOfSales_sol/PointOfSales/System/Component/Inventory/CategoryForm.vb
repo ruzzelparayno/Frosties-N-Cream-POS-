@@ -3,6 +3,9 @@
 Public Class CategoryForm
     Private connectionString As String = "server=localhost;userid=root;password=;database=pos"
 
+    ' ✅ Event to notify when a new category is added
+    Public Event CategoryAdded(categoryName As String)
+
     Private Sub BtnSave_Click(sender As Object, e As EventArgs) Handles BtnSave.Click
         Dim categoryName As String = SiticoneTextBox1.Text.Trim()
         Dim description As String = TextBox1.Text.Trim()
@@ -42,6 +45,9 @@ Public Class CategoryForm
                     cmd.ExecuteNonQuery()
                 End Using
 
+                ' ✅ Raise event to notify ProductContent
+                RaiseEvent CategoryAdded(categoryName)
+
                 MessageBox.Show("Category saved successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
                 ' Clear fields after saving
@@ -51,8 +57,7 @@ Public Class CategoryForm
             Catch ex As Exception
                 MessageBox.Show("Error: " & ex.Message, "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End Try
+            Me.Hide()
         End Using
     End Sub
-
-
 End Class

@@ -22,10 +22,6 @@ Partial Class DashboardContent
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim BarChartTheme1 As SiticoneNetFrameworkUI.SiticoneBarChart.BarChartTheme = New SiticoneNetFrameworkUI.SiticoneBarChart.BarChartTheme()
-        Dim ChartTheme1 As SiticoneNetFrameworkUI.SiticoneLineChartAdvanced.ChartTheme = New SiticoneNetFrameworkUI.SiticoneLineChartAdvanced.ChartTheme()
-        Dim DoughnutChartTheme1 As SiticoneNetFrameworkUI.SiticoneDoughnutChart.DoughnutChartTheme = New SiticoneNetFrameworkUI.SiticoneDoughnutChart.DoughnutChartTheme()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(DashboardContent))
         Dim ChartFont1 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
         Dim ChartFont2 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
         Dim ChartFont3 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
@@ -41,6 +37,38 @@ Partial Class DashboardContent
         Dim ChartFont7 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
         Dim Tick3 As Guna.Charts.WinForms.Tick = New Guna.Charts.WinForms.Tick()
         Dim ChartFont8 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim ChartFont9 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim ChartFont10 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim ChartFont11 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim ChartFont12 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim Grid4 As Guna.Charts.WinForms.Grid = New Guna.Charts.WinForms.Grid()
+        Dim Tick4 As Guna.Charts.WinForms.Tick = New Guna.Charts.WinForms.Tick()
+        Dim ChartFont13 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim Grid5 As Guna.Charts.WinForms.Grid = New Guna.Charts.WinForms.Grid()
+        Dim Tick5 As Guna.Charts.WinForms.Tick = New Guna.Charts.WinForms.Tick()
+        Dim ChartFont14 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim Grid6 As Guna.Charts.WinForms.Grid = New Guna.Charts.WinForms.Grid()
+        Dim PointLabel2 As Guna.Charts.WinForms.PointLabel = New Guna.Charts.WinForms.PointLabel()
+        Dim ChartFont15 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim Tick6 As Guna.Charts.WinForms.Tick = New Guna.Charts.WinForms.Tick()
+        Dim ChartFont16 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim DoughnutChartTheme1 As SiticoneNetFrameworkUI.SiticoneDoughnutChart.DoughnutChartTheme = New SiticoneNetFrameworkUI.SiticoneDoughnutChart.DoughnutChartTheme()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(DashboardContent))
+        Dim ChartFont17 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim ChartFont18 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim ChartFont19 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim ChartFont20 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim Grid7 As Guna.Charts.WinForms.Grid = New Guna.Charts.WinForms.Grid()
+        Dim Tick7 As Guna.Charts.WinForms.Tick = New Guna.Charts.WinForms.Tick()
+        Dim ChartFont21 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim Grid8 As Guna.Charts.WinForms.Grid = New Guna.Charts.WinForms.Grid()
+        Dim Tick8 As Guna.Charts.WinForms.Tick = New Guna.Charts.WinForms.Tick()
+        Dim ChartFont22 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim Grid9 As Guna.Charts.WinForms.Grid = New Guna.Charts.WinForms.Grid()
+        Dim PointLabel3 As Guna.Charts.WinForms.PointLabel = New Guna.Charts.WinForms.PointLabel()
+        Dim ChartFont23 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim Tick9 As Guna.Charts.WinForms.Tick = New Guna.Charts.WinForms.Tick()
+        Dim ChartFont24 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.SiticonePanel4 = New SiticoneNetFrameworkUI.SiticonePanel()
@@ -50,15 +78,17 @@ Partial Class DashboardContent
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.SiticonePanel1 = New SiticoneNetFrameworkUI.SiticonePanel()
-        Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
+        Me.Label11 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
         Me.SiticonePanel8 = New SiticoneNetFrameworkUI.SiticonePanel()
-        Me.SiticoneBarChart1 = New SiticoneNetFrameworkUI.SiticoneBarChart()
+        Me.GunaChart3 = New Guna.Charts.WinForms.GunaChart()
+        Me.GunaBarDataset1 = New Guna.Charts.WinForms.GunaBarDataset()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.SiticonePanel7 = New SiticoneNetFrameworkUI.SiticonePanel()
-        Me.SiticoneLineChartAdvanced1 = New SiticoneNetFrameworkUI.SiticoneLineChartAdvanced()
+        Me.GunaChart2 = New Guna.Charts.WinForms.GunaChart()
+        Me.GunaLineDataset1 = New Guna.Charts.WinForms.GunaLineDataset()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.SiticonePanel6 = New SiticoneNetFrameworkUI.SiticonePanel()
@@ -68,6 +98,9 @@ Partial Class DashboardContent
         Me.GunaChart1 = New Guna.Charts.WinForms.GunaChart()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.SiticonePanel3 = New SiticoneNetFrameworkUI.SiticonePanel()
+        Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.SiticoneShimmerLabel1 = New SiticoneNetFrameworkUI.SiticoneShimmerLabel()
+        Me.Guna2CirclePictureBox1 = New Guna.UI2.WinForms.Guna2CirclePictureBox()
         Me.FlowLayoutPanel2 = New System.Windows.Forms.FlowLayoutPanel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel2.SuspendLayout()
@@ -83,6 +116,8 @@ Partial Class DashboardContent
         Me.SiticonePanel6.SuspendLayout()
         Me.SiticonePanel5.SuspendLayout()
         Me.SiticonePanel3.SuspendLayout()
+        Me.Guna2Panel1.SuspendLayout()
+        CType(Me.Guna2CirclePictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel2
@@ -257,7 +292,7 @@ Partial Class DashboardContent
         Me.SiticonePanel1.BorderGradientEndColor = System.Drawing.Color.Transparent
         Me.SiticonePanel1.BorderGradientStartColor = System.Drawing.Color.Transparent
         Me.SiticonePanel1.BorderThickness = 2.0!
-        Me.SiticonePanel1.Controls.Add(Me.FlowLayoutPanel1)
+        Me.SiticonePanel1.Controls.Add(Me.Label11)
         Me.SiticonePanel1.Controls.Add(Me.Label7)
         Me.SiticonePanel1.CornerRadiusBottomLeft = 16.0!
         Me.SiticonePanel1.CornerRadiusBottomRight = 16.0!
@@ -288,14 +323,19 @@ Partial Class DashboardContent
         Me.SiticonePanel1.UsePatternTexture = False
         Me.SiticonePanel1.UseRadialGradient = False
         '
-        'FlowLayoutPanel1
+        'Label11
         '
-        Me.FlowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.FlowLayoutPanel1.Location = New System.Drawing.Point(0, 31)
-        Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
-        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(254, 84)
-        Me.FlowLayoutPanel1.TabIndex = 11
-        Me.FlowLayoutPanel1.WrapContents = False
+        Me.Label11.AutoSize = True
+        Me.Label11.BackColor = System.Drawing.Color.Transparent
+        Me.Label11.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Label11.Font = New System.Drawing.Font("Segoe UI", 34.0!, System.Drawing.FontStyle.Bold)
+        Me.Label11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.Label11.Location = New System.Drawing.Point(0, 43)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Padding = New System.Windows.Forms.Padding(0, 0, 0, 10)
+        Me.Label11.Size = New System.Drawing.Size(233, 72)
+        Me.Label11.TabIndex = 12
+        Me.Label11.Text = "10,000,00"
         '
         'Label7
         '
@@ -306,9 +346,9 @@ Partial Class DashboardContent
         Me.Label7.Location = New System.Drawing.Point(0, 0)
         Me.Label7.Name = "Label7"
         Me.Label7.Padding = New System.Windows.Forms.Padding(10, 10, 0, 0)
-        Me.Label7.Size = New System.Drawing.Size(72, 31)
+        Me.Label7.Size = New System.Drawing.Size(86, 31)
         Me.Label7.TabIndex = 10
-        Me.Label7.Text = "Vacant"
+        Me.Label7.Text = "Revenue"
         '
         'Panel1
         '
@@ -346,7 +386,7 @@ Partial Class DashboardContent
         Me.SiticonePanel8.BorderGradientEndColor = System.Drawing.Color.Transparent
         Me.SiticonePanel8.BorderGradientStartColor = System.Drawing.Color.Transparent
         Me.SiticonePanel8.BorderThickness = 2.0!
-        Me.SiticonePanel8.Controls.Add(Me.SiticoneBarChart1)
+        Me.SiticonePanel8.Controls.Add(Me.GunaChart3)
         Me.SiticonePanel8.Controls.Add(Me.Label10)
         Me.SiticonePanel8.CornerRadiusBottomLeft = 16.0!
         Me.SiticonePanel8.CornerRadiusBottomRight = 16.0!
@@ -378,25 +418,47 @@ Partial Class DashboardContent
         Me.SiticonePanel8.UsePatternTexture = False
         Me.SiticonePanel8.UseRadialGradient = False
         '
-        'SiticoneBarChart1
+        'GunaChart3
         '
-        Me.SiticoneBarChart1.BackColor = System.Drawing.SystemColors.Control
-        Me.SiticoneBarChart1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.SiticoneBarChart1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.SiticoneBarChart1.LabelMember = "Month"
-        Me.SiticoneBarChart1.Location = New System.Drawing.Point(10, 60)
-        Me.SiticoneBarChart1.Name = "SiticoneBarChart1"
-        Me.SiticoneBarChart1.Size = New System.Drawing.Size(363, 124)
-        Me.SiticoneBarChart1.TabIndex = 11
-        BarChartTheme1.AxisLabelColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer))
-        BarChartTheme1.BackColor = System.Drawing.SystemColors.Control
-        BarChartTheme1.BarColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(204, Byte), Integer))
-        BarChartTheme1.BarHighlightColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(246, Byte), Integer))
-        BarChartTheme1.GridColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        BarChartTheme1.Name = "Default Blue"
-        BarChartTheme1.ValueLabelColor = System.Drawing.Color.Black
-        Me.SiticoneBarChart1.Theme = BarChartTheme1
-        Me.SiticoneBarChart1.ValueMember = "Revenue"
+        Me.GunaChart3.BackColor = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(235, Byte), Integer))
+        Me.GunaChart3.Datasets.AddRange(New Guna.Charts.Interfaces.IGunaDataset() {Me.GunaBarDataset1})
+        Me.GunaChart3.Dock = System.Windows.Forms.DockStyle.Fill
+        ChartFont1.FontName = "Arial"
+        Me.GunaChart3.Legend.LabelFont = ChartFont1
+        Me.GunaChart3.Location = New System.Drawing.Point(10, 60)
+        Me.GunaChart3.Name = "GunaChart3"
+        Me.GunaChart3.Size = New System.Drawing.Size(363, 124)
+        Me.GunaChart3.TabIndex = 12
+        ChartFont2.FontName = "Arial"
+        ChartFont2.Size = 12
+        ChartFont2.Style = Guna.Charts.WinForms.ChartFontStyle.Bold
+        Me.GunaChart3.Title.Font = ChartFont2
+        ChartFont3.FontName = "Arial"
+        Me.GunaChart3.Tooltips.BodyFont = ChartFont3
+        ChartFont4.FontName = "Arial"
+        ChartFont4.Size = 9
+        ChartFont4.Style = Guna.Charts.WinForms.ChartFontStyle.Bold
+        Me.GunaChart3.Tooltips.TitleFont = ChartFont4
+        Me.GunaChart3.XAxes.GridLines = Grid1
+        ChartFont5.FontName = "Arial"
+        Tick1.Font = ChartFont5
+        Me.GunaChart3.XAxes.Ticks = Tick1
+        Me.GunaChart3.YAxes.GridLines = Grid2
+        ChartFont6.FontName = "Arial"
+        Tick2.Font = ChartFont6
+        Me.GunaChart3.YAxes.Ticks = Tick2
+        Me.GunaChart3.ZAxes.GridLines = Grid3
+        ChartFont7.FontName = "Arial"
+        PointLabel1.Font = ChartFont7
+        Me.GunaChart3.ZAxes.PointLabels = PointLabel1
+        ChartFont8.FontName = "Arial"
+        Tick3.Font = ChartFont8
+        Me.GunaChart3.ZAxes.Ticks = Tick3
+        '
+        'GunaBarDataset1
+        '
+        Me.GunaBarDataset1.Label = "Bar1"
+        Me.GunaBarDataset1.TargetChart = Me.GunaChart3
         '
         'Label10
         '
@@ -420,7 +482,7 @@ Partial Class DashboardContent
         Me.SiticonePanel7.BorderGradientEndColor = System.Drawing.Color.Transparent
         Me.SiticonePanel7.BorderGradientStartColor = System.Drawing.Color.Transparent
         Me.SiticonePanel7.BorderThickness = 2.0!
-        Me.SiticonePanel7.Controls.Add(Me.SiticoneLineChartAdvanced1)
+        Me.SiticonePanel7.Controls.Add(Me.GunaChart2)
         Me.SiticonePanel7.Controls.Add(Me.Label9)
         Me.SiticonePanel7.CornerRadiusBottomLeft = 16.0!
         Me.SiticonePanel7.CornerRadiusBottomRight = 16.0!
@@ -452,28 +514,48 @@ Partial Class DashboardContent
         Me.SiticonePanel7.UsePatternTexture = False
         Me.SiticonePanel7.UseRadialGradient = False
         '
-        'SiticoneLineChartAdvanced1
+        'GunaChart2
         '
-        Me.SiticoneLineChartAdvanced1.AutoScaleMaxValue = False
-        Me.SiticoneLineChartAdvanced1.BackColor = System.Drawing.SystemColors.Control
-        Me.SiticoneLineChartAdvanced1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.SiticoneLineChartAdvanced1.Font = New System.Drawing.Font("Segoe UI", 8.0!)
-        Me.SiticoneLineChartAdvanced1.Location = New System.Drawing.Point(10, 60)
-        Me.SiticoneLineChartAdvanced1.MaxValue = 85.1R
-        Me.SiticoneLineChartAdvanced1.Name = "SiticoneLineChartAdvanced1"
-        Me.SiticoneLineChartAdvanced1.Size = New System.Drawing.Size(363, 124)
-        Me.SiticoneLineChartAdvanced1.TabIndex = 11
-        ChartTheme1.AxisLabelColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer))
-        ChartTheme1.BackColor = System.Drawing.SystemColors.Control
-        ChartTheme1.GradientEndColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(204, Byte), Integer))
-        ChartTheme1.GradientStartColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(204, Byte), Integer))
-        ChartTheme1.GridColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        ChartTheme1.LineColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(204, Byte), Integer))
-        ChartTheme1.Name = "Default Blue"
-        ChartTheme1.PointColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(204, Byte), Integer))
-        ChartTheme1.TooltipBackColor = System.Drawing.Color.White
-        ChartTheme1.TooltipTextColor = System.Drawing.Color.Black
-        Me.SiticoneLineChartAdvanced1.Theme = ChartTheme1
+        Me.GunaChart2.BackColor = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(235, Byte), Integer))
+        Me.GunaChart2.Datasets.AddRange(New Guna.Charts.Interfaces.IGunaDataset() {Me.GunaLineDataset1})
+        ChartFont9.FontName = "Arial"
+        Me.GunaChart2.Legend.LabelFont = ChartFont9
+        Me.GunaChart2.Location = New System.Drawing.Point(16, 60)
+        Me.GunaChart2.Name = "GunaChart2"
+        Me.GunaChart2.Size = New System.Drawing.Size(344, 123)
+        Me.GunaChart2.TabIndex = 11
+        ChartFont10.FontName = "Arial"
+        ChartFont10.Size = 12
+        ChartFont10.Style = Guna.Charts.WinForms.ChartFontStyle.Bold
+        Me.GunaChart2.Title.Font = ChartFont10
+        ChartFont11.FontName = "Arial"
+        Me.GunaChart2.Tooltips.BodyFont = ChartFont11
+        ChartFont12.FontName = "Arial"
+        ChartFont12.Size = 9
+        ChartFont12.Style = Guna.Charts.WinForms.ChartFontStyle.Bold
+        Me.GunaChart2.Tooltips.TitleFont = ChartFont12
+        Me.GunaChart2.XAxes.GridLines = Grid4
+        ChartFont13.FontName = "Arial"
+        Tick4.Font = ChartFont13
+        Me.GunaChart2.XAxes.Ticks = Tick4
+        Me.GunaChart2.YAxes.GridLines = Grid5
+        ChartFont14.FontName = "Arial"
+        Tick5.Font = ChartFont14
+        Me.GunaChart2.YAxes.Ticks = Tick5
+        Me.GunaChart2.ZAxes.GridLines = Grid6
+        ChartFont15.FontName = "Arial"
+        PointLabel2.Font = ChartFont15
+        Me.GunaChart2.ZAxes.PointLabels = PointLabel2
+        ChartFont16.FontName = "Arial"
+        Tick6.Font = ChartFont16
+        Me.GunaChart2.ZAxes.Ticks = Tick6
+        '
+        'GunaLineDataset1
+        '
+        Me.GunaLineDataset1.BorderColor = System.Drawing.Color.Empty
+        Me.GunaLineDataset1.FillColor = System.Drawing.Color.Empty
+        Me.GunaLineDataset1.Label = "Line1"
+        Me.GunaLineDataset1.TargetChart = Me.GunaChart2
         '
         'Label9
         '
@@ -550,7 +632,7 @@ Partial Class DashboardContent
         'SiticoneDoughnutChart1
         '
         Me.SiticoneDoughnutChart1.BackColor = System.Drawing.SystemColors.Control
-        Me.SiticoneDoughnutChart1.CenterSubText = "$2,901.50"
+        Me.SiticoneDoughnutChart1.CenterSubText = "₱2,901.50"
         Me.SiticoneDoughnutChart1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.SiticoneDoughnutChart1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.SiticoneDoughnutChart1.LabelMember = "Category"
@@ -625,39 +707,39 @@ Partial Class DashboardContent
         '
         'GunaChart1
         '
-        Me.GunaChart1.BackColor = System.Drawing.Color.Transparent
+        Me.GunaChart1.BackColor = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(235, Byte), Integer))
         Me.GunaChart1.Dock = System.Windows.Forms.DockStyle.Fill
-        ChartFont1.FontName = "Arial"
-        Me.GunaChart1.Legend.LabelFont = ChartFont1
+        ChartFont17.FontName = "Arial"
+        Me.GunaChart1.Legend.LabelFont = ChartFont17
         Me.GunaChart1.Location = New System.Drawing.Point(10, 60)
         Me.GunaChart1.Name = "GunaChart1"
         Me.GunaChart1.Size = New System.Drawing.Size(285, 261)
         Me.GunaChart1.TabIndex = 11
-        ChartFont2.FontName = "Arial"
-        ChartFont2.Size = 12
-        ChartFont2.Style = Guna.Charts.WinForms.ChartFontStyle.Bold
-        Me.GunaChart1.Title.Font = ChartFont2
-        ChartFont3.FontName = "Arial"
-        Me.GunaChart1.Tooltips.BodyFont = ChartFont3
-        ChartFont4.FontName = "Arial"
-        ChartFont4.Size = 9
-        ChartFont4.Style = Guna.Charts.WinForms.ChartFontStyle.Bold
-        Me.GunaChart1.Tooltips.TitleFont = ChartFont4
-        Me.GunaChart1.XAxes.GridLines = Grid1
-        ChartFont5.FontName = "Arial"
-        Tick1.Font = ChartFont5
-        Me.GunaChart1.XAxes.Ticks = Tick1
-        Me.GunaChart1.YAxes.GridLines = Grid2
-        ChartFont6.FontName = "Arial"
-        Tick2.Font = ChartFont6
-        Me.GunaChart1.YAxes.Ticks = Tick2
-        Me.GunaChart1.ZAxes.GridLines = Grid3
-        ChartFont7.FontName = "Arial"
-        PointLabel1.Font = ChartFont7
-        Me.GunaChart1.ZAxes.PointLabels = PointLabel1
-        ChartFont8.FontName = "Arial"
-        Tick3.Font = ChartFont8
-        Me.GunaChart1.ZAxes.Ticks = Tick3
+        ChartFont18.FontName = "Arial"
+        ChartFont18.Size = 12
+        ChartFont18.Style = Guna.Charts.WinForms.ChartFontStyle.Bold
+        Me.GunaChart1.Title.Font = ChartFont18
+        ChartFont19.FontName = "Arial"
+        Me.GunaChart1.Tooltips.BodyFont = ChartFont19
+        ChartFont20.FontName = "Arial"
+        ChartFont20.Size = 9
+        ChartFont20.Style = Guna.Charts.WinForms.ChartFontStyle.Bold
+        Me.GunaChart1.Tooltips.TitleFont = ChartFont20
+        Me.GunaChart1.XAxes.GridLines = Grid7
+        ChartFont21.FontName = "Arial"
+        Tick7.Font = ChartFont21
+        Me.GunaChart1.XAxes.Ticks = Tick7
+        Me.GunaChart1.YAxes.GridLines = Grid8
+        ChartFont22.FontName = "Arial"
+        Tick8.Font = ChartFont22
+        Me.GunaChart1.YAxes.Ticks = Tick8
+        Me.GunaChart1.ZAxes.GridLines = Grid9
+        ChartFont23.FontName = "Arial"
+        PointLabel3.Font = ChartFont23
+        Me.GunaChart1.ZAxes.PointLabels = PointLabel3
+        ChartFont24.FontName = "Arial"
+        Tick9.Font = ChartFont24
+        Me.GunaChart1.ZAxes.Ticks = Tick9
         '
         'Label6
         '
@@ -681,6 +763,7 @@ Partial Class DashboardContent
         Me.SiticonePanel3.BorderGradientEndColor = System.Drawing.Color.Transparent
         Me.SiticonePanel3.BorderGradientStartColor = System.Drawing.Color.Transparent
         Me.SiticonePanel3.BorderThickness = 2.0!
+        Me.SiticonePanel3.Controls.Add(Me.Guna2Panel1)
         Me.SiticonePanel3.Controls.Add(Me.FlowLayoutPanel2)
         Me.SiticonePanel3.Controls.Add(Me.Label1)
         Me.SiticonePanel3.CornerRadiusBottomLeft = 16.0!
@@ -711,6 +794,50 @@ Partial Class DashboardContent
         Me.SiticonePanel3.UseMultiGradient = False
         Me.SiticonePanel3.UsePatternTexture = False
         Me.SiticonePanel3.UseRadialGradient = False
+        '
+        'Guna2Panel1
+        '
+        Me.Guna2Panel1.Controls.Add(Me.SiticoneShimmerLabel1)
+        Me.Guna2Panel1.Controls.Add(Me.Guna2CirclePictureBox1)
+        Me.Guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Guna2Panel1.Location = New System.Drawing.Point(0, 60)
+        Me.Guna2Panel1.Name = "Guna2Panel1"
+        Me.Guna2Panel1.Size = New System.Drawing.Size(149, 271)
+        Me.Guna2Panel1.TabIndex = 0
+        Me.Guna2Panel1.Visible = False
+        '
+        'SiticoneShimmerLabel1
+        '
+        Me.SiticoneShimmerLabel1.AutoReverse = False
+        Me.SiticoneShimmerLabel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(235, Byte), Integer))
+        Me.SiticoneShimmerLabel1.BaseColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.SiticoneShimmerLabel1.Direction = SiticoneNetFrameworkUI.ShimmerDirection.LeftToRight
+        Me.SiticoneShimmerLabel1.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SiticoneShimmerLabel1.IsAnimating = True
+        Me.SiticoneShimmerLabel1.IsPaused = False
+        Me.SiticoneShimmerLabel1.Location = New System.Drawing.Point(8, 133)
+        Me.SiticoneShimmerLabel1.Name = "SiticoneShimmerLabel1"
+        Me.SiticoneShimmerLabel1.PauseDuration = 0
+        Me.SiticoneShimmerLabel1.ShimmerColor = System.Drawing.Color.Cyan
+        Me.SiticoneShimmerLabel1.ShimmerOpacity = 1.0!
+        Me.SiticoneShimmerLabel1.ShimmerSpeed = 50
+        Me.SiticoneShimmerLabel1.ShimmerWidth = 0.2!
+        Me.SiticoneShimmerLabel1.Size = New System.Drawing.Size(132, 32)
+        Me.SiticoneShimmerLabel1.TabIndex = 1
+        Me.SiticoneShimmerLabel1.Text = "All Stocks Are Available"
+        Me.SiticoneShimmerLabel1.ToolTipText = ""
+        '
+        'Guna2CirclePictureBox1
+        '
+        Me.Guna2CirclePictureBox1.Image = Global.PointOfSales.My.Resources.Resources.POS_terminal
+        Me.Guna2CirclePictureBox1.ImageRotate = 0!
+        Me.Guna2CirclePictureBox1.Location = New System.Drawing.Point(35, 55)
+        Me.Guna2CirclePictureBox1.Name = "Guna2CirclePictureBox1"
+        Me.Guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Me.Guna2CirclePictureBox1.Size = New System.Drawing.Size(71, 72)
+        Me.Guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Guna2CirclePictureBox1.TabIndex = 0
+        Me.Guna2CirclePictureBox1.TabStop = False
         '
         'FlowLayoutPanel2
         '
@@ -762,6 +889,8 @@ Partial Class DashboardContent
         Me.SiticonePanel6.ResumeLayout(False)
         Me.SiticonePanel5.ResumeLayout(False)
         Me.SiticonePanel3.ResumeLayout(False)
+        Me.Guna2Panel1.ResumeLayout(False)
+        CType(Me.Guna2CirclePictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -774,7 +903,6 @@ Partial Class DashboardContent
     Friend WithEvents Label7 As Label
     Friend WithEvents SiticonePanel4 As SiticoneNetFrameworkUI.SiticonePanel
     Friend WithEvents Label2 As Label
-    Friend WithEvents FlowLayoutPanel1 As FlowLayoutPanel
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Panel1 As Panel
@@ -786,13 +914,19 @@ Partial Class DashboardContent
     Friend WithEvents Label6 As Label
     Friend WithEvents GunaChart1 As Guna.Charts.WinForms.GunaChart
     Friend WithEvents SiticonePanel6 As SiticonePanel
-    Friend WithEvents SiticoneDoughnutChart1 As SiticoneDoughnutChart
     Friend WithEvents Label8 As Label
     Friend WithEvents TableLayoutPanel3 As TableLayoutPanel
     Friend WithEvents SiticonePanel8 As SiticonePanel
-    Friend WithEvents SiticoneBarChart1 As SiticoneBarChart
     Friend WithEvents Label10 As Label
     Friend WithEvents SiticonePanel7 As SiticonePanel
-    Friend WithEvents SiticoneLineChartAdvanced1 As SiticoneLineChartAdvanced
     Friend WithEvents Label9 As Label
+    Friend WithEvents GunaChart2 As Guna.Charts.WinForms.GunaChart
+    Friend WithEvents GunaLineDataset1 As Guna.Charts.WinForms.GunaLineDataset
+    Friend WithEvents GunaChart3 As Guna.Charts.WinForms.GunaChart
+    Friend WithEvents GunaBarDataset1 As Guna.Charts.WinForms.GunaBarDataset
+    Friend WithEvents SiticoneDoughnutChart1 As SiticoneDoughnutChart
+    Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents SiticoneShimmerLabel1 As SiticoneShimmerLabel
+    Friend WithEvents Guna2CirclePictureBox1 As Guna.UI2.WinForms.Guna2CirclePictureBox
+    Friend WithEvents Label11 As Label
 End Class

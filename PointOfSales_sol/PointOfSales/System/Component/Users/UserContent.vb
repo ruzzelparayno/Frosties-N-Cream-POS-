@@ -2,9 +2,10 @@
 
 Public Class UserContent
     Dim conn As New MySqlConnection("server=localhost;userid=root;password=;database=pos")
-
+    Public Shared Instance As UserContent
     Private Sub UserContent_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' 🔹 Load categories and products when the form/control opens
+        Instance = Me
         LoadUsers()
         cb_sq.DropDownStyle = ComboBoxStyle.DropDownList
         cb_ur.DropDownStyle = ComboBoxStyle.DropDownList
@@ -22,7 +23,7 @@ Public Class UserContent
         End Using
     End Function
 
-    Private Sub LoadUsers()
+    Public Sub LoadUsers()
         Try
             Using conn As New MySqlConnection("server=localhost;userid=root;password=;database=pos")
                 conn.Open()
@@ -56,57 +57,6 @@ Public Class UserContent
         End Try
     End Sub
 
-    Private Async Sub SiticoneButton3_Click(sender As Object, e As EventArgs) Handles SiticoneButton3.Click
-        If Guna2DataGridView1.CurrentRow Is Nothing Then
-            MessageBox.Show("Please select a user first.")
-            Exit Sub
-        End If
-
-        Dim userid As Integer = Guna2DataGridView1.CurrentRow.Cells("userid").Value
-
-        ' Validation
-        If SiticoneTextBox5.Text = "" Or cb_ur.Text = "" Or cb_sq.Text = "" Or SiticoneTextBox1.Text = "" Or SiticoneTextBox7.Text = "" Then
-            MessageBox.Show("Please fill all required fields.")
-            Exit Sub
-        End If
-
-        Try
-            SiticoneOverlay1.Show = True
-            Await Task.Delay(1000)
-            Using conn As New MySqlConnection("server=localhost;userid=root;password=;database=pos")
-                conn.Open()
-
-                ' 🔹 Update user info (no password here)
-                Dim query = "UPDATE users SET username=@username, role=@role, Secret_Question=@secretQ, Secret_Answer=@secretA, email=@Email WHERE userid=@userid"
-
-                Using cmd As New MySqlCommand(query, conn)
-                    cmd.Parameters.AddWithValue("@username", SiticoneTextBox5.Text.Trim)
-                    cmd.Parameters.AddWithValue("@role", cb_ur.Text.Trim)
-                    cmd.Parameters.AddWithValue("@secretQ", cb_sq.Text.Trim)
-                    cmd.Parameters.AddWithValue("@Email", SiticoneTextBox1.Text.Trim)
-                    cmd.Parameters.AddWithValue("@userid", userid)
-
-                    ' 🔒 Always hash secret answer
-                    cmd.Parameters.AddWithValue("@secretA", HashText(SiticoneTextBox7.Text.Trim))
-
-                    Dim rowsAffected = cmd.ExecuteNonQuery
-                    If rowsAffected = 0 Then
-                        Throw New Exception("No rows were updated. Check if userid exists.")
-                    End If
-                End Using
-            End Using
-            SiticoneOverlay1.Show = False
-
-            LoadUsers()
-
-            MessageBox.Show("The user information has been updated.", "Update Successful", MessageBoxButtons.OK, MessageBoxIcon.Information)
-
-            ClearFields()
-        Catch ex As Exception
-            MessageBox.Show("Unable to update the user. Please try again." & vbCrLf & "Error details: " & ex.Message,
-        "Update Failed", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        End Try
-    End Sub
 
     Private Sub ClearFields()
         SiticoneTextBox5.Clear() 'USERNAME
@@ -205,43 +155,20 @@ Public Class UserContent
         SiticoneTextBox1.Enabled = True
     End Sub
 
-    Private Sub Guna2DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles Guna2DataGridView1.CellClick
-        If e.RowIndex >= 0 Then
-            Dim row = Guna2DataGridView1.Rows(e.RowIndex)
-            SiticoneTextBox5.Text = row.Cells("username").Value.ToString
-            cb_ur.Text = row.Cells("role").Value.ToString
-            cb_sq.Text = row.Cells("Secret_Question").Value.ToString
-            SiticoneTextBox1.Text = row.Cells("email").Value.ToString
 
+    Private Sub Guna2DataGridView1_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) _
+        
 
-            Dim userid = row.Cells("userid").Value.ToString
+        If e.RowIndex < 0 Then Exit Sub
 
+        Dim row = Guna2DataGridView1.Rows(e.RowIndex)
 
+        EditUser.CurrentUserID = CInt(row.Cells("userid").Value)
+        EditUser.txtUsername.Text = row.Cells("username").Value.ToString()
+        EditUser.cbRole.Text = row.Cells("role").Value.ToString()
+        EditUser.txtEmail.Text = row.Cells("email").Value.ToString()
 
-            Try
-
-                Using conn As New MySqlConnection("server=localhost;userid=root;password=;database=pos")
-                    conn.Open()
-                    Dim cmd As New MySqlCommand("SELECT password FROM users WHERE userid=@userid", conn)
-                    cmd.Parameters.AddWithValue("@userid", userid)
-                    Dim dbPassword = cmd.ExecuteScalar
-
-                    If dbPassword IsNot Nothing Then
-                        SiticoneTextBox6.Text = dbPassword.ToString
-                        SiticoneTextBox3.Text = dbPassword.ToString
-                    End If
-                End Using
-
-            Catch ex As Exception
-                MessageBox.Show("Error fetching password: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-            End Try
-
-
-
-            SiticoneTextBox1.Enabled = False
-            SiticoneTextBox5.Enabled = False
-            SiticoneTextBox3.Enabled = False
-
-        End If
+        EditUser.Show()
     End Sub
+
 End Class

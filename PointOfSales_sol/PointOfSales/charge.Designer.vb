@@ -25,9 +25,6 @@ Partial Class Charge
         Me.components = New System.ComponentModel.Container()
         Me.lbl_totalpaid = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.cb_employee = New System.Windows.Forms.CheckBox()
-        Me.cb_pwd = New System.Windows.Forms.CheckBox()
-        Me.cb_senior = New System.Windows.Forms.CheckBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.SiticoneImageButton1 = New SiticoneNetFrameworkUI.SiticoneImageButton()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -36,6 +33,9 @@ Partial Class Charge
         Me.SiticoneFlatPanel1 = New SiticoneNetFrameworkUI.SiticoneFlatPanel()
         Me.SiticoneButton1 = New SiticoneNetFrameworkUI.SiticoneButton()
         Me.Guna2AnimateWindow1 = New Guna.UI2.WinForms.Guna2AnimateWindow(Me.components)
+        Me.cb_employee = New System.Windows.Forms.CheckBox()
+        Me.cb_pwd = New System.Windows.Forms.CheckBox()
+        Me.cb_senior = New System.Windows.Forms.CheckBox()
         Me.Panel1.SuspendLayout()
         Me.SiticoneFlatPanel1.SuspendLayout()
         Me.SuspendLayout()
@@ -59,39 +59,6 @@ Partial Class Charge
         Me.Label4.Size = New System.Drawing.Size(74, 21)
         Me.Label4.TabIndex = 12
         Me.Label4.Text = "Discount"
-        '
-        'cb_employee
-        '
-        Me.cb_employee.AutoSize = True
-        Me.cb_employee.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cb_employee.Location = New System.Drawing.Point(50, 354)
-        Me.cb_employee.Name = "cb_employee"
-        Me.cb_employee.Size = New System.Drawing.Size(101, 25)
-        Me.cb_employee.TabIndex = 13
-        Me.cb_employee.Text = "Employee"
-        Me.cb_employee.UseVisualStyleBackColor = True
-        '
-        'cb_pwd
-        '
-        Me.cb_pwd.AutoSize = True
-        Me.cb_pwd.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cb_pwd.Location = New System.Drawing.Point(50, 377)
-        Me.cb_pwd.Name = "cb_pwd"
-        Me.cb_pwd.Size = New System.Drawing.Size(235, 25)
-        Me.cb_pwd.TabIndex = 14
-        Me.cb_pwd.Text = "Person With Disability (PWD)"
-        Me.cb_pwd.UseVisualStyleBackColor = True
-        '
-        'cb_senior
-        '
-        Me.cb_senior.AutoSize = True
-        Me.cb_senior.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cb_senior.Location = New System.Drawing.Point(50, 400)
-        Me.cb_senior.Name = "cb_senior"
-        Me.cb_senior.Size = New System.Drawing.Size(129, 25)
-        Me.cb_senior.TabIndex = 15
-        Me.cb_senior.Text = "Senior Citizen"
-        Me.cb_senior.UseVisualStyleBackColor = True
         '
         'Panel1
         '
@@ -329,20 +296,53 @@ Partial Class Charge
         '
         Me.Guna2AnimateWindow1.TargetForm = Me
         '
+        'cb_employee
+        '
+        Me.cb_employee.AutoSize = True
+        Me.cb_employee.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.cb_employee.Location = New System.Drawing.Point(36, 352)
+        Me.cb_employee.Name = "cb_employee"
+        Me.cb_employee.Size = New System.Drawing.Size(101, 25)
+        Me.cb_employee.TabIndex = 22
+        Me.cb_employee.Text = "Employee"
+        Me.cb_employee.UseVisualStyleBackColor = True
+        '
+        'cb_pwd
+        '
+        Me.cb_pwd.AutoSize = True
+        Me.cb_pwd.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.cb_pwd.Location = New System.Drawing.Point(35, 375)
+        Me.cb_pwd.Name = "cb_pwd"
+        Me.cb_pwd.Size = New System.Drawing.Size(235, 25)
+        Me.cb_pwd.TabIndex = 23
+        Me.cb_pwd.Text = "Person With Disability (PWD)"
+        Me.cb_pwd.UseVisualStyleBackColor = True
+        '
+        'cb_senior
+        '
+        Me.cb_senior.AutoSize = True
+        Me.cb_senior.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.cb_senior.Location = New System.Drawing.Point(35, 398)
+        Me.cb_senior.Name = "cb_senior"
+        Me.cb_senior.Size = New System.Drawing.Size(129, 25)
+        Me.cb_senior.TabIndex = 24
+        Me.cb_senior.Text = "Senior Citizen"
+        Me.cb_senior.UseVisualStyleBackColor = True
+        '
         'Charge
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(375, 484)
+        Me.Controls.Add(Me.cb_senior)
+        Me.Controls.Add(Me.cb_pwd)
+        Me.Controls.Add(Me.cb_employee)
         Me.Controls.Add(Me.SiticoneButton1)
         Me.Controls.Add(Me.SiticoneFlatPanel1)
         Me.Controls.Add(Me.SiticoneRadioButton2)
         Me.Controls.Add(Me.SiticoneRadioButton1)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.cb_senior)
-        Me.Controls.Add(Me.cb_pwd)
-        Me.Controls.Add(Me.cb_employee)
         Me.Controls.Add(Me.Label4)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Charge"
@@ -358,9 +358,6 @@ Partial Class Charge
     End Sub
     Friend WithEvents lbl_totalpaid As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents cb_employee As CheckBox
-    Friend WithEvents cb_pwd As CheckBox
-    Friend WithEvents cb_senior As CheckBox
     Friend WithEvents Panel1 As Panel
     Friend WithEvents SiticoneImageButton1 As SiticoneNetFrameworkUI.SiticoneImageButton
     Friend WithEvents Label1 As Label
@@ -369,4 +366,7 @@ Partial Class Charge
     Friend WithEvents SiticoneFlatPanel1 As SiticoneNetFrameworkUI.SiticoneFlatPanel
     Friend WithEvents SiticoneButton1 As SiticoneNetFrameworkUI.SiticoneButton
     Friend WithEvents Guna2AnimateWindow1 As Guna.UI2.WinForms.Guna2AnimateWindow
+    Friend WithEvents cb_senior As CheckBox
+    Friend WithEvents cb_pwd As CheckBox
+    Friend WithEvents cb_employee As CheckBox
 End Class

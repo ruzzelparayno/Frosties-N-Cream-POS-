@@ -1,7 +1,17 @@
-﻿Imports MySql.Data.MySqlClient
+﻿Imports System.Data
+Imports iText.IO.Font.Constants
+Imports iText.Kernel.Colors
+Imports iText.Kernel.Font
+Imports iText.Kernel.Pdf
+Imports iText.Layout
+Imports iText.Layout.Borders
+Imports iText.Layout.Element
+Imports iText.Layout.Properties
+Imports MySql.Data.MySqlClient
 
 Public Class AccountContent
     Dim conn As New MySqlConnection("server=localhost;userid=root;password=;database=pos")
+    Dim boldFont As PdfFont = PdfFontFactory.CreateFont(StandardFonts.HELVETICA_BOLD)
 
     ' 🔹 Function to hash a string with SHA256
     Private Function HashText(input As String) As String
@@ -13,59 +23,85 @@ Public Class AccountContent
     End Function
 
     Private Sub AccountContent_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ' Set password chars
         txt_cpass.PasswordChar = "•"c
         txt_pass.PasswordChar = "•"c
         txt_pass2.PasswordChar = "•"c
         txt_op.PasswordChar = "•"c
         txt_np.PasswordChar = "•"c
+
+        ' Lock username/email fields
+        txt_uname.Enabled = False
+        txt_mail.Enabled = False
+
+        ' Hide all password change controls initially
+        HidePasswordChangeControls()
+
+        ' Load current user info
+        LoadLoggedInUserInfo()
     End Sub
 
+    ' 🔹 Load info for currently logged-in user
+    Public Sub LoadLoggedInUserInfo()
+        Try
+            If LoginPass.currentUsername = "" Then Exit Sub
+
+            conn.Open()
+            Dim query As String = "SELECT username, email FROM users WHERE username=@uname LIMIT 1"
+            Dim cmd As New MySqlCommand(query, conn)
+            cmd.Parameters.AddWithValue("@uname", LoginPass.currentUsername)
+
+            Dim reader As MySqlDataReader = cmd.ExecuteReader(CommandBehavior.SingleRow)
+            If reader.Read() Then
+                txt_uname.Text = reader("username").ToString()
+                txt_mail.Text = reader("email").ToString()
+                txt_pass2.Text = ""
+            End If
+            reader.Close()
+            conn.Close()
+        Catch ex As Exception
+            MessageBox.Show("Error loading account info: " & ex.Message)
+        Finally
+            If conn.State = ConnectionState.Open Then conn.Close()
+        End Try
+    End Sub
+
+    ' 🔹 Verify current password
     Private Sub SiticoneButton3_Click(sender As Object, e As EventArgs) Handles SiticoneButton3.Click
         Try
-            conn.Open()
+            If txt_pass.Text.Trim = "" Then
+                MessageBox.Show("Please enter your current password.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                Exit Sub
+            End If
 
-            Dim query = "SELECT username, password, email FROM users WHERE username=@uname"
+            conn.Open()
+            Dim query = "SELECT password FROM users WHERE username=@uname AND email=@mail LIMIT 1"
             Dim cmd As New MySqlCommand(query, conn)
             cmd.Parameters.AddWithValue("@uname", txt_uname.Text.Trim())
+            cmd.Parameters.AddWithValue("@mail", txt_mail.Text.Trim())
 
             Dim reader = cmd.ExecuteReader()
-
             If reader.Read() Then
-                Dim dbUsername = reader("username").ToString()
                 Dim dbPassword = reader("password").ToString()
-                Dim dbEmail = reader("email").ToString()
+                Dim hashedInputPass = HashText(txt_pass.Text.Trim())
 
-                ' ✅ Display the email from the database in txt_mail1
-                txt_mail1.Text = dbEmail
+                If hashedInputPass = dbPassword Then
+                    ' ✅ Verification successful
+                    MessageBox.Show("Account verified! You can now change your password.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
-                Dim hashedInputPass = HashText(txt_pass2.Text.Trim())
-
-                If txt_uname.Text = dbUsername AndAlso hashedInputPass = dbPassword AndAlso txt_mail.Text = dbEmail Then
-                    txt_uname.Enabled = False
-                    txt_pass2.Enabled = False
-                    txt_mail.Enabled = False
-                    txt_mail1.Enabled = False
-                    txt_pass.Text = txt_pass2.Text
+                    ' Disable old password fields
                     txt_pass.Enabled = False
+                    txt_op.Enabled = False
+                    txt_op.Text = txt_pass.Text ' pre-fill old password
 
-                    MessageBox.Show("Account confirmed! Current password is verified.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                    ' Show all password change controls including SiticoneButton1 inside Panel15
+                    ShowPasswordChangeControls()
 
-                    ' ✅ Show all the password change controls
-                    Panel9.Show()
-                    Panel16.Show()
-                    Panel18.Show()
-                    lbl_op.Show()
-                    txt_op.Show()
-                    lbl_np.Show()
-                    lbl_cp.Show()
-                    txt_cpass.Show()
-                    SiticoneButton1.Show()
-                    txt_np.Show()
                 Else
-                    MessageBox.Show("Username, Password, or Email does not match!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                    MessageBox.Show("Current password is incorrect!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 End If
             Else
-                MessageBox.Show("User not found in database!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                MessageBox.Show("Account not found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
 
             reader.Close()
@@ -75,79 +111,81 @@ Public Class AccountContent
         End Try
     End Sub
 
-
-
-    Private Sub ResetAccountFields()
-        txt_uname.Enabled = True
-        txt_pass2.Enabled = True
-        txt_mail.Enabled = True
-        txt_mail1.Enabled = True
-        txt_pass.Enabled = True
-
-        txt_uname.Clear()
-        txt_pass2.Clear()
-        txt_mail.Clear()
-        txt_mail1.Clear()
-        txt_pass.Clear()
-        txt_op.Clear()
-        txt_np.Clear()
-        txt_cpass.Clear()
-
-        ' 🔹 FIXED — Hide everything again properly
-        lbl_op.Hide()
-        txt_op.Hide()
-        lbl_np.Hide()
-        lbl_cp.Hide()
-        txt_np.Hide()
-        txt_cpass.Hide()
-        SiticoneButton1.Hide()
-    End Sub
-
-    Private Sub SiticoneButton1_Click(sender As Object, e As EventArgs)
+    ' 🔹 Change password
+    Private Sub SiticoneButton1_Click(sender As Object, e As EventArgs) Handles SiticoneButton1.Click
         Try
-            conn.Open()
-
-            Dim checkQuery = "SELECT password FROM users WHERE username=@uname"
-            Dim checkCmd As New MySqlCommand(checkQuery, conn)
-            checkCmd.Parameters.AddWithValue("@uname", txt_uname.Text.Trim)
-
-            Dim dbPassword = Convert.ToString(checkCmd.ExecuteScalar)
-            Dim hashedOldPass = HashText(txt_op.Text.Trim)
-
-            If hashedOldPass <> dbPassword Then
-                MessageBox.Show("Old password is not correct!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                conn.Close()
-                Exit Sub
-            End If
-
-            If txt_np.Text.Trim = "" OrElse txt_cpass.Text.Trim = "" Then
+            If txt_np.Text.Trim = "" Or txt_cpass.Text.Trim = "" Then
                 MessageBox.Show("Please enter a new password and confirm it.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-                conn.Close()
                 Exit Sub
             End If
 
             If txt_np.Text.Trim <> txt_cpass.Text.Trim Then
                 MessageBox.Show("New password and confirm password do not match!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                conn.Close()
                 Exit Sub
             End If
 
+            conn.Open()
             Dim updateQuery = "UPDATE users SET password=@newPass WHERE username=@uname"
             Dim updateCmd As New MySqlCommand(updateQuery, conn)
-            updateCmd.Parameters.AddWithValue("@newPass", HashText(txt_np.Text.Trim)) ' 🔹 Hash new password
-            updateCmd.Parameters.AddWithValue("@uname", txt_uname.Text.Trim)
-
+            updateCmd.Parameters.AddWithValue("@newPass", HashText(txt_np.Text.Trim))
+            updateCmd.Parameters.AddWithValue("@uname", txt_uname.Text.Trim())
             Dim rowsAffected = updateCmd.ExecuteNonQuery()
+
             If rowsAffected > 0 Then
                 MessageBox.Show("Password updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                ResetAccountFields()
+                HidePasswordChangeControls()
+                ClearPasswordFields()
             Else
                 MessageBox.Show("Failed to update password!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
-
+            txt_pass.Enabled = True
             conn.Close()
         Catch ex As Exception
             MessageBox.Show("Database error: " & ex.Message)
         End Try
+    End Sub
+
+    ' 🔹 Show all password change controls including SiticoneButton1
+    Private Sub ShowPasswordChangeControls()
+        ' Show all parent panels first
+        Panel9.Show()
+        Panel16.Show()
+        Panel18.Show()
+        Panel15.Show() ' Panel containing SiticoneButton1
+
+        ' Show labels and textboxes
+        lbl_op.Show()
+        txt_op.Show()
+        lbl_np.Show()
+        lbl_cp.Show()
+        txt_cpass.Show()
+        txt_np.Show()
+
+        ' Show SiticoneButton1
+        SiticoneButton1.Show()
+        SiticoneButton1.BringToFront()
+    End Sub
+
+    ' 🔹 Hide all password change controls and button
+    Private Sub HidePasswordChangeControls()
+        Panel9.Hide()
+        Panel16.Hide()
+        Panel18.Hide()
+        Panel15.Hide() ' Hide parent panel to hide button
+        lbl_op.Hide()
+        txt_op.Hide()
+        lbl_np.Hide()
+        lbl_cp.Hide()
+        txt_cpass.Hide()
+        txt_np.Hide()
+        SiticoneButton1.Hide()
+    End Sub
+
+    ' 🔹 Clear password fields
+    Private Sub ClearPasswordFields()
+        txt_pass.Clear()
+        txt_op.Clear()
+        txt_np.Clear()
+        txt_cpass.Clear()
     End Sub
 End Class

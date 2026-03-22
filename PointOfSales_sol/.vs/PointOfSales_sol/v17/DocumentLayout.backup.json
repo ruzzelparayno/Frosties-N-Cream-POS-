@@ -1,20 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\latest\\POS version 5.5\\POS version 5.5\\PointOfSales_sol\\",
+  "WorkspaceRootPath": "C:\\Users\\cyder\\Downloads\\POS version 6.5-20251202T072811Z-1-001\\POS version 6.5\\POS version 6.5\\PointOfSales_sol\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|d:\\latest\\pos version 5.5\\pos version 5.5\\pointofsales_sol\\pointofsales\\system\\component\\shift\\shiftcontent.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|solutionrelative:pointofsales\\system\\component\\shift\\shiftcontent.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|c:\\users\\cyder\\downloads\\pos version 6.5-20251202t072811z-1-001\\pos version 6.5\\pos version 6.5\\pointofsales_sol\\pointofsales\\system\\component\\account\\accountcontent.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|solutionrelative:pointofsales\\system\\component\\account\\accountcontent.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|PointOfSales||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|d:\\latest\\pos version 5.5\\pos version 5.5\\pointofsales_sol\\pointofsales\\system\\component\\shift\\shiftcontent.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|solutionrelative:pointofsales\\system\\component\\shift\\shiftcontent.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|d:\\latest\\pos version 5.5\\pos version 5.5\\pointofsales_sol\\pointofsales\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|8998e48e-b89a-4034-b66e-353d8c1fdc2e"
+      "AbsoluteMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|c:\\users\\cyder\\downloads\\pos version 6.5-20251202t072811z-1-001\\pos version 6.5\\pos version 6.5\\pointofsales_sol\\pointofsales\\system\\component\\account\\accountcontent.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|solutionrelative:pointofsales\\system\\component\\account\\accountcontent.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -24,44 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ShiftContent.vb",
-              "DocumentMoniker": "D:\\latest\\POS version 5.5\\POS version 5.5\\PointOfSales_sol\\PointOfSales\\System\\Component\\Shift\\ShiftContent.vb",
-              "RelativeDocumentMoniker": "PointOfSales\\System\\Component\\Shift\\ShiftContent.vb",
-              "ToolTip": "D:\\latest\\POS version 5.5\\POS version 5.5\\PointOfSales_sol\\PointOfSales\\System\\Component\\Shift\\ShiftContent.vb*",
-              "RelativeToolTip": "PointOfSales\\System\\Component\\Shift\\ShiftContent.vb*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-11-20T09:04:32.911Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ShiftContent.vb [Design]",
-              "DocumentMoniker": "D:\\latest\\POS version 5.5\\POS version 5.5\\PointOfSales_sol\\PointOfSales\\System\\Component\\Shift\\ShiftContent.vb",
-              "RelativeDocumentMoniker": "PointOfSales\\System\\Component\\Shift\\ShiftContent.vb",
-              "ToolTip": "D:\\latest\\POS version 5.5\\POS version 5.5\\PointOfSales_sol\\PointOfSales\\System\\Component\\Shift\\ShiftContent.vb [Design]*",
-              "RelativeToolTip": "PointOfSales\\System\\Component\\Shift\\ShiftContent.vb [Design]*",
+              "Title": "AccountContent.vb",
+              "DocumentMoniker": "C:\\Users\\cyder\\Downloads\\POS version 6.5-20251202T072811Z-1-001\\POS version 6.5\\POS version 6.5\\PointOfSales_sol\\PointOfSales\\System\\Component\\Account\\AccountContent.vb",
+              "RelativeDocumentMoniker": "PointOfSales\\System\\Component\\Account\\AccountContent.vb",
+              "ToolTip": "C:\\Users\\cyder\\Downloads\\POS version 6.5-20251202T072811Z-1-001\\POS version 6.5\\POS version 6.5\\PointOfSales_sol\\PointOfSales\\System\\Component\\Account\\AccountContent.vb*",
+              "RelativeToolTip": "PointOfSales\\System\\Component\\Account\\AccountContent.vb*",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAAAI0AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-11-20T08:49:34.014Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-12-07T03:39:10.863Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PointOfSales",
-              "DocumentMoniker": "D:\\latest\\POS version 5.5\\POS version 5.5\\PointOfSales_sol\\PointOfSales\\PointOfSales.vbproj",
-              "RelativeDocumentMoniker": "PointOfSales\\PointOfSales.vbproj",
-              "ToolTip": "D:\\latest\\POS version 5.5\\POS version 5.5\\PointOfSales_sol\\PointOfSales\\PointOfSales.vbproj*",
-              "RelativeToolTip": "PointOfSales\\PointOfSales.vbproj*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-11-19T17:01:43.74Z",
-              "EditorCaption": ""
+              "Title": "AccountContent.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\cyder\\Downloads\\POS version 6.5-20251202T072811Z-1-001\\POS version 6.5\\POS version 6.5\\PointOfSales_sol\\PointOfSales\\System\\Component\\Account\\AccountContent.vb",
+              "RelativeDocumentMoniker": "PointOfSales\\System\\Component\\Account\\AccountContent.vb",
+              "ToolTip": "C:\\Users\\cyder\\Downloads\\POS version 6.5-20251202T072811Z-1-001\\POS version 6.5\\POS version 6.5\\PointOfSales_sol\\PointOfSales\\System\\Component\\Account\\AccountContent.vb [Design]*",
+              "RelativeToolTip": "PointOfSales\\System\\Component\\Account\\AccountContent.vb [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-12-07T03:30:35.417Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

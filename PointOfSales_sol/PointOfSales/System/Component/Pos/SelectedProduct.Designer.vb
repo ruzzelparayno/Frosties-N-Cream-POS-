@@ -23,11 +23,11 @@ Partial Class SelectedProduct
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SelectedProduct))
         Me.Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
         Me.Guna2Button5 = New Guna.UI2.WinForms.Guna2Button()
         Me.Panel9 = New System.Windows.Forms.Panel()
         Me.Guna2Button4 = New Guna.UI2.WinForms.Guna2Button()
-        Me.SiticoneTextBox1 = New SiticoneNetFrameworkUI.SiticoneTextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel8 = New System.Windows.Forms.Panel()
         Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
@@ -43,6 +43,7 @@ Partial Class SelectedProduct
         Me.SiticoneCloseButton2 = New SiticoneNetFrameworkUI.SiticoneCloseButton()
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.Guna2DragControl1 = New Guna.UI2.WinForms.Guna2DragControl(Me.components)
+        Me.SiticoneUpDown1 = New SiticoneNetFrameworkUI.SiticoneUpDown()
         Me.Panel9.SuspendLayout()
         Me.Panel8.SuspendLayout()
         Me.Panel7.SuspendLayout()
@@ -114,64 +115,6 @@ Partial Class SelectedProduct
         Me.Guna2Button4.TabIndex = 10
         Me.Guna2Button4.Text = "Save"
         '
-        'SiticoneTextBox1
-        '
-        Me.SiticoneTextBox1.AccessibleDescription = "A customizable text input field."
-        Me.SiticoneTextBox1.AccessibleName = "Text Box"
-        Me.SiticoneTextBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.Text
-        Me.SiticoneTextBox1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.SiticoneTextBox1.BackColor = System.Drawing.Color.Transparent
-        Me.SiticoneTextBox1.BlinkCount = 3
-        Me.SiticoneTextBox1.BlinkShadow = False
-        Me.SiticoneTextBox1.BorderColor1 = System.Drawing.Color.LightSlateGray
-        Me.SiticoneTextBox1.BorderColor2 = System.Drawing.Color.LightSlateGray
-        Me.SiticoneTextBox1.BorderFocusColor1 = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(77, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.SiticoneTextBox1.BorderFocusColor2 = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(77, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.SiticoneTextBox1.CanShake = True
-        Me.SiticoneTextBox1.ContinuousBlink = False
-        Me.SiticoneTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.SiticoneTextBox1.CursorBlinkRate = 500
-        Me.SiticoneTextBox1.CursorColor = System.Drawing.Color.Black
-        Me.SiticoneTextBox1.CursorHeight = 26
-        Me.SiticoneTextBox1.CursorOffset = 0
-        Me.SiticoneTextBox1.CursorStyle = SiticoneNetFrameworkUI.Helpers.DrawingStyle.SiticoneDrawingStyle.Solid
-        Me.SiticoneTextBox1.CursorWidth = 1
-        Me.SiticoneTextBox1.DisabledBackColor = System.Drawing.Color.WhiteSmoke
-        Me.SiticoneTextBox1.DisabledBorderColor = System.Drawing.Color.LightGray
-        Me.SiticoneTextBox1.DisabledTextColor = System.Drawing.Color.Gray
-        Me.SiticoneTextBox1.EnableDropShadow = False
-        Me.SiticoneTextBox1.FillColor1 = System.Drawing.Color.White
-        Me.SiticoneTextBox1.FillColor2 = System.Drawing.Color.White
-        Me.SiticoneTextBox1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SiticoneTextBox1.ForeColor = System.Drawing.Color.DimGray
-        Me.SiticoneTextBox1.HoverBorderColor1 = System.Drawing.Color.Gray
-        Me.SiticoneTextBox1.HoverBorderColor2 = System.Drawing.Color.Gray
-        Me.SiticoneTextBox1.IsEnabled = True
-        Me.SiticoneTextBox1.Location = New System.Drawing.Point(11, 41)
-        Me.SiticoneTextBox1.Name = "SiticoneTextBox1"
-        Me.SiticoneTextBox1.PlaceholderColor = System.Drawing.Color.Gray
-        Me.SiticoneTextBox1.PlaceholderText = "Enter text here..."
-        Me.SiticoneTextBox1.ReadOnlyBorderColor1 = System.Drawing.Color.LightGray
-        Me.SiticoneTextBox1.ReadOnlyBorderColor2 = System.Drawing.Color.LightGray
-        Me.SiticoneTextBox1.ReadOnlyFillColor1 = System.Drawing.Color.WhiteSmoke
-        Me.SiticoneTextBox1.ReadOnlyFillColor2 = System.Drawing.Color.WhiteSmoke
-        Me.SiticoneTextBox1.ReadOnlyPlaceholderColor = System.Drawing.Color.DarkGray
-        Me.SiticoneTextBox1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(77, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.SiticoneTextBox1.ShadowAnimationDuration = 1
-        Me.SiticoneTextBox1.ShadowBlur = 10
-        Me.SiticoneTextBox1.ShadowColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.SiticoneTextBox1.Size = New System.Drawing.Size(444, 29)
-        Me.SiticoneTextBox1.SolidBorderColor = System.Drawing.Color.LightSlateGray
-        Me.SiticoneTextBox1.SolidBorderFocusColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(77, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.SiticoneTextBox1.SolidBorderHoverColor = System.Drawing.Color.Gray
-        Me.SiticoneTextBox1.SolidFillColor = System.Drawing.Color.White
-        Me.SiticoneTextBox1.TabIndex = 24
-        Me.SiticoneTextBox1.TextPadding = New System.Windows.Forms.Padding(16, 0, 6, 0)
-        Me.SiticoneTextBox1.ValidationErrorMessage = "Invalid input."
-        Me.SiticoneTextBox1.ValidationFunction = Nothing
-        '
         'Label4
         '
         Me.Label4.Dock = System.Windows.Forms.DockStyle.Top
@@ -186,7 +129,7 @@ Partial Class SelectedProduct
         'Panel8
         '
         Me.Panel8.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(250, Byte), Integer))
-        Me.Panel8.Controls.Add(Me.SiticoneTextBox1)
+        Me.Panel8.Controls.Add(Me.SiticoneUpDown1)
         Me.Panel8.Controls.Add(Me.Label4)
         Me.Panel8.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel8.Location = New System.Drawing.Point(256, 224)
@@ -269,7 +212,7 @@ Partial Class SelectedProduct
         Me.Label3.Padding = New System.Windows.Forms.Padding(10, 10, 0, 0)
         Me.Label3.Size = New System.Drawing.Size(467, 82)
         Me.Label3.TabIndex = 0
-        Me.Label3.Text = "Side"
+        Me.Label3.Text = "Size"
         '
         'Panel7
         '
@@ -283,6 +226,7 @@ Partial Class SelectedProduct
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Size = New System.Drawing.Size(467, 84)
         Me.Panel7.TabIndex = 26
+        Me.Panel7.Visible = False
         '
         'Panel4
         '
@@ -364,6 +308,49 @@ Partial Class SelectedProduct
         Me.Guna2DragControl1.TargetControl = Me.Panel6
         Me.Guna2DragControl1.UseTransparentDrag = True
         '
+        'SiticoneUpDown1
+        '
+        Me.SiticoneUpDown1.AccessibleDescription = "An advanced numeric up/down control."
+        Me.SiticoneUpDown1.AccessibleName = "SiticoneUpDown"
+        Me.SiticoneUpDown1.AccessibleRole = System.Windows.Forms.AccessibleRole.SpinButton
+        Me.SiticoneUpDown1.ActiveBorderColor = System.Drawing.Color.DodgerBlue
+        Me.SiticoneUpDown1.AllowMouseWheel = True
+        Me.SiticoneUpDown1.AnimateValueChanges = True
+        Me.SiticoneUpDown1.BackColor = System.Drawing.Color.Transparent
+        Me.SiticoneUpDown1.BorderColor = System.Drawing.Color.Gray
+        Me.SiticoneUpDown1.CanBeep = False
+        Me.SiticoneUpDown1.CanShake = False
+        Me.SiticoneUpDown1.CornerRadiusBottomLeft = 4
+        Me.SiticoneUpDown1.CornerRadiusBottomRight = 4
+        Me.SiticoneUpDown1.CornerRadiusTopLeft = 4
+        Me.SiticoneUpDown1.CornerRadiusTopRight = 4
+        Me.SiticoneUpDown1.DecimalPlaces = 0
+        Me.SiticoneUpDown1.EnableDirectInput = True
+        Me.SiticoneUpDown1.FillColor = System.Drawing.Color.White
+        Me.SiticoneUpDown1.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SiticoneUpDown1.ForeColor = System.Drawing.Color.Black
+        Me.SiticoneUpDown1.GradientColorEnd = System.Drawing.Color.LightGray
+        Me.SiticoneUpDown1.GradientColorStart = System.Drawing.Color.White
+        Me.SiticoneUpDown1.GradientMode = SiticoneNetFrameworkUI.Helpers.[Enum].GradientModes.None
+        Me.SiticoneUpDown1.HoverBorderColor = System.Drawing.Color.Transparent
+        Me.SiticoneUpDown1.Increment = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.SiticoneUpDown1.InitialRepeatDelay = 500
+        Me.SiticoneUpDown1.InputType = SiticoneNetFrameworkUI.Helpers.[Enum].InputType.WholeNumbers
+        Me.SiticoneUpDown1.IsReadOnly = False
+        Me.SiticoneUpDown1.Location = New System.Drawing.Point(86, 26)
+        Me.SiticoneUpDown1.Maximum = New Decimal(New Integer() {100, 0, 0, 0})
+        Me.SiticoneUpDown1.Minimum = New Decimal(New Integer() {0, 0, 0, 0})
+        Me.SiticoneUpDown1.Name = "SiticoneUpDown1"
+        Me.SiticoneUpDown1.RepeatSpeed = 50
+        Me.SiticoneUpDown1.ShowBorder = True
+        Me.SiticoneUpDown1.Size = New System.Drawing.Size(314, 38)
+        Me.SiticoneUpDown1.StepPoints = CType(resources.GetObject("SiticoneUpDown1.StepPoints"), System.Collections.Generic.List(Of Decimal))
+        Me.SiticoneUpDown1.TabIndex = 16
+        Me.SiticoneUpDown1.Text = "0"
+        Me.SiticoneUpDown1.TextAlignment = SiticoneNetFrameworkUI.Helpers.Text.TextAlignment.Center
+        Me.SiticoneUpDown1.UseGradient = False
+        Me.SiticoneUpDown1.Value = New Decimal(New Integer() {0, 0, 0, 0})
+        '
         'SelectedProduct
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -397,7 +384,6 @@ Partial Class SelectedProduct
     Friend WithEvents Guna2Button4 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button5 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Panel8 As Panel
-    Friend WithEvents SiticoneTextBox1 As SiticoneTextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Panel7 As Panel
     Friend WithEvents Guna2Button3 As Guna.UI2.WinForms.Guna2Button
@@ -412,4 +398,5 @@ Partial Class SelectedProduct
     Friend WithEvents Panel6 As Panel
     Friend WithEvents SiticoneCloseButton2 As SiticoneCloseButton
     Friend WithEvents Guna2DragControl1 As Guna.UI2.WinForms.Guna2DragControl
+    Friend WithEvents SiticoneUpDown1 As SiticoneUpDown
 End Class
