@@ -1,9 +1,13 @@
-﻿Imports MySql.Data.MySqlClient
+﻿Imports System.Data.SQLite
 Imports System.Security.Cryptography
 Imports System.Text
+Imports System.Threading.Tasks
 
 Public Class EditUser
     Public CurrentUserID As Integer = -1
+    Private dbName As String = "pos.db"
+    Private dbPath As String = Application.StartupPath & "\" & dbName
+    Private connStr As String = "Data Source=" & dbPath & ";Version=3;"
 
     Private Sub EditUser_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         txtAdminPass.UseSystemPasswordChar = True
@@ -14,9 +18,18 @@ Public Class EditUser
         txtPassword.PasswordChar = "•"c
         satextbox.UseSystemPasswordChar = True
         satextbox.PasswordChar = "•"c
+        PictureBox2.Show()
+        PictureBox3.Show()
+        PictureBox5.Show()
+        PictureBox7.Show()
+        PictureBox1.Hide()
+        PictureBox4.Hide()
+        PictureBox6.Hide()
+        PictureBox8.Hide()
         cbRole.DropDownStyle = ComboBoxStyle.DropDownList
         cb_sq.DropDownStyle = ComboBoxStyle.DropDownList
     End Sub
+
 
     Private Function HashText(input As String) As String
         Using sha As SHA256 = SHA256.Create()
@@ -52,11 +65,11 @@ Public Class EditUser
         ' VERIFY ADMIN PASSWORD
         Dim adminCorrect As Boolean = False
 
-        Using conn As New MySqlConnection("server=localhost;userid=root;password=;database=pos")
+        Using conn As New SQLiteConnection(connStr)
             conn.Open()
 
             Dim checkAdmin = "SELECT COUNT(*) FROM users WHERE username='admin' AND password=@pass"
-            Using cmd As New MySqlCommand(checkAdmin, conn)
+            Using cmd As New SQLiteCommand(checkAdmin, conn)
                 cmd.Parameters.AddWithValue("@pass", HashText(txtAdminPass.Text))
                 adminCorrect = (Convert.ToInt32(cmd.ExecuteScalar()) = 1)
             End Using
@@ -69,7 +82,7 @@ Public Class EditUser
 
         ' UPDATE USER DATA
         Try
-            Using conn As New MySqlConnection("server=localhost;userid=root;password=;database=pos")
+            Using conn As New SQLiteConnection(connStr)
                 conn.Open()
 
                 ' 🔥 Updated to use Secret_Question and Secret_Answer
@@ -77,7 +90,7 @@ Public Class EditUser
                     "UPDATE users SET username=@u, email=@e, role=@r, password=@p, " &
                     "Secret_Question=@sq, Secret_Answer=@sa WHERE userid=@id"
 
-                Using cmd As New MySqlCommand(query, conn)
+                Using cmd As New SQLiteCommand(query, conn)
                     cmd.Parameters.AddWithValue("@u", txtUsername.Text)
                     cmd.Parameters.AddWithValue("@e", txtEmail.Text)
                     cmd.Parameters.AddWithValue("@r", cbRole.Text)
@@ -110,6 +123,65 @@ Public Class EditUser
             MessageBox.Show("Error updating user: " & ex.Message)
         End Try
 
+    End Sub
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+        txtPassword.UseSystemPasswordChar = True
+        txtPassword.PasswordChar = "•"c
+
+        PictureBox1.Hide()
+        PictureBox2.Show()
+    End Sub
+
+    ' Click PictureBox2 → show PictureBox1, show password
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+        txtPassword.UseSystemPasswordChar = False
+
+        PictureBox2.Hide()
+        PictureBox1.Show()
+    End Sub
+
+    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+        txtConfirmPass.UseSystemPasswordChar = True
+        txtConfirmPass.PasswordChar = "•"c
+
+        PictureBox3.Hide()
+        PictureBox4.Show()
+    End Sub
+
+    Private Sub PictureBox4_Click(sender As Object, e As EventArgs) Handles PictureBox4.Click
+        txtConfirmPass.UseSystemPasswordChar = False
+
+        PictureBox3.Show()
+        PictureBox4.Hide()
+    End Sub
+
+    Private Sub PictureBox5_Click(sender As Object, e As EventArgs) Handles PictureBox5.Click
+        satextbox.UseSystemPasswordChar = True
+        satextbox.PasswordChar = "•"c
+
+        PictureBox5.Hide()
+        PictureBox6.Show()
+    End Sub
+
+    Private Sub PictureBox6_Click(sender As Object, e As EventArgs) Handles PictureBox6.Click
+        satextbox.UseSystemPasswordChar = False
+
+        PictureBox5.Show()
+        PictureBox6.Hide()
+    End Sub
+    Private Sub PictureBox7_Click(sender As Object, e As EventArgs) Handles PictureBox7.Click
+        txtAdminPass.UseSystemPasswordChar = True
+        txtAdminPass.PasswordChar = "•"c
+
+        PictureBox7.Show()
+        PictureBox8.Hide()
+    End Sub
+
+    Private Sub PictureBox8_Click(sender As Object, e As EventArgs) Handles PictureBox8.Click
+        txtAdminPass.UseSystemPasswordChar = False
+
+        PictureBox8.Show()
+        PictureBox7.Hide()
     End Sub
 
 End Class

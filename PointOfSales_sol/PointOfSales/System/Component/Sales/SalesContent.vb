@@ -1,34 +1,43 @@
-﻿Imports MySql.Data.MySqlClient
+﻿Imports System.Data.SQLite
 Imports System.Globalization
 
 Public Class SalesContent
     Public Property AllowCloseOverlay As Boolean = True
-    Dim conn As New MySqlConnection("server=localhost;userid=root;password=;database=pos")
 
-    ' Load sales into Guna2DataGridView1
+    ' SQLite connection
+    Private dbName As String = "pos.db"
+    Private dbPath As String = Application.StartupPath & "\" & dbName
+    Private conn As New SQLiteConnection("Data Source=" & dbPath & ";Version=3;")
+
+    ' -------------------------------------------------------------
+    ' LOAD SALES INTO DATAGRID
+    ' -------------------------------------------------------------
     Public Sub LoadSalesData(Optional ByVal filter As String = "", Optional ByVal sortBy As String = "SaleDate ASC")
         Try
             conn.Open()
+
             Dim query As String = "SELECT SalesID, SaleDate, ProductName, TicketNumber, TotalAmount FROM sales WHERE 1=1"
 
-            ' Filter by search box if not empty
             If filter <> "" Then
                 query &= " AND (ProductName LIKE @filter OR SaleDate LIKE @filter OR TicketNumber LIKE @filter)"
             End If
 
-            ' Add sort
             query &= " ORDER BY " & sortBy
 
-            Dim cmd As New MySqlCommand(query, conn)
+            Dim cmd As New SQLiteCommand(query, conn)
+
             If filter <> "" Then
                 cmd.Parameters.AddWithValue("@filter", "%" & filter & "%")
             End If
 
-            Dim adapter As New MySqlDataAdapter(cmd)
+            Dim adapter As New SQLiteDataAdapter(cmd)
             Dim dt As New DataTable()
             adapter.Fill(dt)
+
             Guna2DataGridView1.DataSource = dt
-            If Guna2DataGridView1.Columns.Contains("salesID") Then
+
+            ' Auto-size columns (same as your original code)
+            If Guna2DataGridView1.Columns.Contains("SalesID") Then
                 Guna2DataGridView1.Columns("SalesID").AutoSizeMode = DataGridViewAutoSizeColumnMode.ColumnHeader
             End If
             If Guna2DataGridView1.Columns.Contains("TotalAmount") Then
@@ -51,29 +60,40 @@ Public Class SalesContent
         End Try
     End Sub
 
-    ' Load monthly sales into Guna2Chart
+    ' -------------------------------------------------------------
+    ' LOAD MONTHLY SALES CHART
+    ' -------------------------------------------------------------
     Public Sub LoadMonthlySalesChart()
         Try
             conn.Open()
+
             Dim currentYear As Integer = DateTime.Now.Year
 
             Dim query As String = "
-            SELECT MONTH(SaleDate) AS SaleMonth, SUM(TotalAmount) AS TotalAmount
+            SELECT strftime('%m', SaleDate) AS SaleMonth, SUM(TotalAmount) AS TotalAmount
             FROM sales
-            WHERE YEAR(SaleDate) = @year
-            GROUP BY MONTH(SaleDate)
-            ORDER BY SaleMonth"
-            Dim cmd As New MySqlCommand(query, conn)
-            cmd.Parameters.AddWithValue("@year", currentYear)
-            Dim reader As MySqlDataReader = cmd.ExecuteReader()
+            WHERE strftime('%Y', SaleDate) = @year
+            GROUP BY strftime('%m', SaleDate)
+            ORDER BY SaleMonth
+            "
+
+            Dim cmd As New SQLiteCommand(query, conn)
+            cmd.Parameters.AddWithValue("@year", currentYear.ToString())
+
+            Dim reader As SQLiteDataReader = cmd.ExecuteReader()
 
             Dim monthlySales As New Dictionary(Of Integer, Decimal)
+
             While reader.Read()
-                monthlySales(Convert.ToInt32(reader("SaleMonth"))) = Convert.ToDecimal(reader("TotalAmount"))
+                Dim month As Integer = Convert.ToInt32(reader("SaleMonth"))
+                Dim total As Decimal = Convert.ToDecimal(reader("TotalAmount"))
+                monthlySales(month) = total
             End While
+
             reader.Close()
 
             GunaChart1.Datasets.Clear()
+
             Dim series As New Guna.Charts.WinForms.GunaBarDataset()
             series.Label = "Sales Report"
 
@@ -93,17 +113,21 @@ Public Class SalesContent
         End Try
     End Sub
 
-    ' Populate ComboBox1 with sort options
+    ' -------------------------------------------------------------
+    ' POPULATE SORT OPTIONS
+    ' -------------------------------------------------------------
     Private Sub LoadSortOptions()
         ComboBox1.Items.Clear()
-        ComboBox1.Items.Add("Date Ascending")
-        ComboBox1.Items.Add("Date Descending")
+        ComboBox1.Items.Add("Ticketnumber Ascending")
+        ComboBox1.Items.Add("Ticketnumber Descending")
         ComboBox1.Items.Add("TotalAmount Ascending")
         ComboBox1.Items.Add("TotalAmount Descending")
         ComboBox1.SelectedIndex = 0
     End Sub
 
-    ' Apply sorting based on ComboBox1 selection
+    ' -------------------------------------------------------------
+    ' RETURN SORT QUERY
+    ' -------------------------------------------------------------
     Private Function GetSortQuery() As String
         Select Case ComboBox1.SelectedItem.ToString()
             Case "Date Ascending"
@@ -118,42 +142,43 @@ Public Class SalesContent
                 Return "SaleDate ASC"
         End Select
     End Function
-    ' FILTER BY DATE RANGE + COMBOBOX SORT + SEARCH TEXT
+
+    ' -------------------------------------------------------------
+    ' FILTER BY DATE RANGE + SEARCH + SORT
+    ' -------------------------------------------------------------
     Public Sub LoadSalesDataWithFilter()
         Try
             conn.Open()
 
             Dim query As String = "SELECT SalesID, SaleDate, ProductName, TicketNumber, TotalAmount FROM sales WHERE 1=1"
-            Dim cmd As New MySqlCommand()
+            Dim cmd As New SQLiteCommand()
             cmd.Connection = conn
 
-            ' --- DATE FILTER ---
+            ' --- DATE FILTERS ---
             If SiticoneDateTimePicker1.Value.HasValue AndAlso SiticoneDateTimePicker2.Value.HasValue Then
-                ' Both From and To selected
                 query &= " AND SaleDate BETWEEN @dateFrom AND @dateTo"
-                cmd.Parameters.AddWithValue("@dateFrom", SiticoneDateTimePicker1.SelectedDate)
-                cmd.Parameters.AddWithValue("@dateTo", SiticoneDateTimePicker2.SelectedDate)
+                cmd.Parameters.AddWithValue("@dateFrom", SiticoneDateTimePicker1.Value.ToString("yyyy-MM-dd"))
+                cmd.Parameters.AddWithValue("@dateTo", SiticoneDateTimePicker2.Value.ToString("yyyy-MM-dd"))
             ElseIf SiticoneDateTimePicker1.Value.HasValue Then
-                ' Only From selected → filter exact date
-                query &= " AND DATE(SaleDate) = @dateFrom"
-                cmd.Parameters.AddWithValue("@dateFrom", SiticoneDateTimePicker1.SelectedDate)
+                query &= " AND date(SaleDate) = date(@dateFrom)"
+                cmd.Parameters.AddWithValue("@dateFrom", SiticoneDateTimePicker1.Value.ToString("yyyy-MM-dd"))
             ElseIf SiticoneDateTimePicker2.Value.HasValue Then
-                ' Only To selected → show all records up to that date
                 query &= " AND SaleDate <= @dateTo"
-                cmd.Parameters.AddWithValue("@dateTo", SiticoneDateTimePicker2.SelectedDate)
+                cmd.Parameters.AddWithValue("@dateTo", SiticoneDateTimePicker2.Value.ToString("yyyy-MM-dd"))
             End If
 
-            ' --- SEARCH FILTER ---
+            ' --- SEARCH ---
             If SiticoneButtonTextbox2.Text <> "" Then
                 query &= " AND (ProductName LIKE @filter OR TicketNumber LIKE @filter)"
                 cmd.Parameters.AddWithValue("@filter", "%" & SiticoneButtonTextbox2.Text & "%")
             End If
 
-            ' --- SORTING ---
+            ' --- SORT ---
             query &= " ORDER BY " & GetSortQuery()
+
             cmd.CommandText = query
 
-            Dim da As New MySqlDataAdapter(cmd)
+            Dim da As New SQLiteDataAdapter(cmd)
             Dim dt As New DataTable
             da.Fill(dt)
 
@@ -166,22 +191,36 @@ Public Class SalesContent
         End Try
     End Sub
 
-
-
-    ' Refresh both grid and chart
+    ' -------------------------------------------------------------
+    ' REFRESH BOTH GRID + CHART
+    ' -------------------------------------------------------------
     Public Sub RefreshSales(Optional ByVal filter As String = "")
         LoadSalesData(filter, GetSortQuery())
         LoadMonthlySalesChart()
     End Sub
 
-    ' Form Load
+    ' -------------------------------------------------------------
+    ' FORM LOAD
+    ' -------------------------------------------------------------
     Private Sub SalesContent_Load(sender As Object, e As EventArgs) Handles Me.Load
         LoadSortOptions()
         LoadSalesDataWithFilter()
         LoadMonthlySalesChart()
+
+        ' =========================================
+        ' For Datagridview
+        Guna2DataGridView1.ColumnHeadersDefaultCellStyle.Font =
+        New Font("Segoe UI", 10, FontStyle.Bold)
+        For Each col As DataGridViewColumn In Guna2DataGridView1.Columns
+            col.SortMode = DataGridViewColumnSortMode.NotSortable
+        Next
+        ' =========================================
+
     End Sub
 
-    ' ComboBox1 SelectedIndexChanged - update sorting
+    ' -------------------------------------------------------------
+    ' EVENT HANDLERS
+    ' -------------------------------------------------------------
     Private Sub SiticoneDateTimePicker1_ValueChanged(sender As Object, e As EventArgs) Handles SiticoneDateTimePicker1.ValueChanged
         LoadSalesDataWithFilter()
     End Sub
@@ -201,24 +240,19 @@ Public Class SalesContent
     Private Async Sub ComboBox1_Click(sender As Object, e As EventArgs) Handles ComboBox1.Click
         SiticoneOverlay1.Show = True
         Await Task.Delay(2000)
-        If AllowCloseOverlay Then
-            SiticoneOverlay1.Show = False
-        End If
+        If AllowCloseOverlay Then SiticoneOverlay1.Show = False
     End Sub
 
     Private Async Sub SiticoneDateTimePicker1_Click(sender As Object, e As EventArgs) Handles SiticoneDateTimePicker1.Click
         SiticoneOverlay1.Show = True
         Await Task.Delay(2000)
-        If AllowCloseOverlay Then
-            SiticoneOverlay1.Show = False
-        End If
+        If AllowCloseOverlay Then SiticoneOverlay1.Show = False
     End Sub
 
     Private Async Sub SiticoneDateTimePicker2_Click(sender As Object, e As EventArgs) Handles SiticoneDateTimePicker2.Click
         SiticoneOverlay1.Show = True
         Await Task.Delay(2000)
-        If AllowCloseOverlay Then
-            SiticoneOverlay1.Show = False
-        End If
+        If AllowCloseOverlay Then SiticoneOverlay1.Show = False
     End Sub
+
 End Class

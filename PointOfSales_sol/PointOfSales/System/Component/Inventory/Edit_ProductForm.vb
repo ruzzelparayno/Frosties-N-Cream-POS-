@@ -1,9 +1,13 @@
 ﻿Imports System.IO
-Imports MySql.Data.MySqlClient
+Imports System.Data.SQLite
 
 Public Class Edit_ProductForm
 
-    Private connectionString As String = "server=localhost;userid=root;password=;database=pos;"
+    ' 🔹 SQLite connection string
+    Private dbName As String = "pos.db"
+    Private dbPath As String = Application.StartupPath & "\" & dbName
+    Private connectionString As String = "Data Source=" & dbPath & ";Version=3;"
+
     Public CurrentProductID As String = ""   ' FIXED: ProductID is VARCHAR
     Public CurrentImage As Image = Nothing
 
@@ -60,7 +64,7 @@ Public Class Edit_ProductForm
         End If
 
         Try
-            Using conn As New MySqlConnection(connectionString)
+            Using conn As New SQLiteConnection(connectionString)
                 conn.Open()
 
                 Dim query As String = "
@@ -73,7 +77,7 @@ Public Class Edit_ProductForm
                 WHERE ProductID=@id
                 "
 
-                Dim cmd As New MySqlCommand(query, conn)
+                Dim cmd As New SQLiteCommand(query, conn)
                 cmd.Parameters.AddWithValue("@name", SiticoneTextBox1.Text)
                 cmd.Parameters.AddWithValue("@stock", SiticoneTextBox2.Text)
                 cmd.Parameters.AddWithValue("@price", SiticoneTextBox3.Text)
@@ -87,7 +91,7 @@ Public Class Edit_ProductForm
                 cmd.ExecuteNonQuery()
             End Using
 
-            MessageBox.Show("Product updated successfully!")
+            MessageBox.Show("Product updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
             If ProductContent.Instance IsNot Nothing Then
                 ProductContent.Instance.LoadInventory()
@@ -111,4 +115,7 @@ Public Class Edit_ProductForm
         End Try
     End Sub
 
+    Private Sub Edit_ProductForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

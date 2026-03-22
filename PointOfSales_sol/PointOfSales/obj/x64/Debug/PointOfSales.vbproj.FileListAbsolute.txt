@@ -1,0 +1,857 @@
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\e_sqlite3.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\PointOfSales.exe.config
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\PointOfSales.exe.manifest
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\PointOfSales.application
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\PointOfSales.exe
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\PointOfSales.pdb
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\PointOfSales.xml
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\BouncyCastle.Cryptography.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\Google.Protobuf.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\Google.Protobuf.pdb
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\Guna.Charts.WinForms.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\Guna.UI2.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.barcodes.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.bouncy-castle-connector.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.forms.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.io.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.kernel.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.layout.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.pdfa.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.pdfua.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.sign.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.styledxmlparser.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.svg.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.commons.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\K4os.Compression.LZ4.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\K4os.Hash.xxHash.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.Extensions.Options.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\comerr64.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\gssapi64.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\k5sprt64.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\krb5_64.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\krbcc64.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\MySql.Data.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\Newtonsoft.Json.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\QRCoder.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\SiticoneNetFrameworkUI.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\SQLitePCLRaw.batteries_v2.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\SQLitePCLRaw.core.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Buffers.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Collections.Immutable.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Data.SQLite.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.IO.Pipelines.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Memory.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Numerics.Vectors.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Security.AccessControl.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Security.Cryptography.Xml.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Security.Principal.Windows.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Text.Encodings.Web.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Text.Json.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.ValueTuple.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\bin\x64\Debug\ZstdSharp.dll
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.vbproj.AssemblyReference.cache
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.vbproj.SuggestedBindingRedirects.cache
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.exe.config
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Charge.resources
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Edit.resources
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Login.resources
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.fgtPass.resources
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.LoginPass.resources
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Resources.resources
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.CashierDashboard.resources
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.AccountContent.resources
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.DashboardContent.resources
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.CategoryContent.resources
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.CategoryForm.resources
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Edit_ProductForm.resources
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Guna2Category.resources
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Inventory.resources
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.ProductContent.resources
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.LogoutContent.resources
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Charge_Cash.resources
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Charge_Gcash.resources
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Charge_Success.resources
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.PosControl.resources
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.SelectedProduct.resources
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.SalesContent.resources
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.CashManagementControll.resources
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.ClosingShiftContent.resources
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.OpenShift.resources
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.ShiftContent.resources
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.RefundConfirmation.resources
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.RefundForm.resources
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.TransactionContent.resources
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.EditUser.resources
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.UserContent.resources
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Dashboard.resources
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.SplashScreen.resources
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.vbproj.GenerateResource.cache
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.vbproj.CoreCompileInputs.cache
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.TrustInfo.xml
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.exe.manifest
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.application
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfS.CE2E3E08.Up2Date
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.exe
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.xml
+C:\Users\cyder\Downloads\POS version 6.9-20251210T051241Z-1-001\POS version 6.9\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.pdb
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\e_sqlite3.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\PointOfSales.exe.config
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\PointOfSales.exe.manifest
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\PointOfSales.application
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\PointOfSales.exe
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\PointOfSales.pdb
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\PointOfSales.xml
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\BouncyCastle.Cryptography.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\Google.Protobuf.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\Google.Protobuf.pdb
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\Guna.Charts.WinForms.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\Guna.UI2.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.barcodes.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.bouncy-castle-connector.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.forms.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.io.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.kernel.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.layout.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.pdfa.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.pdfua.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.sign.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.styledxmlparser.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.svg.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.commons.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\K4os.Compression.LZ4.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\K4os.Hash.xxHash.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.Extensions.Options.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\comerr64.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\gssapi64.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\k5sprt64.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\krb5_64.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\krbcc64.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\MySql.Data.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\Newtonsoft.Json.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\QRCoder.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\SiticoneNetFrameworkUI.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\SQLitePCLRaw.batteries_v2.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\SQLitePCLRaw.core.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Buffers.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Collections.Immutable.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Data.SQLite.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.IO.Pipelines.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Memory.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Numerics.Vectors.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Security.AccessControl.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Security.Cryptography.Xml.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Security.Principal.Windows.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Text.Encodings.Web.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Text.Json.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.ValueTuple.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\bin\x64\Debug\ZstdSharp.dll
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.vbproj.AssemblyReference.cache
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.vbproj.SuggestedBindingRedirects.cache
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.exe.config
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Charge.resources
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Edit.resources
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Login.resources
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.fgtPass.resources
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.LoginPass.resources
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Resources.resources
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.CashierDashboard.resources
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.AccountContent.resources
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.DashboardContent.resources
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.CategoryContent.resources
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.CategoryForm.resources
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Edit_ProductForm.resources
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Guna2Category.resources
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Inventory.resources
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.ProductContent.resources
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.LogoutContent.resources
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Charge_Cash.resources
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Charge_Gcash.resources
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Charge_Success.resources
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.PosControl.resources
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.SelectedProduct.resources
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.SalesContent.resources
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.CashManagementControll.resources
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.ClosingShiftContent.resources
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.OpenShift.resources
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.ShiftContent.resources
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.RefundConfirmation.resources
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.RefundForm.resources
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.TransactionContent.resources
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.EditUser.resources
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.UserContent.resources
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Dashboard.resources
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.SplashScreen.resources
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.vbproj.GenerateResource.cache
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.vbproj.CoreCompileInputs.cache
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.TrustInfo.xml
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.exe.manifest
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.application
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfS.CE2E3E08.Up2Date
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.exe
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.xml
+C:\Users\cyder\Downloads\POS version 7.0\POS version 7.0\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.pdb
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.vbproj.AssemblyReference.cache
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.vbproj.SuggestedBindingRedirects.cache
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.exe.config
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.exe
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.xml
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.pdb
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\e_sqlite3.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\PointOfSales.exe.config
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\PointOfSales.exe.manifest
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\PointOfSales.application
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\PointOfSales.exe
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\PointOfSales.pdb
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\PointOfSales.xml
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\BouncyCastle.Cryptography.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\Google.Protobuf.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\Google.Protobuf.pdb
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\Guna.Charts.WinForms.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\Guna.UI2.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.barcodes.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.bouncy-castle-connector.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.forms.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.io.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.kernel.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.layout.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.pdfa.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.pdfua.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.sign.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.styledxmlparser.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.svg.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.commons.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\K4os.Compression.LZ4.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\K4os.Compression.LZ4.Streams.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\K4os.Hash.xxHash.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.Extensions.DependencyInjection.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.Extensions.Logging.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.Extensions.Options.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.Extensions.Primitives.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\comerr64.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\gssapi64.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\k5sprt64.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\krb5_64.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\krbcc64.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\MySql.Data.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\Newtonsoft.Json.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\QRCoder.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\SiticoneNetFrameworkUI.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\SQLitePCLRaw.batteries_v2.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\SQLitePCLRaw.core.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\SQLitePCLRaw.provider.e_sqlite3.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Buffers.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Collections.Immutable.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Configuration.ConfigurationManager.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Data.SQLite.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.IO.Pipelines.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Memory.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Numerics.Vectors.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Security.AccessControl.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Security.Cryptography.Xml.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Security.Principal.Windows.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Text.Encodings.Web.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Text.Json.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Threading.Tasks.Extensions.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.ValueTuple.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\bin\x64\Debug\ZstdSharp.dll
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Charge.resources
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Edit.resources
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Login.resources
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.fgtPass.resources
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.LoginPass.resources
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Resources.resources
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.CashierDashboard.resources
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.AccountContent.resources
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.DashboardContent.resources
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.CategoryContent.resources
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.CategoryForm.resources
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Edit_ProductForm.resources
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Guna2Category.resources
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Inventory.resources
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.ProductContent.resources
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.LogoutContent.resources
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Charge_Cash.resources
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Charge_Gcash.resources
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Charge_Success.resources
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.PosControl.resources
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.SelectedProduct.resources
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.SalesContent.resources
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.CashManagementControll.resources
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.ClosingShiftContent.resources
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.OpenShift.resources
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.ShiftContent.resources
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.RefundConfirmation.resources
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.RefundForm.resources
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.TransactionContent.resources
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.EditUser.resources
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.UserContent.resources
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Dashboard.resources
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.SplashScreen.resources
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.vbproj.GenerateResource.cache
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.vbproj.CoreCompileInputs.cache
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.TrustInfo.xml
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.exe.manifest
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.application
+D:\latest\POS version 7.1\POS version 7.1\POS version 7.1\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfS.CE2E3E08.Up2Date
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.1\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.vbproj.AssemblyReference.cache
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.1\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.vbproj.SuggestedBindingRedirects.cache
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.1\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.exe.config
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.1\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.exe
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.1\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.xml
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.1\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.pdb
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\e_sqlite3.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\PointOfSales.exe.config
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\PointOfSales.exe.manifest
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\PointOfSales.application
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\PointOfSales.exe
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\PointOfSales.pdb
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\PointOfSales.xml
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\BouncyCastle.Cryptography.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\Google.Protobuf.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\Google.Protobuf.pdb
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\Guna.Charts.WinForms.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\Guna.UI2.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.barcodes.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.bouncy-castle-connector.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.forms.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.io.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.kernel.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.layout.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.pdfa.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.pdfua.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.sign.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.styledxmlparser.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.svg.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.commons.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\K4os.Compression.LZ4.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\K4os.Hash.xxHash.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.Extensions.Options.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\concrt140d_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\msvcp140_1d_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\msvcp140_2d_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\msvcp140d_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\msvcp140d_atomic_wait_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\vcamp140d_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\vccorlib140d_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\vcomp140d_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\vcruntime140_1d_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\vcruntime140d_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\concrt140_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\msvcp140_1_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\msvcp140_2_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\msvcp140_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\msvcp140_atomic_wait_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\vcamp140_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\vccorlib140_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\vcomp140_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\vcruntime140_1_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\vcruntime140_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\comerr64.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\gssapi64.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\k5sprt64.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\krb5_64.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\krbcc64.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\MySql.Data.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\Newtonsoft.Json.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\QRCoder.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\SiticoneNetFrameworkUI.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\SQLitePCLRaw.batteries_v2.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\SQLitePCLRaw.core.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Buffers.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Collections.Immutable.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Data.SQLite.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.IO.Pipelines.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Memory.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Numerics.Vectors.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Security.AccessControl.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Security.Cryptography.Xml.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Security.Principal.Windows.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Text.Encodings.Web.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Text.Json.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.ValueTuple.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\bin\x64\Debug\ZstdSharp.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.vbproj.AssemblyReference.cache
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.vbproj.SuggestedBindingRedirects.cache
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.exe.config
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Charge.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Edit.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Login.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.fgtPass.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.LoginPass.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Resources.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.CashierDashboard.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.AccountContent.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.DashboardContent.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.CategoryContent.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.CategoryForm.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Edit_ProductForm.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Guna2Category.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Inventory.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.ProductContent.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.LogoutContent.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Charge_Cash.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Charge_Gcash.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Charge_Success.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.PosControl.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.SelectedProduct.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.SalesContent.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.CashManagementControll.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.ClosingShiftContent.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.OpenShift.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.ShiftContent.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.RefundConfirmation.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.RefundForm.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.TransactionContent.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.EditUser.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.UserContent.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Dashboard.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.SplashScreen.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.vbproj.GenerateResource.cache
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.vbproj.CoreCompileInputs.cache
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.TrustInfo.xml
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.exe.manifest
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.application
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfS.CE2E3E08.Up2Date
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.exe
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.xml
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.2\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.pdb
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\e_sqlite3.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\PointOfSales.exe.config
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\PointOfSales.exe.manifest
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\PointOfSales.application
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\PointOfSales.exe
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\PointOfSales.pdb
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\PointOfSales.xml
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\BouncyCastle.Cryptography.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\Google.Protobuf.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\Google.Protobuf.pdb
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\Guna.Charts.WinForms.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\Guna.UI2.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.barcodes.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.bouncy-castle-connector.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.forms.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.io.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.kernel.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.layout.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.pdfa.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.pdfua.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.sign.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.styledxmlparser.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.svg.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.commons.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\K4os.Compression.LZ4.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\K4os.Hash.xxHash.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.Extensions.Options.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\concrt140d_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\msvcp140_1d_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\msvcp140_2d_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\msvcp140d_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\msvcp140d_atomic_wait_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\vcamp140d_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\vccorlib140d_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\vcomp140d_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\vcruntime140_1d_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\vcruntime140d_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\concrt140_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\msvcp140_1_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\msvcp140_2_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\msvcp140_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\msvcp140_atomic_wait_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\vcamp140_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\vccorlib140_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\vcomp140_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\vcruntime140_1_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\vcruntime140_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\comerr64.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\gssapi64.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\k5sprt64.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\krb5_64.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\krbcc64.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\MySql.Data.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\Newtonsoft.Json.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\QRCoder.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\SiticoneNetFrameworkUI.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\SQLitePCLRaw.batteries_v2.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\SQLitePCLRaw.core.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Buffers.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Collections.Immutable.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Data.SQLite.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.IO.Pipelines.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Memory.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Numerics.Vectors.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Security.AccessControl.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Security.Cryptography.Xml.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Security.Principal.Windows.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Text.Encodings.Web.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Text.Json.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.ValueTuple.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\bin\x64\Debug\ZstdSharp.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.vbproj.AssemblyReference.cache
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.vbproj.SuggestedBindingRedirects.cache
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.exe.config
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Charge.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Edit.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Login.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.fgtPass.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.LoginPass.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Resources.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.CashierDashboard.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.AccountContent.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.DashboardContent.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.CategoryContent.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.CategoryForm.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Edit_ProductForm.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Guna2Category.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Inventory.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.ProductContent.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.LogoutContent.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Charge_Cash.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Charge_Gcash.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Charge_Success.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.PosControl.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.SelectedProduct.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.SalesContent.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.CashManagementControll.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.ClosingShiftContent.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.OpenShift.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.ShiftContent.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.RefundConfirmation.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.RefundForm.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.TransactionContent.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.EditUser.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.UserContent.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Dashboard.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.SplashScreen.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.vbproj.GenerateResource.cache
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.vbproj.CoreCompileInputs.cache
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.TrustInfo.xml
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.exe.manifest
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.application
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfS.CE2E3E08.Up2Date
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.exe
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.xml
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.3\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.pdb
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\e_sqlite3.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\PointOfSales.exe.config
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\PointOfSales.exe.manifest
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\PointOfSales.application
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\PointOfSales.exe
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\PointOfSales.pdb
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\PointOfSales.xml
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\BouncyCastle.Cryptography.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\Google.Protobuf.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\Google.Protobuf.pdb
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\Guna.Charts.WinForms.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\Guna.UI2.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.barcodes.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.bouncy-castle-connector.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.forms.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.io.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.kernel.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.layout.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.pdfa.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.pdfua.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.sign.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.styledxmlparser.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.svg.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.commons.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\K4os.Compression.LZ4.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\K4os.Hash.xxHash.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.Extensions.Options.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\concrt140d_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\msvcp140_1d_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\msvcp140_2d_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\msvcp140d_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\msvcp140d_atomic_wait_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\vcamp140d_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\vccorlib140d_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\vcomp140d_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\vcruntime140_1d_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\vcruntime140d_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\concrt140_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\msvcp140_1_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\msvcp140_2_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\msvcp140_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\msvcp140_atomic_wait_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\vcamp140_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\vccorlib140_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\vcomp140_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\vcruntime140_1_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\vcruntime140_app.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\comerr64.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\gssapi64.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\k5sprt64.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\krb5_64.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\krbcc64.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\MySql.Data.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\Newtonsoft.Json.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\QRCoder.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\SiticoneNetFrameworkUI.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\SQLitePCLRaw.batteries_v2.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\SQLitePCLRaw.core.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Buffers.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Collections.Immutable.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Data.SQLite.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.IO.Pipelines.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Memory.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Numerics.Vectors.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Security.AccessControl.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Security.Cryptography.Xml.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Security.Principal.Windows.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Text.Encodings.Web.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Text.Json.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.ValueTuple.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\bin\x64\Debug\ZstdSharp.dll
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.vbproj.AssemblyReference.cache
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.vbproj.SuggestedBindingRedirects.cache
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.exe.config
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Charge.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Edit.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Login.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.fgtPass.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.LoginPass.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Resources.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.CashierDashboard.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.AccountContent.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.DashboardContent.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.CategoryContent.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.CategoryForm.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Edit_ProductForm.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Guna2Category.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Inventory.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.ProductContent.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.LogoutContent.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Charge_Cash.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Charge_Gcash.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Charge_Success.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.PosControl.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.SelectedProduct.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.SalesContent.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.CashManagementControll.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.ClosingShiftContent.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.OpenShift.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.ShiftContent.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.RefundConfirmation.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.RefundForm.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.TransactionContent.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.EditUser.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.UserContent.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Dashboard.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.SplashScreen.resources
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.vbproj.GenerateResource.cache
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.vbproj.CoreCompileInputs.cache
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.TrustInfo.xml
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.exe.manifest
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.application
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfS.CE2E3E08.Up2Date
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.exe
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.xml
+C:\Users\cyder\Downloads\POS version 7.1-20251231T182139Z-1-001\POS version 7.4\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.pdb
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\e_sqlite3.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\pos.db
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\PointOfSales.exe.config
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\PointOfSales.exe.manifest
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\PointOfSales.application
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\PointOfSales.exe
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\PointOfSales.pdb
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\PointOfSales.xml
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\BouncyCastle.Cryptography.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\Google.Protobuf.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\Google.Protobuf.pdb
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\Guna.Charts.WinForms.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\Guna.UI2.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.barcodes.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.bouncy-castle-connector.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.forms.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.io.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.kernel.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.layout.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.pdfa.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.pdfua.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.sign.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.styledxmlparser.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.svg.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\itext.commons.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\K4os.Compression.LZ4.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\K4os.Hash.xxHash.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.Extensions.Options.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\concrt140d_app.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\msvcp140_1d_app.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\msvcp140_2d_app.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\msvcp140d_app.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\msvcp140d_atomic_wait_app.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\vcamp140d_app.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\vccorlib140d_app.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\vcomp140d_app.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\vcruntime140_1d_app.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\vcruntime140d_app.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\concrt140_app.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\msvcp140_1_app.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\msvcp140_2_app.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\msvcp140_app.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\msvcp140_atomic_wait_app.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\vcamp140_app.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\vccorlib140_app.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\vcomp140_app.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\vcruntime140_1_app.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\vcruntime140_app.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\comerr64.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\gssapi64.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\k5sprt64.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\krb5_64.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\krbcc64.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\MySql.Data.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\Newtonsoft.Json.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\QRCoder.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\SiticoneNetFrameworkUI.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\SQLitePCLRaw.batteries_v2.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\SQLitePCLRaw.core.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Buffers.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Collections.Immutable.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Data.SQLite.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.IO.Pipelines.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Memory.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Numerics.Vectors.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Security.AccessControl.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Security.Cryptography.Xml.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Security.Principal.Windows.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Text.Encodings.Web.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Text.Json.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\System.ValueTuple.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\bin\x64\Debug\ZstdSharp.dll
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.vbproj.AssemblyReference.cache
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.vbproj.SuggestedBindingRedirects.cache
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.exe.config
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Charge.resources
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Edit.resources
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Login.resources
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.fgtPass.resources
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.LoginPass.resources
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Resources.resources
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.CashierDashboard.resources
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.AccountContent.resources
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.DashboardContent.resources
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.CategoryContent.resources
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.CategoryForm.resources
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Edit_ProductForm.resources
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Guna2Category.resources
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Inventory.resources
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.ProductContent.resources
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.LogoutContent.resources
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Charge_Cash.resources
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Charge_Gcash.resources
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Charge_Success.resources
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.PosControl.resources
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.SelectedProduct.resources
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.SalesContent.resources
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.CashManagementControll.resources
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.ClosingShiftContent.resources
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.OpenShift.resources
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.ShiftContent.resources
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.RefundConfirmation.resources
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.RefundForm.resources
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.TransactionContent.resources
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.EditUser.resources
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.UserContent.resources
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.Dashboard.resources
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.SplashScreen.resources
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.vbproj.GenerateResource.cache
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.vbproj.CoreCompileInputs.cache
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.TrustInfo.xml
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.exe.manifest
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.application
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfS.CE2E3E08.Up2Date
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.exe
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.xml
+C:\Users\User\Downloads\POS version 7.5\PointOfSales_sol\PointOfSales\obj\x64\Debug\PointOfSales.pdb

@@ -42,11 +42,13 @@ Public Class Edit
 
     Private Sub SiticoneButton1_Click(sender As Object, e As EventArgs) Handles SiticoneButton1.Click
         Try
+            ' --- Validate product selection ---
             If String.IsNullOrWhiteSpace(SelectedProductName) Then
                 MessageBox.Show("Product name cannot be empty.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 Exit Sub
             End If
 
+            ' --- Validate quantity ---
             If SiticoneUpDown1.Value <= 0 Then
                 MessageBox.Show("Quantity must be greater than zero.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 Exit Sub
@@ -62,43 +64,51 @@ Public Class Edit
                 Exit Sub
             End If
 
-            ' Find product row in DataGridView
+            ' --- Find product row in DataGridView ---
             Dim foundRow As DataGridViewRow = Nothing
             For Each row As DataGridViewRow In posForm.Guna2DataGridView1.Rows
                 If row.IsNewRow Then Continue For
                 If row.Cells("ProductName").Value IsNot Nothing AndAlso
-                   String.Equals(row.Cells("ProductName").Value.ToString(), productName, StringComparison.OrdinalIgnoreCase) Then
+               String.Equals(row.Cells("ProductName").Value.ToString(), productName, StringComparison.OrdinalIgnoreCase) Then
                     foundRow = row
                     Exit For
                 End If
             Next
 
             If foundRow Is Nothing Then
-                ' Product not yet in cart → add it
+                ' --- Product not yet in cart → check stock first ---
+                Dim availableStock As Integer = posForm.GetStockQuantity(productName)
+                If updatedQty > availableStock Then
+                    MessageBox.Show("Not enough stock. Available: " & availableStock, "Out of Stock", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                    Exit Sub
+                End If
+
+                ' --- Add product to cart ---
                 posForm.Guna2DataGridView1.Rows.Add(updatedQty, productName, (productPrice * updatedQty).ToString("N2"))
                 posForm.ChangeStock(productName, -updatedQty)
             Else
-                ' Update existing product
+                ' --- Update existing product ---
                 Dim oldQty As Integer = Convert.ToInt32(foundRow.Cells("Quantity").Value)
-                Dim delta As Integer = updatedQty - oldQty
+                Dim availableStock As Integer = posForm.GetStockQuantity(productName) + oldQty
 
-                ' Check stock if increasing quantity
-                If delta > 0 Then
-                    Dim available As Integer = posForm.GetStockQuantity(productName)
-                    If available < delta Then
-                        MessageBox.Show("Not enough stock. Available: " & available, "Out of Stock", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-                        Exit Sub
-                    End If
-                    posForm.ChangeStock(productName, -delta)
-                ElseIf delta < 0 Then
-                    posForm.ChangeStock(productName, -delta) ' return stock
+                If updatedQty > availableStock Then
+                    MessageBox.Show("Not enough stock. Available: " & availableStock, "Out of Stock", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                    Exit Sub
                 End If
 
+                ' --- Update stock by the difference ---
+                Dim delta As Integer = updatedQty - oldQty
+                posForm.ChangeStock(productName, -delta)
+
+                ' --- Update DataGridView ---
                 foundRow.Cells("Quantity").Value = updatedQty
                 foundRow.Cells("Price").Value = (productPrice * updatedQty).ToString("N2")
             End If
 
+            ' --- Recalculate totals ---
             posForm.CalculateTotals()
+
+            ' --- Close overlay if applicable ---
             AllowCloseOverlay = True
             If ParentPOS IsNot Nothing Then
                 ParentPOS.SiticoneOverlay1.Show = False
@@ -109,6 +119,7 @@ Public Class Edit
             MessageBox.Show("Error updating quantity: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
+
 
     Private Sub SiticoneImageButton1_Click(sender As Object, e As EventArgs) Handles SiticoneImageButton1.Click
         AllowCloseOverlay = True

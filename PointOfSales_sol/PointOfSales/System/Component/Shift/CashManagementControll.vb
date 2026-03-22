@@ -1,4 +1,5 @@
 ﻿Public Class CashManagementControll
+    Dim cashManager As CashManagementControll = Dashboard.cashInstance
 
     ' -------------------------
     ' Internal state (avoid relying on labels)
@@ -19,6 +20,7 @@
             Return _currentShiftID
         End Get
     End Property
+
 
     Public Sub StartShift(shiftID As Integer)
         _currentShiftID = shiftID
@@ -85,6 +87,8 @@
             shiftForm.SiticoneButton3.Hide()
         End If
 
+        Dashboard.posInstance.EnableMainButton()
+        Dashboard.SetNavbarItemEnabled(8, False)
         lbl_datet.Text = Date.Now.ToString("yyyy-MM-dd HH:mm:ss")
         clearopenshift()
         displayalllabels()
@@ -170,22 +174,23 @@
     ' -------------------------
     Private Sub UpdateAllLabels()
         lbl_sc1.Text = "₱" & _shiftStartCash.ToString("N2")
-        lbl_cashp1.Text = "₱" & _cashPayments.ToString("N2")
-        lbl_refund1.Text = "₱" & _currentRefund.ToString("N2")
-        lbl_srefunds.Text = "₱" & _currentRefund.ToString("N2")
-        lbl_gs.Text = "₱" & _grossSales.ToString("N2")
-        lbl_sdiscounts.Text = "₱" & _totalDiscounts.ToString("N2")
+        lbl_cashp1.Text = "₱" & _cashPayments.ToString("N2")        ' Cash Payments
+        lbl_refund1.Text = "₱" & _currentRefund.ToString("N2")      ' Cash Refund
+        lbl_srefunds.Text = "₱" & _currentRefund.ToString("N2")     ' Refunds
+        lbl_gs.Text = "₱" & _grossSales.ToString("N2")             ' Gross Sales
+        lbl_sdiscounts.Text = "₱" & _totalDiscounts.ToString("N2")  ' Discounts
 
         Dim extraCash As Decimal = _shiftStartCash + _cashPayments - _currentRefund
-        lbl_eca.Text = "₱" & extraCash.ToString("N2")
+        lbl_eca.Text = "₱" & extraCash.ToString("N2")              ' Expected Cash Amount
 
         Dim netSales As Decimal = (_grossSales - _totalDiscounts - _currentRefund)
         If netSales < 0D Then netSales = 0D
-        lbl_ns.Text = "₱" & netSales.ToString("N2")
+        lbl_ns.Text = "₱" & netSales.ToString("N2")                ' Net Sales
 
-        lbl_ncash.Text = "₱" & (_cashPayments - _currentRefund).ToString("N2")
-        lbl_ngcash.Text = "₱" & _gcashPayments.ToString("N2")
+        lbl_ncash.Text = "₱" & (_cashPayments - _currentRefund).ToString("N2")  ' Cash
+        lbl_ngcash.Text = "₱" & _gcashPayments.ToString("N2")                  ' GCash
     End Sub
+
 
     ' -------------------------
     ' ComputeTotal
@@ -303,6 +308,27 @@
         lbl_ncash.Visible = False
         lbl_ngcash.Visible = False
         lbl_sc1.Visible = False
+    End Sub
+
+    Public Sub ApplySale(amount As Decimal, paymentMode As String, discount As Decimal)
+        ' Update payments
+        If paymentMode = "Cash" Then
+            _cashPayments += amount
+        ElseIf paymentMode = "GCash" Then
+            _gcashPayments += amount
+        End If
+
+        ' Update sales
+        _grossSales += amount
+        _totalDiscounts += discount
+
+        ' Refresh UI
+        UpdateAllLabels()
+        displayalllabels()
+    End Sub
+    Protected Overrides Sub OnLoad(e As EventArgs)
+        MyBase.OnLoad(e)
+        Dashboard.cashInstance = Me
     End Sub
 
 

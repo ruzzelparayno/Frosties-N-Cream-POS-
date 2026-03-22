@@ -1,7 +1,10 @@
-﻿Imports MySql.Data.MySqlClient
+﻿Imports System.Data.SQLite
 
 Public Class Guna2Category
-    Private connectionString As String = "server=localhost;userid=root;password=;database=pos"
+    ' 🔹 SQLite connection string
+    Private dbName As String = "pos.db"
+    Private dbPath As String = Application.StartupPath & "\" & dbName
+    Private connectionString As String = "Data Source=" & dbPath & ";Version=3;"
 
     Private Sub BtnSave_Click(sender As Object, e As EventArgs) Handles BtnSave.Click
         Dim categoryName As String = SiticoneTextBox1.Text.Trim()
@@ -13,7 +16,7 @@ Public Class Guna2Category
             Return
         End If
 
-        ' Check description word count
+        ' Check description word count (optional)
         'Dim wordCount As Integer = description.Split(New Char() {" "c}, StringSplitOptions.RemoveEmptyEntries).Length
         'If wordCount < 10 Then
         '    MessageBox.Show("Description must have at least 10 words.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
@@ -21,11 +24,11 @@ Public Class Guna2Category
         'End If
 
         ' Check for duplicate category name
-        Using conn As New MySqlConnection(connectionString)
+        Using conn As New SQLiteConnection(connectionString)
             Try
                 conn.Open()
-                Dim checkQuery As String = "SELECT COUNT(*) FROM categories WHERE categoryName=@catName"
-                Using cmd As New MySqlCommand(checkQuery, conn)
+                Dim checkQuery As String = "SELECT COUNT(*) FROM categories WHERE CategoryName=@catName"
+                Using cmd As New SQLiteCommand(checkQuery, conn)
                     cmd.Parameters.AddWithValue("@catName", categoryName)
                     Dim count As Integer = Convert.ToInt32(cmd.ExecuteScalar())
                     If count > 0 Then
@@ -35,8 +38,8 @@ Public Class Guna2Category
                 End Using
 
                 ' Insert new category
-                Dim insertQuery As String = "INSERT INTO categories (categoryName, description) VALUES (@catName, @desc)"
-                Using cmd As New MySqlCommand(insertQuery, conn)
+                Dim insertQuery As String = "INSERT INTO categories (CategoryName, Description) VALUES (@catName, @desc)"
+                Using cmd As New SQLiteCommand(insertQuery, conn)
                     cmd.Parameters.AddWithValue("@catName", categoryName)
                     cmd.Parameters.AddWithValue("@desc", description)
                     cmd.ExecuteNonQuery()
@@ -55,9 +58,11 @@ Public Class Guna2Category
     End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
-
-
         Me.Close()
         Dashboard.posInstance.BringToFront()
+    End Sub
+
+    Private Sub Guna2Category_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ' Optional: initialization logic
     End Sub
 End Class

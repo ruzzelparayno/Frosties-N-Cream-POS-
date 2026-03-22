@@ -1,4 +1,4 @@
-﻿Imports MySql.Data.MySqlClient
+﻿Imports System.Data.SQLite
 Imports System.Text
 Imports System.Runtime.InteropServices
 
@@ -6,6 +6,10 @@ Public Class RefundForm
 
     ' Optional labels/controls you already have on the form:
     ' lbl_getticket, lbl_getproducts, lbl_getprice, lbl_getsubtotal, lbl_getvat, lbl_gettotal, lbl_MOP
+
+    Private dbName As String = "pos.db"
+    Private dbPath As String = Application.StartupPath & "\" & dbName
+    Private connectionString As String = "Data Source=" & dbPath & ";Version=3;"
 
     Private Sub RefundForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' Optional: format the labels if necessary
@@ -40,10 +44,10 @@ Public Class RefundForm
 
         ' --- Update database ---
         Try
-            Using conn As New MySqlConnection("server=localhost;userid=root;password=;database=pos")
+            Using conn As New SQLiteConnection(connectionString)
                 conn.Open()
-                Dim updateQuery As String = "UPDATE sales SET Status='Refunded' WHERE TicketNumber=@TicketNumber AND TRIM(ProductName)=@ProductName"
-                Using cmd As New MySqlCommand(updateQuery, conn)
+                Dim updateQuery As String = "UPDATE sales SET Status='Cancelled' WHERE TicketNumber=@TicketNumber AND TRIM(ProductName)=@ProductName"
+                Using cmd As New SQLiteCommand(updateQuery, conn)
                     cmd.Parameters.AddWithValue("@TicketNumber", lbl_getticket.Text.Trim())
                     cmd.Parameters.AddWithValue("@ProductName", lbl_getproducts.Text.Trim())
                     cmd.ExecuteNonQuery()
@@ -54,13 +58,8 @@ Public Class RefundForm
             Return
         End Try
 
-        ' --- Find active CashManagementControll using recursive function ---
-        Dim cashForm As CashManagementControll = Nothing
-        Dim shiftForm As ShiftContent = Dashboard.shiftInstance
-
-        If shiftForm IsNot Nothing Then
-            cashForm = FindCashManagementControl(shiftForm)
-        End If
+        ' --- Use shared CashManagementControll instance from Dashboard ---
+        Dim cashForm As CashManagementControll = Dashboard.cashInstance
 
         If cashForm Is Nothing Then
             MessageBox.Show("Cash management control not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -80,27 +79,13 @@ Public Class RefundForm
         Me.Close()
     End Sub
 
-
-
-    ' --- Recursive function to find CashManagementControll anywhere in the form ---
-    Private Function FindCashManagementControl(parent As Control) As CashManagementControll
-        For Each c As Control In parent.Controls
-            If TypeOf c Is CashManagementControll Then
-                Return CType(c, CashManagementControll)
-            ElseIf c.HasChildren Then
-                Dim found As CashManagementControll = FindCashManagementControl(c)
-                If found IsNot Nothing Then Return found
-            End If
-        Next
-        Return Nothing
-    End Function
-
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
         Me.Hide()
     End Sub
 
     ' ----------------- REPRINT REFUND RECEIPT -----------------
     Private Sub SiticoneButton3_Click(sender As Object, e As EventArgs) Handles SiticoneButton3.Click
+        ' --- Receipt generation code unchanged ---
         Dim receipt As New StringBuilder()
         Dim maxChars As Integer = 32
         Dim line As String = New String("=", maxChars)

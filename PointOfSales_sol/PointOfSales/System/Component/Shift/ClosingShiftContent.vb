@@ -64,7 +64,8 @@ Public Class ClosingShiftContent
 
         ' Print Closing Shift Receipt
         PrintClosingShiftReceipt()
-
+        Dashboard.posInstance.DisableMainButton()
+        Dashboard.SetNavbarItemEnabled(8, True)
         ' Hide this form
         Me.Hide()
         If MainForm IsNot Nothing AndAlso MainForm.cashmanagementcontroll IsNot Nothing Then
@@ -191,6 +192,7 @@ Public Class ClosingShiftContent
         SendStringToPrinter("POS-58-Series", receipt.ToString())
     End Sub
 
+    Private Sub ClosingShiftContent_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-
+    End Sub
 End Class

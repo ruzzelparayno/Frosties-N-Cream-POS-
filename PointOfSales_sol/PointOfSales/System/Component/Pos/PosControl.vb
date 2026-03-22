@@ -1,11 +1,12 @@
 ﻿Imports System.IO
 Imports Guna.UI2.WinForms
-Imports MySql.Data.MySqlClient
+Imports System.Data.SQLite
 Imports System.Text.Json
 
 Public Class PosControl
-    Dim conn As New MySqlConnection("server=localhost;userid=root;password=;database=pos")
-    Private connectionString As String = "server=localhost;userid=root;password=;database=pos"
+    Public Shared Instance As PosControl
+    Dim conn As New SQLiteConnection("Data Source=pos.db;Version=3;")
+    Private connectionString As String = "Data Source=pos.db;Version=3;"
 
     ' -----------------------------
     ' For ticket persistence
@@ -20,6 +21,7 @@ Public Class PosControl
     End Class
 
     Private Sub PosControl_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Instance = Me
         lbl_vat.Text = "₱0.00"
         lbl_subtotal.Text = "₱0.00"
         lbl_total.Text = "₱0.00"
@@ -29,42 +31,102 @@ Public Class PosControl
         cb_cate1.DropDownStyle = ComboBoxStyle.DropDownList
         LoadCategories()
 
-        ' ✅ Load last ticket
+        ' Load last ticket
         LoadLastTicketFromFile()
         UpdateTicket()
 
-        ' ✅ Subscribe to ProductContent event using the instance
-        If ProductContent.Instance IsNot Nothing Then
-            AddHandler ProductContent.Instance.ProductAdded, AddressOf OnProductAdded
-        Else
-            MessageBox.Show("ProductContent instance is not ready yet!")
+        ' Subscribe to shared events
+        AddHandler ProductContent.ProductAddedShared, AddressOf OnProductAdded
+        AddHandler ProductContent.ProductStockChangedShared, AddressOf OnProductStockChanged
+        AddHandler CategoryForm.CategoryAddedShared, AddressOf OnCategoryAdded
+
+    End Sub
+    Private Sub OnCategoryAdded(categoryName As String)
+        ' Ensure UI thread safety
+        If Me.InvokeRequired Then
+            Me.Invoke(New Action(Of String)(AddressOf OnCategoryAdded), categoryName)
+            Return
         End If
+
+        ' Add new category to cb_cate1 if not already present
+        If Not cb_cate1.Items.Contains(categoryName) Then
+            cb_cate1.Items.Add(categoryName)
+        End If
+
+        ' Select the new category
+        cb_cate1.SelectedItem = categoryName
+        ' Reload products to show new category products (if any)
+        FilterProductsByCategory()
+    End Sub
+
+
+    Private Sub OnProductStockChanged(productId As String, newStock As Integer)
+        ' Update FlowLayoutPanel1 product card if needed
+        For Each ctrl As Control In FlowLayoutPanel1.Controls
+            If TypeOf ctrl Is Panel Then
+                Dim card As Panel = CType(ctrl, Panel)
+                If card.Tag IsNot Nothing AndAlso card.Tag.ToString() = productId Then
+                    ' Optional: update stock display inside card if you have it
+                    ' e.g., a hidden Label showing stock
+                End If
+            End If
+        Next
+
+        ' Also refresh ticket grid in case it is in cart
+        CalculateTotals()
     End Sub
 
     ' ===============================
     '  TICKET PERSISTENCE METHODS
     ' ===============================
-    Private Sub LoadLastTicketFromFile()
+    Private Function GetLastTicketFromDB() As Integer
         Try
+            Using c As New SQLiteConnection(connectionString)
+                c.Open()
+                Dim cmd As New SQLiteCommand("SELECT TicketNumber FROM sales ORDER BY SaleDate DESC LIMIT 1", c)
+                Dim result = cmd.ExecuteScalar()
+                If result IsNot Nothing Then
+                    Dim lastTicketStr As String = result.ToString().TrimStart("#"c)
+                    Dim ticketNum As Integer
+                    If Integer.TryParse(lastTicketStr, ticketNum) Then
+                        Return ticketNum
+                    End If
+                End If
+            End Using
+        Catch ex As Exception
+            ' ignore
+        End Try
+        Return 0
+    End Function
+
+    Public Sub LoadLastTicketFromFile()
+        Try
+            Dim lastTicketInDB As Integer = GetLastTicketFromDB()
+
             If File.Exists(TicketFile) Then
                 Dim json As String = File.ReadAllText(TicketFile)
                 Dim obj = JsonSerializer.Deserialize(Of TicketData)(json)
+                Dim fileTicket As Integer = If(obj?.LastTicket, 0)
 
-                If obj IsNot Nothing Then
-                    ' Continue if same day; otherwise reset
-                    If obj.TicketDate = DateTime.Now.Date Then
-                        CurrentTicket = obj.LastTicket + 1
-                    Else
-                        CurrentTicket = 1
-                    End If
+                Dim maxTicket As Integer = Math.Max(lastTicketInDB, fileTicket)
+                If obj IsNot Nothing AndAlso obj.TicketDate = DateTime.Now.Date Then
+                    CurrentTicket = maxTicket + 1
+                Else
+                    CurrentTicket = maxTicket + 1
                 End If
             Else
-                CurrentTicket = 1
+                CurrentTicket = lastTicketInDB + 1
             End If
         Catch ex As Exception
             CurrentTicket = 1
         End Try
     End Sub
+    Public Sub RefreshAllData()
+        LoadCategories()
+        LoadProducts()
+        SetupDataGrid()
+    End Sub
+
 
     Private Sub SaveCurrentTicketToFile()
         Try
@@ -75,12 +137,13 @@ Public Class PosControl
             Dim json As String = JsonSerializer.Serialize(obj)
             File.WriteAllText(TicketFile, json)
         Catch ex As Exception
-            ' ignore file errors
+            ' ignore
         End Try
     End Sub
 
     Public Sub NextTicket()
-        SaveCurrentTicketToFile() ' save current ticket before increment
+        ' Save ticket before incrementing to keep file in sync
+        SaveCurrentTicketToFile()
         CurrentTicket += 1
     End Sub
 
@@ -91,7 +154,6 @@ Public Class PosControl
     Public Sub UpdateTicket()
         lbl_tickets.Text = GetFormattedTicket()
     End Sub
-
     ' ===============================
     '  DATA GRID & PRODUCTS
     ' ===============================
@@ -120,14 +182,23 @@ Public Class PosControl
         Try
             conn.Open()
             Dim query As String = "SELECT CategoryName FROM categories"
-            Dim cmd As New MySqlCommand(query, conn)
-            Dim reader As MySqlDataReader = cmd.ExecuteReader()
+            Dim cmd As New SQLiteCommand(query, conn)
+            Dim reader As SQLiteDataReader = cmd.ExecuteReader()
 
             cb_cate1.Items.Clear()
+
+            ' ✅ Add All Products
+            cb_cate1.Items.Add("All Products")
+
             While reader.Read()
                 cb_cate1.Items.Add(reader("CategoryName").ToString())
             End While
+
             reader.Close()
+
+            ' ✅ Select All Products by default
+            cb_cate1.SelectedIndex = 0
+
         Catch ex As Exception
             MessageBox.Show("Error loading categories: " & ex.Message)
         Finally
@@ -135,16 +206,17 @@ Public Class PosControl
         End Try
     End Sub
 
+
     Public Sub LoadProducts()
         Try
             FlowLayoutPanel1.Controls.Clear()
 
-            Using conn As New MySqlConnection(connectionString)
+            Using conn As New SQLiteConnection(connectionString)
                 conn.Open()
                 Dim query As String = "SELECT ProductID, ProductName, ProductImage, Price FROM products"
 
-                Using cmd As New MySqlCommand(query, conn)
-                    Using reader As MySqlDataReader = cmd.ExecuteReader()
+                Using cmd As New SQLiteCommand(query, conn)
+                    Using reader As SQLiteDataReader = cmd.ExecuteReader()
                         While reader.Read()
                             Dim productId As String = reader("ProductID").ToString()
                             Dim pname As String = reader("ProductName").ToString()
@@ -163,7 +235,6 @@ Public Class PosControl
                     End Using
                 End Using
             End Using
-
         Catch ex As Exception
             MessageBox.Show("Error loading products: " & ex.Message)
         End Try
@@ -308,10 +379,10 @@ Public Class PosControl
     Public Function GetStockQuantity(productName As String) As Integer
         Dim stock As Integer = 0
         Try
-            Using c As New MySqlConnection(connectionString)
+            Using c As New SQLiteConnection(connectionString)
                 c.Open()
                 Dim q As String = "SELECT StockQuantity FROM products WHERE ProductName = @ProductName LIMIT 1"
-                Using cmd As New MySqlCommand(q, c)
+                Using cmd As New SQLiteCommand(q, c)
                     cmd.Parameters.AddWithValue("@ProductName", productName)
                     Dim res = cmd.ExecuteScalar()
                     If res IsNot Nothing Then stock = Convert.ToInt32(res)
@@ -325,10 +396,10 @@ Public Class PosControl
 
     Public Function ChangeStock(productName As String, delta As Integer) As Boolean
         Try
-            Using c As New MySqlConnection(connectionString)
+            Using c As New SQLiteConnection(connectionString)
                 c.Open()
                 Dim q As String = "UPDATE products SET StockQuantity = StockQuantity + @Delta WHERE ProductName = @ProductName"
-                Using cmd As New MySqlCommand(q, c)
+                Using cmd As New SQLiteCommand(q, c)
                     cmd.Parameters.AddWithValue("@Delta", delta)
                     cmd.Parameters.AddWithValue("@ProductName", productName)
                     cmd.ExecuteNonQuery()
@@ -406,21 +477,27 @@ Public Class PosControl
 
         Dim selectedCategory As String = cb_cate1.SelectedItem.ToString()
 
+        ' ✅ If All Products, load everything
+        If selectedCategory = "All Products" Then
+            LoadProducts()
+            Exit Sub
+        End If
+
         Try
             FlowLayoutPanel1.Controls.Clear()
 
-            Using conn As New MySqlConnection(connectionString)
+            Using conn As New SQLiteConnection(connectionString)
                 conn.Open()
 
                 Dim query As String =
-                    "SELECT ProductID, ProductName, ProductImage, Price 
-                     FROM products 
-                     WHERE CategoryName = @cat"
+                "SELECT ProductID, ProductName, ProductImage, Price 
+                 FROM products 
+                 WHERE CategoryName = @cat"
 
-                Using cmd As New MySqlCommand(query, conn)
+                Using cmd As New SQLiteCommand(query, conn)
                     cmd.Parameters.AddWithValue("@cat", selectedCategory)
 
-                    Using reader As MySqlDataReader = cmd.ExecuteReader()
+                    Using reader As SQLiteDataReader = cmd.ExecuteReader()
                         While reader.Read()
                             Dim productId As String = reader("ProductID").ToString()
                             Dim pname As String = reader("ProductName").ToString()
@@ -445,21 +522,18 @@ Public Class PosControl
         End Try
     End Sub
 
+
     ' ===============================
     '  EVENT HANDLER FOR NEW PRODUCT
     ' ===============================
     Private Sub OnProductAdded(productId As String)
-        ' Load only the newly added product
-        Dim categorySelected As String = ""
-        If cb_cate1.SelectedIndex <> -1 Then categorySelected = cb_cate1.SelectedItem.ToString()
-
         Try
-            Using conn As New MySqlConnection(connectionString)
+            Using conn As New SQLiteConnection(connectionString)
                 conn.Open()
                 Dim query As String = "SELECT ProductID, ProductName, ProductImage, Price, CategoryName FROM products WHERE ProductID=@id"
-                Using cmd As New MySqlCommand(query, conn)
+                Using cmd As New SQLiteCommand(query, conn)
                     cmd.Parameters.AddWithValue("@id", productId)
-                    Using reader As MySqlDataReader = cmd.ExecuteReader()
+                    Using reader As SQLiteDataReader = cmd.ExecuteReader()
                         If reader.Read() Then
                             Dim pid As String = reader("ProductID").ToString()
                             Dim pname As String = reader("ProductName").ToString()
@@ -474,8 +548,9 @@ Public Class PosControl
                                 End Using
                             End If
 
-                            ' Only add product card if it matches selected category or no filter
-                            If categorySelected = "" OrElse categorySelected = prodCategory Then
+                            ' ✅ If category matches OR All Products selected, add it
+                            Dim categorySelected As String = If(cb_cate1.SelectedIndex <> -1, cb_cate1.SelectedItem.ToString(), "")
+                            If categorySelected = "" OrElse categorySelected = "All Products" OrElse categorySelected = prodCategory Then
                                 AddProductCard(pid, pname, productImage, price)
                             End If
                         End If
@@ -486,6 +561,7 @@ Public Class PosControl
             MessageBox.Show("Error loading new product: " & ex.Message)
         End Try
     End Sub
+
 
     Private Sub AdjustLayout()
         Dim parentForm As Form = Nothing
@@ -506,11 +582,48 @@ Public Class PosControl
             Panel1.Size = New Size(290, Panel1.Height)
         Else
             Panel1.Size = New Size(240, Panel1.Height)
-
         End If
     End Sub
 
     Private Sub PosControl_Resize(sender As Object, e As EventArgs) Handles MyBase.Resize
         AdjustLayout()
     End Sub
+
+    Private Sub SiticoneButtonTextbox1_TextContentChanged(sender As Object, e As EventArgs) Handles SiticoneButtonTextbox1.TextContentChanged
+        Dim searchText As String = SiticoneButtonTextbox1.Text.Trim().ToLower()
+
+        For Each ctrl As Control In FlowLayoutPanel1.Controls
+            If TypeOf ctrl Is SiticonePanel Then
+                Dim card As SiticonePanel = CType(ctrl, SiticonePanel)
+
+                ' Product name label (you added it as the 2nd control)
+                Dim lblName As Label = TryCast(card.Controls.OfType(Of Label)().FirstOrDefault(), Label)
+
+                If lblName IsNot Nothing Then
+                    If searchText = "" Then
+                        card.Visible = True
+                    ElseIf lblName.Text.ToLower().Contains(searchText) Then
+                        card.Visible = True
+                    Else
+                        card.Visible = False
+                    End If
+                End If
+            End If
+        Next
+    End Sub
+
+    Private Sub Guna2Button1_EnabledChanged(sender As Object, e As EventArgs) Handles Guna2Button1.EnabledChanged
+        FlowLayoutPanel1.Visible = Guna2Button1.Enabled
+    End Sub
+    Public Sub EnableMainButton()
+        Guna2Button1.Enabled = True
+        Guna2Button1.BringToFront()
+    End Sub
+
+    Public Sub DisableMainButton()
+        Guna2Button1.Enabled = False
+        Guna2Button1.BringToFront()
+
+    End Sub
+
 End Class

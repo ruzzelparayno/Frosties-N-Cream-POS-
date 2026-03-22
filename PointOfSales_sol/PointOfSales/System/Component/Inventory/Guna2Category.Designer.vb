@@ -25,6 +25,7 @@ Partial Class Guna2Category
         Me.components = New System.ComponentModel.Container()
         Me.Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.SiticoneLabel1 = New SiticoneNetFrameworkUI.SiticoneLabel()
         Me.Guna2AnimateWindow1 = New Guna.UI2.WinForms.Guna2AnimateWindow(Me.components)
         Me.TextBox1 = New System.Windows.Forms.TextBox()
@@ -32,7 +33,6 @@ Partial Class Guna2Category
         Me.SiticoneTextBox1 = New SiticoneNetFrameworkUI.SiticoneTextBox()
         Me.SiticoneLabel2 = New SiticoneNetFrameworkUI.SiticoneLabel()
         Me.BtnSave = New SiticoneNetFrameworkUI.SiticoneButton()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -53,6 +53,16 @@ Partial Class Guna2Category
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(676, 48)
         Me.Panel1.TabIndex = 0
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.PointOfSales.My.Resources.Resources.Back_To
+        Me.PictureBox1.Location = New System.Drawing.Point(31, 7)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(35, 35)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 20
+        Me.PictureBox1.TabStop = False
         '
         'SiticoneLabel1
         '
@@ -239,16 +249,6 @@ Partial Class Guna2Category
         Me.BtnSave.TooltipText = Nothing
         Me.BtnSave.UseAdvancedRendering = True
         Me.BtnSave.UseParticles = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.PointOfSales.My.Resources.Resources.Back_To
-        Me.PictureBox1.Location = New System.Drawing.Point(31, 7)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(35, 35)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 20
-        Me.PictureBox1.TabStop = False
         '
         'Guna2Category
         '

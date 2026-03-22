@@ -41,9 +41,12 @@ Partial Class RefundForm
         Me.lbl_MOP = New System.Windows.Forms.Label()
         Me.lbl_getticket = New System.Windows.Forms.Label()
         Me.Guna2DragControl1 = New Guna.UI2.WinForms.Guna2DragControl(Me.components)
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SiticonePanel1.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -253,6 +256,8 @@ Partial Class RefundForm
         Me.SiticonePanel1.BorderGradientEndColor = System.Drawing.Color.Purple
         Me.SiticonePanel1.BorderGradientStartColor = System.Drawing.Color.Blue
         Me.SiticonePanel1.BorderThickness = 2.0!
+        Me.SiticonePanel1.Controls.Add(Me.Label5)
+        Me.SiticonePanel1.Controls.Add(Me.PictureBox2)
         Me.SiticonePanel1.Controls.Add(Me.lbl_getsubtotal)
         Me.SiticonePanel1.Controls.Add(Me.lbl_gettotal)
         Me.SiticonePanel1.Controls.Add(Me.lbl_getvat)
@@ -297,7 +302,7 @@ Partial Class RefundForm
         Me.lbl_getsubtotal.BackColor = System.Drawing.Color.White
         Me.lbl_getsubtotal.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_getsubtotal.ForeColor = System.Drawing.Color.FromArgb(CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.lbl_getsubtotal.Location = New System.Drawing.Point(298, 283)
+        Me.lbl_getsubtotal.Location = New System.Drawing.Point(298, 291)
         Me.lbl_getsubtotal.Name = "lbl_getsubtotal"
         Me.lbl_getsubtotal.Size = New System.Drawing.Size(13, 21)
         Me.lbl_getsubtotal.TabIndex = 19
@@ -321,7 +326,7 @@ Partial Class RefundForm
         Me.lbl_getvat.BackColor = System.Drawing.Color.White
         Me.lbl_getvat.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_getvat.ForeColor = System.Drawing.Color.FromArgb(CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.lbl_getvat.Location = New System.Drawing.Point(298, 243)
+        Me.lbl_getvat.Location = New System.Drawing.Point(298, 259)
         Me.lbl_getvat.Name = "lbl_getvat"
         Me.lbl_getvat.Size = New System.Drawing.Size(13, 21)
         Me.lbl_getvat.TabIndex = 17
@@ -345,7 +350,7 @@ Partial Class RefundForm
         Me.Label3.BackColor = System.Drawing.Color.White
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(49, 283)
+        Me.Label3.Location = New System.Drawing.Point(49, 291)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(68, 21)
         Me.Label3.TabIndex = 15
@@ -357,7 +362,7 @@ Partial Class RefundForm
         Me.Label2.BackColor = System.Drawing.Color.White
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(49, 243)
+        Me.Label2.Location = New System.Drawing.Point(49, 259)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(36, 21)
         Me.Label2.TabIndex = 14
@@ -369,7 +374,7 @@ Partial Class RefundForm
         Me.lbl_getprice.BackColor = System.Drawing.Color.White
         Me.lbl_getprice.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_getprice.ForeColor = System.Drawing.Color.FromArgb(CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.lbl_getprice.Location = New System.Drawing.Point(298, 109)
+        Me.lbl_getprice.Location = New System.Drawing.Point(298, 143)
         Me.lbl_getprice.Name = "lbl_getprice"
         Me.lbl_getprice.Size = New System.Drawing.Size(13, 21)
         Me.lbl_getprice.TabIndex = 13
@@ -381,7 +386,7 @@ Partial Class RefundForm
         Me.lbl_getproducts.BackColor = System.Drawing.Color.White
         Me.lbl_getproducts.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_getproducts.ForeColor = System.Drawing.Color.FromArgb(CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.lbl_getproducts.Location = New System.Drawing.Point(49, 109)
+        Me.lbl_getproducts.Location = New System.Drawing.Point(49, 143)
         Me.lbl_getproducts.Name = "lbl_getproducts"
         Me.lbl_getproducts.Size = New System.Drawing.Size(13, 21)
         Me.lbl_getproducts.TabIndex = 12
@@ -393,7 +398,7 @@ Partial Class RefundForm
         Me.lbl_MOP.BackColor = System.Drawing.Color.White
         Me.lbl_MOP.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_MOP.ForeColor = System.Drawing.Color.FromArgb(CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.lbl_MOP.Location = New System.Drawing.Point(187, 29)
+        Me.lbl_MOP.Location = New System.Drawing.Point(298, 118)
         Me.lbl_MOP.Name = "lbl_MOP"
         Me.lbl_MOP.Size = New System.Drawing.Size(13, 21)
         Me.lbl_MOP.TabIndex = 11
@@ -405,7 +410,7 @@ Partial Class RefundForm
         Me.lbl_getticket.BackColor = System.Drawing.Color.White
         Me.lbl_getticket.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_getticket.ForeColor = System.Drawing.Color.FromArgb(CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.lbl_getticket.Location = New System.Drawing.Point(49, 42)
+        Me.lbl_getticket.Location = New System.Drawing.Point(298, 89)
         Me.lbl_getticket.Name = "lbl_getticket"
         Me.lbl_getticket.Size = New System.Drawing.Size(13, 21)
         Me.lbl_getticket.TabIndex = 10
@@ -416,6 +421,26 @@ Partial Class RefundForm
         Me.Guna2DragControl1.DockIndicatorTransparencyValue = 0.6R
         Me.Guna2DragControl1.TargetControl = Me
         Me.Guna2DragControl1.UseTransparentDrag = True
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.PointOfSales.My.Resources.Resources.POS_terminal
+        Me.PictureBox2.Location = New System.Drawing.Point(29, 13)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(100, 77)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 20
+        Me.PictureBox2.TabStop = False
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(131, 27)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(256, 40)
+        Me.Label5.TabIndex = 21
+        Me.Label5.Text = "Doña Manuela Subdivision, 10 Rosal, " & Global.Microsoft.VisualBasic.ChrW(10) & "Las Piñas, 1740 Metro Manila" & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'RefundForm
         '
@@ -436,6 +461,7 @@ Partial Class RefundForm
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SiticonePanel1.ResumeLayout(False)
         Me.SiticonePanel1.PerformLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -458,4 +484,6 @@ Partial Class RefundForm
     Friend WithEvents lbl_getticket As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Guna2DragControl1 As Guna.UI2.WinForms.Guna2DragControl
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents Label5 As Label
 End Class

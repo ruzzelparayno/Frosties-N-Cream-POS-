@@ -1,4 +1,7 @@
 ﻿Imports System.Data
+Imports System.Data.SQLite
+Imports System.Security.Cryptography
+Imports System.Text
 Imports iText.IO.Font.Constants
 Imports iText.Kernel.Colors
 Imports iText.Kernel.Font
@@ -7,20 +10,117 @@ Imports iText.Layout
 Imports iText.Layout.Borders
 Imports iText.Layout.Element
 Imports iText.Layout.Properties
-Imports MySql.Data.MySqlClient
+Imports SiticoneNetFrameworkUI
 
 Public Class AccountContent
-    Dim conn As New MySqlConnection("server=localhost;userid=root;password=;database=pos")
+    ' 🔹 SQLite connection string
+    Private dbName As String = "pos.db"
+    Private dbPath As String = Application.StartupPath & "\" & dbName
+    Private conn As New SQLiteConnection("Data Source=" & dbPath & ";Version=3;")
+
     Dim boldFont As PdfFont = PdfFontFactory.CreateFont(StandardFonts.HELVETICA_BOLD)
 
     ' 🔹 Function to hash a string with SHA256
     Private Function HashText(input As String) As String
-        Using sha As Security.Cryptography.SHA256 = Security.Cryptography.SHA256.Create()
-            Dim bytes As Byte() = System.Text.Encoding.UTF8.GetBytes(input)
+        Using sha As SHA256 = SHA256.Create()
+            Dim bytes As Byte() = Encoding.UTF8.GetBytes(input)
             Dim hash As Byte() = sha.ComputeHash(bytes)
             Return BitConverter.ToString(hash).Replace("-", "").ToLower()
         End Using
     End Function
+    Private Sub SiticoneButton2_Click(sender As Object, e As EventArgs) Handles SiticoneButton2.Click
+        Try
+            Dim exportFile As String = ""
+
+            Using sfd As New SaveFileDialog()
+                sfd.Filter = "SQLite Database (*.db)|*.db"
+                sfd.Title = "Export Database"
+                sfd.FileName = "pos_backup.db"
+                If sfd.ShowDialog() = DialogResult.OK Then
+                    exportFile = sfd.FileName
+                Else
+                    Exit Sub
+                End If
+            End Using
+
+            ' Copy the database file to the selected location
+            Dim dbPath As String = Application.StartupPath & "\pos.db"
+            System.IO.File.Copy(dbPath, exportFile, True)
+
+            MessageBox.Show("Database exported successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+        Catch ex As Exception
+            MessageBox.Show("Export Error: " & ex.Message)
+        End Try
+    End Sub
+    Private Sub SiticoneButton4_Click(sender As Object, e As EventArgs) Handles SiticoneButton4.Click
+        Try
+            Dim importFile As String = ""
+
+            ' ---------------------------
+            ' Open file dialog to select the .db file
+            ' ---------------------------
+            Using ofd As New OpenFileDialog()
+                ofd.Filter = "SQLite Database (*.db)|*.db"
+                ofd.Title = "Import Database"
+                If ofd.ShowDialog() = DialogResult.OK Then
+                    importFile = ofd.FileName
+                Else
+                    Exit Sub
+                End If
+            End Using
+
+            Dim dbPath As String = Application.StartupPath & "\pos.db"
+
+            ' ---------------------------
+            ' Delete current DB before copying
+            ' ---------------------------
+            If System.IO.File.Exists(dbPath) Then
+                System.IO.File.Delete(dbPath)
+            End If
+
+            ' ---------------------------
+            ' Copy selected DB into application folder
+            ' ---------------------------
+            System.IO.File.Copy(importFile, dbPath, True)
+
+            MessageBox.Show("Database imported successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+            ' ---------------------------
+            ' Refresh all visible modules
+            ' ---------------------------
+            ' ProductContent
+            If ProductContent.Instance IsNot Nothing Then
+                ProductContent.Instance.LoadInventory()
+            End If
+
+            ' UserContent
+            If UserContent.Instance IsNot Nothing Then
+                UserContent.Instance.LoadUsers()
+            End If
+
+            ' --- REFRESH TRANSACTIONS ---
+            If TransactionContent.Instance IsNot Nothing Then
+                TransactionContent.NotifyTransactionAdded()  ' <- THIS IS THE KEY
+            End If
+
+            ' PosControl
+            If PosControl.Instance IsNot Nothing Then
+                PosControl.Instance.RefreshAllData()
+
+                ' Reload ticket from DB so lbl_tickets shows correct number
+                PosControl.Instance.LoadLastTicketFromFile()  ' <-- reload last ticket
+                PosControl.Instance.UpdateTicket()            ' <-- update the label
+            End If
+
+
+            ' Optional: refresh other modules if needed (TransactionContent, etc.)
+
+        Catch ex As Exception
+            MessageBox.Show("Import Error: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Sub
+
 
     Private Sub AccountContent_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' Set password chars
@@ -48,10 +148,10 @@ Public Class AccountContent
 
             conn.Open()
             Dim query As String = "SELECT username, email FROM users WHERE username=@uname LIMIT 1"
-            Dim cmd As New MySqlCommand(query, conn)
+            Dim cmd As New SQLiteCommand(query, conn)
             cmd.Parameters.AddWithValue("@uname", LoginPass.currentUsername)
 
-            Dim reader As MySqlDataReader = cmd.ExecuteReader(CommandBehavior.SingleRow)
+            Dim reader As SQLiteDataReader = cmd.ExecuteReader(CommandBehavior.SingleRow)
             If reader.Read() Then
                 txt_uname.Text = reader("username").ToString()
                 txt_mail.Text = reader("email").ToString()
@@ -76,7 +176,7 @@ Public Class AccountContent
 
             conn.Open()
             Dim query = "SELECT password FROM users WHERE username=@uname AND email=@mail LIMIT 1"
-            Dim cmd As New MySqlCommand(query, conn)
+            Dim cmd As New SQLiteCommand(query, conn)
             cmd.Parameters.AddWithValue("@uname", txt_uname.Text.Trim())
             cmd.Parameters.AddWithValue("@mail", txt_mail.Text.Trim())
 
@@ -96,7 +196,6 @@ Public Class AccountContent
 
                     ' Show all password change controls including SiticoneButton1 inside Panel15
                     ShowPasswordChangeControls()
-
                 Else
                     MessageBox.Show("Current password is incorrect!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 End If
@@ -126,7 +225,7 @@ Public Class AccountContent
 
             conn.Open()
             Dim updateQuery = "UPDATE users SET password=@newPass WHERE username=@uname"
-            Dim updateCmd As New MySqlCommand(updateQuery, conn)
+            Dim updateCmd As New SQLiteCommand(updateQuery, conn)
             updateCmd.Parameters.AddWithValue("@newPass", HashText(txt_np.Text.Trim))
             updateCmd.Parameters.AddWithValue("@uname", txt_uname.Text.Trim())
             Dim rowsAffected = updateCmd.ExecuteNonQuery()
@@ -147,13 +246,11 @@ Public Class AccountContent
 
     ' 🔹 Show all password change controls including SiticoneButton1
     Private Sub ShowPasswordChangeControls()
-        ' Show all parent panels first
         Panel9.Show()
         Panel16.Show()
         Panel18.Show()
         Panel15.Show() ' Panel containing SiticoneButton1
 
-        ' Show labels and textboxes
         lbl_op.Show()
         txt_op.Show()
         lbl_np.Show()
@@ -161,7 +258,6 @@ Public Class AccountContent
         txt_cpass.Show()
         txt_np.Show()
 
-        ' Show SiticoneButton1
         SiticoneButton1.Show()
         SiticoneButton1.BringToFront()
     End Sub
@@ -171,7 +267,7 @@ Public Class AccountContent
         Panel9.Hide()
         Panel16.Hide()
         Panel18.Hide()
-        Panel15.Hide() ' Hide parent panel to hide button
+        Panel15.Hide()
         lbl_op.Hide()
         txt_op.Hide()
         lbl_np.Hide()

@@ -1,17 +1,22 @@
 ﻿Imports System.IO
-Imports MySql.Data.MySqlClient
+Imports System.Data
+Imports System.Data.SQLite
 
 Public Class ProductContent
     Public Shared Instance As ProductContent
 
     ' Event for notifying POS of new product
     Public Event ProductAdded(productId As String)
-
-    ' Event for notifying realtime stock changes
     Public Event ProductStockChanged(productId As String, newStock As Integer)
 
-    Private connectionString As String = "server=localhost;userid=root;password=;database=pos"
-    Private conn As New MySqlConnection(connectionString)
+    Public Shared Event ProductAddedShared(productId As String)
+    Public Shared Event ProductStockChangedShared(productId As String, newStock As Integer)
+
+    ' 🔹 SQLite connection string
+    Private dbName As String = "pos.db"
+    Private dbPath As String = Application.StartupPath & "\" & dbName
+    Private connectionString As String = "Data Source=" & dbPath & ";Version=3;"
+    Private conn As New SQLiteConnection(connectionString)
 
     ' ProductID must be STRING
     Private selectedProductID As String = ""
@@ -48,13 +53,14 @@ Public Class ProductContent
         Try
             conn.Open()
 
+            ' SQLite equivalent query using substr/instr
             Dim query As String =
                 "SELECT ProductID FROM products 
                  WHERE ProductID LIKE @pre 
-                 ORDER BY CAST(SUBSTRING_INDEX(ProductID, '-', -1) AS UNSIGNED) DESC 
+                 ORDER BY CAST(substr(ProductID, instr(ProductID, '-')+1) AS INTEGER) DESC 
                  LIMIT 1"
 
-            Dim cmd As New MySqlCommand(query, conn)
+            Dim cmd As New SQLiteCommand(query, conn)
             cmd.Parameters.AddWithValue("@pre", prefix & "-%")
 
             Dim result = cmd.ExecuteScalar()
@@ -86,7 +92,7 @@ Public Class ProductContent
     Public Sub LoadCategories()
         Try
             conn.Open()
-            Dim cmd = New MySqlCommand("SELECT CategoryName FROM categories", conn)
+            Dim cmd = New SQLiteCommand("SELECT CategoryName FROM categories", conn)
             Dim r = cmd.ExecuteReader()
 
             cb_cate.Items.Clear()
@@ -123,10 +129,10 @@ Public Class ProductContent
     ' =========================================
     Public Sub LoadInventory()
         Try
-            Using c As New MySqlConnection(connectionString)
+            Using c As New SQLiteConnection(connectionString)
                 c.Open()
 
-                Dim da As New MySqlDataAdapter(
+                Dim da As New SQLiteDataAdapter(
                 "SELECT ProductID, ProductName, Price, StockQuantity, CategoryName 
                  FROM products 
                  ORDER BY ProductName ASC", c)
@@ -145,6 +151,16 @@ Public Class ProductContent
         LoadCategories()
         LoadInventory()
         cb_cate.DropDownStyle = ComboBoxStyle.DropDownList
+
+
+        ' =========================================
+        ' For Datagridview
+        Guna2DataGridView1.ColumnHeadersDefaultCellStyle.Font =
+        New Font("Segoe UI", 10, FontStyle.Bold)
+        For Each col As DataGridViewColumn In Guna2DataGridView1.Columns
+            col.SortMode = DataGridViewColumnSortMode.NotSortable
+        Next
+        ' =========================================
     End Sub
 
     ' =========================================
@@ -163,7 +179,7 @@ Public Class ProductContent
 
         Try
             conn.Open()
-            Dim cmd As New MySqlCommand("SELECT ProductImage FROM products WHERE ProductID=@id", conn)
+            Dim cmd As New SQLiteCommand("SELECT ProductImage FROM products WHERE ProductID=@id", conn)
             cmd.Parameters.AddWithValue("@id", selectedProductID)
 
             Dim imgData = CType(cmd.ExecuteScalar(), Byte())
@@ -205,11 +221,9 @@ Public Class ProductContent
     '  SAVE NEW PRODUCT
     ' =========================================
     Private Sub BtnSave_Click(sender As Object, e As EventArgs) Handles BtnSave.Click
-
         If SiticoneTextBox1.Text = "" Or SiticoneTextBox2.Text = "" Or
-           SiticoneTextBox3.Text = "" Or cb_cate.SelectedIndex = -1 Or
-           selectedImagePath = "" Then
-
+       SiticoneTextBox3.Text = "" Or cb_cate.SelectedIndex = -1 Or
+       selectedImagePath = "" Then
             MessageBox.Show("Please complete all fields.")
             Exit Sub
         End If
@@ -218,26 +232,26 @@ Public Class ProductContent
 
         Try
             conn.Open()
-
             Dim sql As String =
-                "INSERT INTO products 
-                (ProductID, ProductName, StockQuantity, Price, CategoryName, ProductImage)
-                VALUES (@id, @name, @stock, @price, @cat, @img)"
+            "INSERT INTO products 
+            (ProductID, ProductName, StockQuantity, Price, CategoryName, ProductImage)
+            VALUES (@id, @name, @stock, @price, @cat, @img)"
 
-            Dim cmd As New MySqlCommand(sql, conn)
-
+            Dim cmd As New SQLiteCommand(sql, conn)
             cmd.Parameters.AddWithValue("@id", newID)
             cmd.Parameters.AddWithValue("@name", SiticoneTextBox1.Text)
             cmd.Parameters.AddWithValue("@stock", SiticoneTextBox2.Text)
             cmd.Parameters.AddWithValue("@price", SiticoneTextBox3.Text)
             cmd.Parameters.AddWithValue("@cat", cb_cate.SelectedItem.ToString())
             cmd.Parameters.AddWithValue("@img", File.ReadAllBytes(selectedImagePath))
-
             cmd.ExecuteNonQuery()
 
-            MessageBox.Show("Product Added! ID: " & newID)
+            MessageBox.Show("Product added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
-            ' ✅ Raise event to notify POS
+            ' 🔹 Raise shared event for POSControl to refresh immediately
+            RaiseEvent ProductAddedShared(newID)
+
+            ' 🔹 Also raise local event
             RaiseEvent ProductAdded(newID)
 
         Catch ex As Exception
@@ -277,7 +291,7 @@ Public Class ProductContent
 
         Try
             conn.Open()
-            Dim cmd As New MySqlCommand("SELECT ProductImage FROM products WHERE ProductID=@id", conn)
+            Dim cmd As New SQLiteCommand("SELECT ProductImage FROM products WHERE ProductID=@id", conn)
             cmd.Parameters.AddWithValue("@id", id)
 
             Dim imgData = CType(cmd.ExecuteScalar(), Byte())
@@ -303,13 +317,11 @@ Public Class ProductContent
     ' ===========================
     Public Sub UpdateStockRealtime(productId As String, newStock As Integer)
         Try
-            ' Raise event so UI subscribers can react
             RaiseEvent ProductStockChanged(productId, newStock)
+            RaiseEvent ProductStockChangedShared(productId, newStock)
         Catch ex As Exception
-            ' Swallow to avoid affecting calling transaction
+            ' ignore
         End Try
-
-        ' Refresh list to reflect any other changes
         LoadInventory()
     End Sub
 
@@ -319,11 +331,11 @@ Public Class ProductContent
     ' ===========================
     Public Sub NotifyStockChangedByName(productName As String)
         Try
-            Using c As New MySqlConnection(connectionString)
+            Using c As New SQLiteConnection(connectionString)
                 c.Open()
-                Dim cmd As New MySqlCommand("SELECT ProductID, StockQuantity FROM products WHERE ProductName = @pname LIMIT 1", c)
+                Dim cmd As New SQLiteCommand("SELECT ProductID, StockQuantity FROM products WHERE ProductName = @pname LIMIT 1", c)
                 cmd.Parameters.AddWithValue("@pname", productName)
-                Using r As MySqlDataReader = cmd.ExecuteReader()
+                Using r As SQLiteDataReader = cmd.ExecuteReader()
                     If r.Read() Then
                         Dim pid As String = r("ProductID").ToString()
                         Dim sq As Integer = 0
@@ -374,4 +386,9 @@ Public Class ProductContent
         End Try
     End Sub
 
+    Private Sub SiticoneTextBox1_KeyDown(sender As Object, e As KeyEventArgs) Handles SiticoneTextBox3.KeyDown, SiticoneTextBox2.KeyDown, SiticoneTextBox1.KeyDown, cb_cate.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            BtnSave.PerformClick()
+        End If
+    End Sub
 End Class

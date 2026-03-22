@@ -42,6 +42,11 @@ PointOfSales
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:PointOfSales.My.Resources.Resources.hide">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:PointOfSales.My.Resources.Resources.Inventory">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -122,6 +127,28 @@ PointOfSales
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:PointOfSales.My.Resources.Resources.pos1">
+<summary>
+  Looks up a localized string similar to -- phpMyAdmin SQL Dump
+-- version 5.2.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Dec 07, 2025 at 11:10 PM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.0.30
+
+SET SQL_MODE = &quot;NO_AUTO_VALUE_ON_ZERO&quot;;
+START TRANSACTION;
+SET time_zone = &quot;+00:00&quot;;
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 * [rest of string was truncated]&quot;;.
+</summary>
+</member>
 <member name="P:PointOfSales.My.Resources.Resources.sales">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -148,6 +175,11 @@ PointOfSales
 </summary>
 </member>
 <member name="P:PointOfSales.My.Resources.Resources.Users">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PointOfSales.My.Resources.Resources.view">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

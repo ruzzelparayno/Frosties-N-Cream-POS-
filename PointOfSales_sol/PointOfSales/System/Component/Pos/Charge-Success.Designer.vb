@@ -49,9 +49,9 @@ Partial Class Charge_Success
         Me.lbl_cr.ForeColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.lbl_cr.Location = New System.Drawing.Point(100, 145)
         Me.lbl_cr.Name = "lbl_cr"
-        Me.lbl_cr.Size = New System.Drawing.Size(184, 21)
+        Me.lbl_cr.Size = New System.Drawing.Size(174, 21)
         Me.lbl_cr.TabIndex = 19
-        Me.lbl_cr.Text = "Entery referral number"
+        Me.lbl_cr.Text = "Enter referral number"
         '
         'Label1
         '

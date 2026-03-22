@@ -22,9 +22,11 @@ Partial Class LoginPass
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Panel9 = New System.Windows.Forms.Panel()
         Me.Panel11 = New System.Windows.Forms.Panel()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.SiticoneLabel4 = New SiticoneNetFrameworkUI.SiticoneLabel()
         Me.SiticoneButton1 = New SiticoneNetFrameworkUI.SiticoneButton()
         Me.SiticoneTextBox2 = New SiticoneNetFrameworkUI.SiticoneTextBox()
@@ -34,8 +36,11 @@ Partial Class LoginPass
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel8 = New System.Windows.Forms.Panel()
         Me.Panel10 = New System.Windows.Forms.Panel()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Panel9.SuspendLayout()
         Me.Panel11.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel9
@@ -52,7 +57,8 @@ Partial Class LoginPass
         'Panel11
         '
         Me.Panel11.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Panel11.Controls.Add(Me.CheckBox1)
+        Me.Panel11.Controls.Add(Me.PictureBox2)
+        Me.Panel11.Controls.Add(Me.PictureBox1)
         Me.Panel11.Controls.Add(Me.SiticoneLabel4)
         Me.Panel11.Controls.Add(Me.SiticoneButton1)
         Me.Panel11.Controls.Add(Me.SiticoneTextBox2)
@@ -66,15 +72,27 @@ Partial Class LoginPass
         Me.Panel11.Size = New System.Drawing.Size(340, 360)
         Me.Panel11.TabIndex = 0
         '
-        'CheckBox1
+        'PictureBox2
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.BackColor = System.Drawing.Color.White
-        Me.CheckBox1.Location = New System.Drawing.Point(312, 223)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox1.TabIndex = 25
-        Me.CheckBox1.UseVisualStyleBackColor = False
+        Me.PictureBox2.BackColor = System.Drawing.Color.White
+        Me.PictureBox2.Image = Global.PointOfSales.My.Resources.Resources.hide
+        Me.PictureBox2.Location = New System.Drawing.Point(298, 219)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(26, 23)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 26
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.White
+        Me.PictureBox1.Image = Global.PointOfSales.My.Resources.Resources.view
+        Me.PictureBox1.Location = New System.Drawing.Point(298, 219)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(26, 23)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 25
+        Me.PictureBox1.TabStop = False
         '
         'SiticoneLabel4
         '
@@ -359,6 +377,8 @@ Partial Class LoginPass
         Me.Panel9.ResumeLayout(False)
         Me.Panel11.ResumeLayout(False)
         Me.Panel11.PerformLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -374,5 +394,7 @@ Partial Class LoginPass
     Friend WithEvents Label2 As Label
     Friend WithEvents Panel8 As Panel
     Friend WithEvents Panel10 As Panel
-    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents Timer1 As Timer
 End Class

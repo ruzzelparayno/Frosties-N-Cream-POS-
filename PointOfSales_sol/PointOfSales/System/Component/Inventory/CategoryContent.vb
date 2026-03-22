@@ -1,19 +1,21 @@
-﻿
-Imports MySql.Data.MySqlClient
-
+﻿Imports System.Data
+Imports System.Data.SQLite
 
 Public Class CategoryContent
-    Dim conn As New MySqlConnection("server=localhost;userid=root;password=;database=pos")
-    Dim connectionString As String = "server=localhost;userid=root;password=;database=pos"
+    ' 🔹 SQLite connection string
+    Private dbName As String = "pos.db"
+    Private dbPath As String = Application.StartupPath & "\" & dbName
+    Private conn As New SQLiteConnection("Data Source=" & dbPath & ";Version=3;")
+    Private connectionString As String = "Data Source=" & dbPath & ";Version=3;"
     Private selectedCategoryID As Integer = -1 ' Track selected row for editing
 
     ' ✅ Function to load all categories into GunaDataGridView1
     Public Sub LoadCategoriesToGrid()
         Try
-            Using connection As New MySqlConnection(connectionString)
+            Using connection As New SQLiteConnection(connectionString)
                 connection.Open()
                 Dim query As String = "SELECT CategoryID, CategoryName, Description FROM categories"
-                Dim da As New MySqlDataAdapter(query, connection)
+                Dim da As New SQLiteDataAdapter(query, connection)
                 Dim dt As New DataTable()
                 da.Fill(dt)
                 Guna2DataGridView1.DataSource = dt
@@ -53,7 +55,7 @@ Public Class CategoryContent
         Try
             conn.Open()
             Dim query As String = "INSERT INTO categories (CategoryName, Description) VALUES (@categoryName, @description)"
-            Dim cmd As New MySqlCommand(query, conn)
+            Dim cmd As New SQLiteCommand(query, conn)
             cmd.Parameters.AddWithValue("@categoryName", SiticoneTextBox1.Text.Trim())
             cmd.Parameters.AddWithValue("@description", TextBox1.Text.Trim())
             cmd.ExecuteNonQuery()
@@ -116,7 +118,7 @@ Public Class CategoryContent
         Try
             conn.Open()
             Dim query As String = "UPDATE categories SET CategoryName=@name, Description=@desc WHERE CategoryID=@id"
-            Dim cmd As New MySqlCommand(query, conn)
+            Dim cmd As New SQLiteCommand(query, conn)
             cmd.Parameters.AddWithValue("@name", SiticoneTextBox1.Text.Trim())
             cmd.Parameters.AddWithValue("@desc", TextBox1.Text.Trim())
             cmd.Parameters.AddWithValue("@id", selectedCategoryID)

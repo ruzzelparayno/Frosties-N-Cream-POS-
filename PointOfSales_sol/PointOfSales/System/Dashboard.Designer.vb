@@ -24,27 +24,25 @@ Partial Class Dashboard
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim SiticoneNavbar1 As SiticoneNetFrameworkUI.SiticoneNavbar
-        Dim NavBarItem1 As SiticoneNetFrameworkUI.NavBarItem = New SiticoneNetFrameworkUI.NavBarItem()
-        Dim NavBarItem2 As SiticoneNetFrameworkUI.NavBarItem = New SiticoneNetFrameworkUI.NavBarItem()
-        Dim NavBarItem3 As SiticoneNetFrameworkUI.NavBarItem = New SiticoneNetFrameworkUI.NavBarItem()
-        Dim NavBarItem4 As SiticoneNetFrameworkUI.NavBarItem = New SiticoneNetFrameworkUI.NavBarItem()
-        Dim NavBarItem5 As SiticoneNetFrameworkUI.NavBarItem = New SiticoneNetFrameworkUI.NavBarItem()
-        Dim NavBarItem6 As SiticoneNetFrameworkUI.NavBarItem = New SiticoneNetFrameworkUI.NavBarItem()
-        Dim NavBarItem7 As SiticoneNetFrameworkUI.NavBarItem = New SiticoneNetFrameworkUI.NavBarItem()
-        Dim NavBarItem8 As SiticoneNetFrameworkUI.NavBarItem = New SiticoneNetFrameworkUI.NavBarItem()
-        Dim NavBarItem9 As SiticoneNetFrameworkUI.NavBarItem = New SiticoneNetFrameworkUI.NavBarItem()
-        Dim LayoutState1 As SiticoneNetFrameworkUI.SiticoneFlowPanel.LayoutState = New SiticoneNetFrameworkUI.SiticoneFlowPanel.LayoutState()
-        Dim Guna2AnimateWindow1 As Guna.UI2.WinForms.Guna2AnimateWindow
+        Dim NavBarItem10 As SiticoneNetFrameworkUI.NavBarItem = New SiticoneNetFrameworkUI.NavBarItem()
+        Dim NavBarItem11 As SiticoneNetFrameworkUI.NavBarItem = New SiticoneNetFrameworkUI.NavBarItem()
+        Dim NavBarItem12 As SiticoneNetFrameworkUI.NavBarItem = New SiticoneNetFrameworkUI.NavBarItem()
+        Dim NavBarItem13 As SiticoneNetFrameworkUI.NavBarItem = New SiticoneNetFrameworkUI.NavBarItem()
+        Dim NavBarItem14 As SiticoneNetFrameworkUI.NavBarItem = New SiticoneNetFrameworkUI.NavBarItem()
+        Dim NavBarItem15 As SiticoneNetFrameworkUI.NavBarItem = New SiticoneNetFrameworkUI.NavBarItem()
+        Dim NavBarItem16 As SiticoneNetFrameworkUI.NavBarItem = New SiticoneNetFrameworkUI.NavBarItem()
+        Dim NavBarItem17 As SiticoneNetFrameworkUI.NavBarItem = New SiticoneNetFrameworkUI.NavBarItem()
+        Dim NavBarItem18 As SiticoneNetFrameworkUI.NavBarItem = New SiticoneNetFrameworkUI.NavBarItem()
+        Dim LayoutState2 As SiticoneNetFrameworkUI.SiticoneFlowPanel.LayoutState = New SiticoneNetFrameworkUI.SiticoneFlowPanel.LayoutState()
         Me.MySiticoneLicenseSettings1 = New SiticoneNetFrameworkUI.MySiticoneLicenseSettings()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.SiticoneDashboardCard = New SiticoneNetFrameworkUI.SiticoneDashboardCard()
-        Me.Panel3 = New System.Windows.Forms.Panel()
         Me.ContentPanel = New SiticoneNetFrameworkUI.SiticoneContentPanel()
+        Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         SiticoneNavbar1 = New SiticoneNetFrameworkUI.SiticoneNavbar()
-        Guna2AnimateWindow1 = New Guna.UI2.WinForms.Guna2AnimateWindow(Me.components)
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.SiticoneDashboardCard.SuspendLayout()
@@ -83,106 +81,106 @@ Partial Class Dashboard
         SiticoneNavbar1.IndicatorCornerRadius = 9
         SiticoneNavbar1.IndicatorGradientEndColor = System.Drawing.Color.Transparent
         SiticoneNavbar1.IndicatorGradientStartColor = System.Drawing.Color.Transparent
-        NavBarItem1.BackColor = System.Drawing.Color.Empty
-        NavBarItem1.BorderColor = System.Drawing.Color.Empty
-        NavBarItem1.FocusedBorderColor = System.Drawing.Color.Transparent
-        NavBarItem1.ForeColor = System.Drawing.Color.Empty
-        NavBarItem1.HoverBackColor = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(235, Byte), Integer))
-        NavBarItem1.PressBackColor = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(235, Byte), Integer))
-        NavBarItem1.SelectedBackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
-        NavBarItem1.SelectedBorderColor = System.Drawing.Color.Transparent
-        NavBarItem1.SelectedForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(250, Byte), Integer))
-        NavBarItem1.Tag = "dash"
-        NavBarItem1.Text = "Dashboard"
-        NavBarItem2.BackColor = System.Drawing.Color.Empty
-        NavBarItem2.BorderColor = System.Drawing.Color.Empty
-        NavBarItem2.FocusedBorderColor = System.Drawing.Color.Transparent
-        NavBarItem2.ForeColor = System.Drawing.Color.Empty
-        NavBarItem2.HoverBackColor = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(235, Byte), Integer))
-        NavBarItem2.PressBackColor = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(235, Byte), Integer))
-        NavBarItem2.SelectedBackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
-        NavBarItem2.SelectedBorderColor = System.Drawing.Color.Transparent
-        NavBarItem2.SelectedForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(250, Byte), Integer))
-        NavBarItem2.Text = "Inventory"
-        NavBarItem3.BackColor = System.Drawing.Color.Empty
-        NavBarItem3.BorderColor = System.Drawing.Color.Empty
-        NavBarItem3.FocusedBorderColor = System.Drawing.Color.Transparent
-        NavBarItem3.ForeColor = System.Drawing.Color.Empty
-        NavBarItem3.HoverBackColor = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(235, Byte), Integer))
-        NavBarItem3.PressBackColor = System.Drawing.Color.FromArgb(CType(CType(74, Byte), Integer), CType(CType(144, Byte), Integer), CType(CType(226, Byte), Integer))
-        NavBarItem3.SelectedBackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
-        NavBarItem3.SelectedBorderColor = System.Drawing.Color.Transparent
-        NavBarItem3.SelectedForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(250, Byte), Integer))
-        NavBarItem3.Text = "Point Of Sales"
-        NavBarItem4.BackColor = System.Drawing.Color.Empty
-        NavBarItem4.BorderColor = System.Drawing.Color.Empty
-        NavBarItem4.FocusedBorderColor = System.Drawing.Color.Transparent
-        NavBarItem4.ForeColor = System.Drawing.Color.Empty
-        NavBarItem4.HoverBackColor = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(235, Byte), Integer))
-        NavBarItem4.PressBackColor = System.Drawing.Color.FromArgb(CType(CType(74, Byte), Integer), CType(CType(144, Byte), Integer), CType(CType(226, Byte), Integer))
-        NavBarItem4.SelectedBackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
-        NavBarItem4.SelectedBorderColor = System.Drawing.Color.Transparent
-        NavBarItem4.SelectedForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(250, Byte), Integer))
-        NavBarItem4.Text = "Users"
-        NavBarItem5.BackColor = System.Drawing.Color.Empty
-        NavBarItem5.BorderColor = System.Drawing.Color.Empty
-        NavBarItem5.FocusedBorderColor = System.Drawing.Color.Transparent
-        NavBarItem5.ForeColor = System.Drawing.Color.Empty
-        NavBarItem5.HoverBackColor = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(235, Byte), Integer))
-        NavBarItem5.PressBackColor = System.Drawing.Color.FromArgb(CType(CType(74, Byte), Integer), CType(CType(144, Byte), Integer), CType(CType(226, Byte), Integer))
-        NavBarItem5.SelectedBackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
-        NavBarItem5.SelectedBorderColor = System.Drawing.Color.Transparent
-        NavBarItem5.SelectedForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(250, Byte), Integer))
-        NavBarItem5.Text = "Sales"
-        NavBarItem6.BackColor = System.Drawing.Color.Empty
-        NavBarItem6.BorderColor = System.Drawing.Color.Empty
-        NavBarItem6.FocusedBorderColor = System.Drawing.Color.Transparent
-        NavBarItem6.ForeColor = System.Drawing.Color.Empty
-        NavBarItem6.HoverBackColor = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(235, Byte), Integer))
-        NavBarItem6.PressBackColor = System.Drawing.Color.FromArgb(CType(CType(74, Byte), Integer), CType(CType(144, Byte), Integer), CType(CType(226, Byte), Integer))
-        NavBarItem6.SelectedBackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
-        NavBarItem6.SelectedBorderColor = System.Drawing.Color.Transparent
-        NavBarItem6.SelectedForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(250, Byte), Integer))
-        NavBarItem6.Text = "Transaction"
-        NavBarItem7.BackColor = System.Drawing.Color.Empty
-        NavBarItem7.BorderColor = System.Drawing.Color.Empty
-        NavBarItem7.FocusedBorderColor = System.Drawing.Color.Transparent
-        NavBarItem7.ForeColor = System.Drawing.Color.Empty
-        NavBarItem7.HoverBackColor = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(235, Byte), Integer))
-        NavBarItem7.PressBackColor = System.Drawing.Color.FromArgb(CType(CType(74, Byte), Integer), CType(CType(144, Byte), Integer), CType(CType(226, Byte), Integer))
-        NavBarItem7.SelectedBackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
-        NavBarItem7.SelectedBorderColor = System.Drawing.Color.Transparent
-        NavBarItem7.SelectedForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(250, Byte), Integer))
-        NavBarItem7.Text = "Account"
-        NavBarItem8.BackColor = System.Drawing.Color.Empty
-        NavBarItem8.BorderColor = System.Drawing.Color.Empty
-        NavBarItem8.FocusedBorderColor = System.Drawing.Color.Transparent
-        NavBarItem8.ForeColor = System.Drawing.Color.Empty
-        NavBarItem8.HoverBackColor = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(235, Byte), Integer))
-        NavBarItem8.PressBackColor = System.Drawing.Color.FromArgb(CType(CType(74, Byte), Integer), CType(CType(144, Byte), Integer), CType(CType(226, Byte), Integer))
-        NavBarItem8.SelectedBackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
-        NavBarItem8.SelectedBorderColor = System.Drawing.Color.Transparent
-        NavBarItem8.SelectedForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(250, Byte), Integer))
-        NavBarItem8.Text = "Shift"
-        NavBarItem9.BackColor = System.Drawing.Color.Empty
-        NavBarItem9.BorderColor = System.Drawing.Color.Empty
-        NavBarItem9.FocusedBorderColor = System.Drawing.Color.Transparent
-        NavBarItem9.ForeColor = System.Drawing.Color.Empty
-        NavBarItem9.HoverBackColor = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(235, Byte), Integer))
-        NavBarItem9.PressBackColor = System.Drawing.Color.FromArgb(CType(CType(74, Byte), Integer), CType(CType(144, Byte), Integer), CType(CType(226, Byte), Integer))
-        NavBarItem9.SelectedBackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
-        NavBarItem9.SelectedBorderColor = System.Drawing.Color.Transparent
-        NavBarItem9.SelectedForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(250, Byte), Integer))
-        NavBarItem9.Text = "Logout"
-        SiticoneNavbar1.Items.Add(NavBarItem1)
-        SiticoneNavbar1.Items.Add(NavBarItem2)
-        SiticoneNavbar1.Items.Add(NavBarItem3)
-        SiticoneNavbar1.Items.Add(NavBarItem4)
-        SiticoneNavbar1.Items.Add(NavBarItem5)
-        SiticoneNavbar1.Items.Add(NavBarItem6)
-        SiticoneNavbar1.Items.Add(NavBarItem7)
-        SiticoneNavbar1.Items.Add(NavBarItem8)
-        SiticoneNavbar1.Items.Add(NavBarItem9)
+        NavBarItem10.BackColor = System.Drawing.Color.Empty
+        NavBarItem10.BorderColor = System.Drawing.Color.Empty
+        NavBarItem10.FocusedBorderColor = System.Drawing.Color.Transparent
+        NavBarItem10.ForeColor = System.Drawing.Color.Empty
+        NavBarItem10.HoverBackColor = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(235, Byte), Integer))
+        NavBarItem10.PressBackColor = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(235, Byte), Integer))
+        NavBarItem10.SelectedBackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
+        NavBarItem10.SelectedBorderColor = System.Drawing.Color.Transparent
+        NavBarItem10.SelectedForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(250, Byte), Integer))
+        NavBarItem10.Tag = "dash"
+        NavBarItem10.Text = "Dashboard"
+        NavBarItem11.BackColor = System.Drawing.Color.Empty
+        NavBarItem11.BorderColor = System.Drawing.Color.Empty
+        NavBarItem11.FocusedBorderColor = System.Drawing.Color.Transparent
+        NavBarItem11.ForeColor = System.Drawing.Color.Empty
+        NavBarItem11.HoverBackColor = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(235, Byte), Integer))
+        NavBarItem11.PressBackColor = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(235, Byte), Integer))
+        NavBarItem11.SelectedBackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
+        NavBarItem11.SelectedBorderColor = System.Drawing.Color.Transparent
+        NavBarItem11.SelectedForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(250, Byte), Integer))
+        NavBarItem11.Text = "Inventory"
+        NavBarItem12.BackColor = System.Drawing.Color.Empty
+        NavBarItem12.BorderColor = System.Drawing.Color.Empty
+        NavBarItem12.FocusedBorderColor = System.Drawing.Color.Transparent
+        NavBarItem12.ForeColor = System.Drawing.Color.Empty
+        NavBarItem12.HoverBackColor = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(235, Byte), Integer))
+        NavBarItem12.PressBackColor = System.Drawing.Color.FromArgb(CType(CType(74, Byte), Integer), CType(CType(144, Byte), Integer), CType(CType(226, Byte), Integer))
+        NavBarItem12.SelectedBackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
+        NavBarItem12.SelectedBorderColor = System.Drawing.Color.Transparent
+        NavBarItem12.SelectedForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(250, Byte), Integer))
+        NavBarItem12.Text = "Point Of Sales"
+        NavBarItem13.BackColor = System.Drawing.Color.Empty
+        NavBarItem13.BorderColor = System.Drawing.Color.Empty
+        NavBarItem13.FocusedBorderColor = System.Drawing.Color.Transparent
+        NavBarItem13.ForeColor = System.Drawing.Color.Empty
+        NavBarItem13.HoverBackColor = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(235, Byte), Integer))
+        NavBarItem13.PressBackColor = System.Drawing.Color.FromArgb(CType(CType(74, Byte), Integer), CType(CType(144, Byte), Integer), CType(CType(226, Byte), Integer))
+        NavBarItem13.SelectedBackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
+        NavBarItem13.SelectedBorderColor = System.Drawing.Color.Transparent
+        NavBarItem13.SelectedForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(250, Byte), Integer))
+        NavBarItem13.Text = "Users"
+        NavBarItem14.BackColor = System.Drawing.Color.Empty
+        NavBarItem14.BorderColor = System.Drawing.Color.Empty
+        NavBarItem14.FocusedBorderColor = System.Drawing.Color.Transparent
+        NavBarItem14.ForeColor = System.Drawing.Color.Empty
+        NavBarItem14.HoverBackColor = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(235, Byte), Integer))
+        NavBarItem14.PressBackColor = System.Drawing.Color.FromArgb(CType(CType(74, Byte), Integer), CType(CType(144, Byte), Integer), CType(CType(226, Byte), Integer))
+        NavBarItem14.SelectedBackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
+        NavBarItem14.SelectedBorderColor = System.Drawing.Color.Transparent
+        NavBarItem14.SelectedForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(250, Byte), Integer))
+        NavBarItem14.Text = "Sales"
+        NavBarItem15.BackColor = System.Drawing.Color.Empty
+        NavBarItem15.BorderColor = System.Drawing.Color.Empty
+        NavBarItem15.FocusedBorderColor = System.Drawing.Color.Transparent
+        NavBarItem15.ForeColor = System.Drawing.Color.Empty
+        NavBarItem15.HoverBackColor = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(235, Byte), Integer))
+        NavBarItem15.PressBackColor = System.Drawing.Color.FromArgb(CType(CType(74, Byte), Integer), CType(CType(144, Byte), Integer), CType(CType(226, Byte), Integer))
+        NavBarItem15.SelectedBackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
+        NavBarItem15.SelectedBorderColor = System.Drawing.Color.Transparent
+        NavBarItem15.SelectedForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(250, Byte), Integer))
+        NavBarItem15.Text = "Transaction"
+        NavBarItem16.BackColor = System.Drawing.Color.Empty
+        NavBarItem16.BorderColor = System.Drawing.Color.Empty
+        NavBarItem16.FocusedBorderColor = System.Drawing.Color.Transparent
+        NavBarItem16.ForeColor = System.Drawing.Color.Empty
+        NavBarItem16.HoverBackColor = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(235, Byte), Integer))
+        NavBarItem16.PressBackColor = System.Drawing.Color.FromArgb(CType(CType(74, Byte), Integer), CType(CType(144, Byte), Integer), CType(CType(226, Byte), Integer))
+        NavBarItem16.SelectedBackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
+        NavBarItem16.SelectedBorderColor = System.Drawing.Color.Transparent
+        NavBarItem16.SelectedForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(250, Byte), Integer))
+        NavBarItem16.Text = "Account"
+        NavBarItem17.BackColor = System.Drawing.Color.Empty
+        NavBarItem17.BorderColor = System.Drawing.Color.Empty
+        NavBarItem17.FocusedBorderColor = System.Drawing.Color.Transparent
+        NavBarItem17.ForeColor = System.Drawing.Color.Empty
+        NavBarItem17.HoverBackColor = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(235, Byte), Integer))
+        NavBarItem17.PressBackColor = System.Drawing.Color.FromArgb(CType(CType(74, Byte), Integer), CType(CType(144, Byte), Integer), CType(CType(226, Byte), Integer))
+        NavBarItem17.SelectedBackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
+        NavBarItem17.SelectedBorderColor = System.Drawing.Color.Transparent
+        NavBarItem17.SelectedForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(250, Byte), Integer))
+        NavBarItem17.Text = "Shift"
+        NavBarItem18.BackColor = System.Drawing.Color.Empty
+        NavBarItem18.BorderColor = System.Drawing.Color.Empty
+        NavBarItem18.FocusedBorderColor = System.Drawing.Color.Transparent
+        NavBarItem18.ForeColor = System.Drawing.Color.Empty
+        NavBarItem18.HoverBackColor = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(235, Byte), Integer))
+        NavBarItem18.PressBackColor = System.Drawing.Color.FromArgb(CType(CType(74, Byte), Integer), CType(CType(144, Byte), Integer), CType(CType(226, Byte), Integer))
+        NavBarItem18.SelectedBackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
+        NavBarItem18.SelectedBorderColor = System.Drawing.Color.Transparent
+        NavBarItem18.SelectedForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(250, Byte), Integer))
+        NavBarItem18.Text = "Logout"
+        SiticoneNavbar1.Items.Add(NavBarItem10)
+        SiticoneNavbar1.Items.Add(NavBarItem11)
+        SiticoneNavbar1.Items.Add(NavBarItem12)
+        SiticoneNavbar1.Items.Add(NavBarItem13)
+        SiticoneNavbar1.Items.Add(NavBarItem14)
+        SiticoneNavbar1.Items.Add(NavBarItem15)
+        SiticoneNavbar1.Items.Add(NavBarItem16)
+        SiticoneNavbar1.Items.Add(NavBarItem17)
+        SiticoneNavbar1.Items.Add(NavBarItem18)
         SiticoneNavbar1.LimitButtonHeight = False
         SiticoneNavbar1.Location = New System.Drawing.Point(0, 0)
         SiticoneNavbar1.MaterialTabIndicatorPosition = SiticoneNetFrameworkUI.IndicatorPosition.Top
@@ -201,8 +199,10 @@ Partial Class Dashboard
         SiticoneNavbar1.SelectedButtonForeColor = System.Drawing.Color.White
         SiticoneNavbar1.SelectedIndex = 0
         SiticoneNavbar1.SelectedIndicatorSideColor = System.Drawing.Color.Transparent
-        SiticoneNavbar1.SelectedItem = NavBarItem1
+        SiticoneNavbar1.SelectedItem = NavBarItem10
+        SiticoneNavbar1.ShowHeaderTitle = True
         SiticoneNavbar1.ShowTitleSections = False
+        SiticoneNavbar1.ShowTitleSeparator = True
         SiticoneNavbar1.ShowTooltips = False
         SiticoneNavbar1.SidebarBackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(250, Byte), Integer))
         SiticoneNavbar1.Size = New System.Drawing.Size(300, 658)
@@ -258,20 +258,10 @@ Partial Class Dashboard
         Me.SiticoneDashboardCard.Name = "SiticoneDashboardCard"
         Me.SiticoneDashboardCard.Size = New System.Drawing.Size(758, 638)
         Me.SiticoneDashboardCard.TabIndex = 3
-        LayoutState1.Location = New System.Drawing.Point(3, 3)
-        LayoutState1.Size = New System.Drawing.Size(0, 0)
-        LayoutState1.Visible = True
-        Me.SiticoneDashboardCard.Tag = LayoutState1
-        '
-        'Panel3
-        '
-        Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(250, Byte), Integer))
-        Me.Panel3.Controls.Add(Me.Label1)
-        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel3.Location = New System.Drawing.Point(0, 0)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(758, 31)
-        Me.Panel3.TabIndex = 0
+        LayoutState2.Location = New System.Drawing.Point(3, 3)
+        LayoutState2.Size = New System.Drawing.Size(0, 0)
+        LayoutState2.Visible = True
+        Me.SiticoneDashboardCard.Tag = LayoutState2
         '
         'ContentPanel
         '
@@ -295,6 +285,16 @@ Partial Class Dashboard
         Me.ContentPanel.TitlePadding = New System.Windows.Forms.Padding(10, 0, 20, 0)
         Me.ContentPanel.TitleSeparatorColor = System.Drawing.Color.White
         '
+        'Panel3
+        '
+        Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.Panel3.Controls.Add(Me.Label1)
+        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel3.Location = New System.Drawing.Point(0, 0)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(758, 31)
+        Me.Panel3.TabIndex = 0
+        '
         'Label1
         '
         Me.Label1.Dock = System.Windows.Forms.DockStyle.Fill
@@ -312,10 +312,6 @@ Partial Class Dashboard
         '
         Me.Timer1.Enabled = True
         Me.Timer1.Interval = 1000
-        '
-        'Guna2AnimateWindow1
-        '
-        Guna2AnimateWindow1.TargetForm = Me
         '
         'Dashboard
         '

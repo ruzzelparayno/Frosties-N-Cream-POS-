@@ -16,7 +16,6 @@
         ' Clear Login textboxes
         Login.SiticoneTextBox1.Text = ""
         Login.SiticoneTextBox2.Text = ""
-        Login.SiticoneTextBox1.Focus()
 
         ' Show message AFTER logout
         MessageBox.Show("You have been logged out successfully!",
@@ -34,7 +33,8 @@
         Dashboard.IsLoggingOut = True
 
         ' Close Dashboard ONLY
-        Dashboard.Hide()
+        Dashboard.Dispose()
+        Login.SiticoneTextBox1.Focus()
 
 
     End Sub

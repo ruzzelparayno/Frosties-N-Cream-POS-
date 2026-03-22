@@ -1,5 +1,6 @@
 ﻿Imports SiticoneNetFrameworkUI ' Adjust this if needed based on your actual Siticone version
 
+
 Public Class Dashboard
     Public Shared IsLoggingOut As Boolean = False
 
@@ -21,11 +22,13 @@ Public Class Dashboard
         ContentPanel.AddContentToView("Sales", New SalesContent())
         ContentPanel.AddContentToView("Transaction", New TransactionContent())
         ContentPanel.AddContentToView("Shift", shiftInstance)
-        ContentPanel.AddContentToView("Cash Management", cashInstance)
         ContentPanel.AddContentToView("Account", New AccountContent())
         ContentPanel.AddContentToView("Logout", New LogoutContent())
 
 
+        ' Set the timer interval to 1000 ms (1 second)
+        Timer1.Interval = 1000
+        Timer1.Enabled = True
 
     End Sub
 
@@ -53,6 +56,7 @@ Public Class Dashboard
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        ' Update Label1 with current date and time every tick
         Label1.Text = DateTime.Now.ToString("MMMM dd, yyyy hh:mm:ss tt")
     End Sub
 
@@ -95,6 +99,19 @@ Public Class Dashboard
         End If
         ' If logging out → DO NOT EXIT APP (Login will show)
     End Sub
+
+    Public Sub SetNavbarItemEnabled(index As Integer, enabled As Boolean)
+        ' Get the SiticoneNavbar from Panel1
+        Dim navbar As SiticoneNetFrameworkUI.SiticoneNavbar = Me.Panel1.Controls _
+         .OfType(Of SiticoneNetFrameworkUI.SiticoneNavbar)() _
+         .FirstOrDefault()
+
+        ' Check if navbar exists and index is valid
+        If navbar IsNot Nothing AndAlso navbar.Items.Count > index Then
+            navbar.Items(index).Enabled = enabled
+        End If
+    End Sub
+
 
 
 End Class

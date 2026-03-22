@@ -10,4 +10,8 @@
             MessageBox.Show("POS screen not found. Please reopen the POS module.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
     End Sub
+
+    Private Sub Charge_Success_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

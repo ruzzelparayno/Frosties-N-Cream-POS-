@@ -150,10 +150,12 @@ Partial Class CashierDashboard
         SiticoneNavbar1.SelectedIndex = 0
         SiticoneNavbar1.SelectedIndicatorSideColor = System.Drawing.Color.Transparent
         SiticoneNavbar1.SelectedItem = NavBarItem1
+        SiticoneNavbar1.ShowHeaderTitle = True
         SiticoneNavbar1.ShowTitleSections = False
+        SiticoneNavbar1.ShowTitleSeparator = True
         SiticoneNavbar1.ShowTooltips = False
         SiticoneNavbar1.SidebarBackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(250, Byte), Integer))
-        SiticoneNavbar1.Size = New System.Drawing.Size(0, 350)
+        SiticoneNavbar1.Size = New System.Drawing.Size(300, 350)
         SiticoneNavbar1.TabIndex = 2
         SiticoneNavbar1.TitleSeparatorColor = System.Drawing.Color.Transparent
         SiticoneNavbar1.UnselectedButtonBackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(250, Byte), Integer))
