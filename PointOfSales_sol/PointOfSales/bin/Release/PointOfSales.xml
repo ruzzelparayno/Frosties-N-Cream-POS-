@@ -22,6 +22,11 @@ PointOfSales
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:PointOfSales.My.Resources.Resources._1000051999_ezgif_com_video_to_gif_converter">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:PointOfSales.My.Resources.Resources.Account">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -48,6 +53,51 @@ PointOfSales
 </summary>
 </member>
 <member name="P:PointOfSales.My.Resources.Resources.Minus">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PointOfSales.My.Resources.Resources.P_Bar_Chart">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PointOfSales.My.Resources.Resources.P_Card_Payment">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PointOfSales.My.Resources.Resources.P_Clock">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PointOfSales.My.Resources.Resources.P_Health_Graph">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PointOfSales.My.Resources.Resources.P_Increase">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PointOfSales.My.Resources.Resources.P_Logout">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PointOfSales.My.Resources.Resources.P_Monitor">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PointOfSales.My.Resources.Resources.P_Settings">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PointOfSales.My.Resources.Resources.P_User_Account">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -98,6 +148,46 @@ PointOfSales
 </summary>
 </member>
 <member name="P:PointOfSales.My.Resources.Resources.Users">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PointOfSales.My.Resources.Resources.w_Bar_Chart">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PointOfSales.My.Resources.Resources.w_Card_Payment">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PointOfSales.My.Resources.Resources.w_Clock">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PointOfSales.My.Resources.Resources.w_Increase">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PointOfSales.My.Resources.Resources.w_Monitor">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PointOfSales.My.Resources.Resources.w_Settings">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PointOfSales.My.Resources.Resources.w_User_Account">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PointOfSales.My.Resources.Resources.w_Warehouse">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

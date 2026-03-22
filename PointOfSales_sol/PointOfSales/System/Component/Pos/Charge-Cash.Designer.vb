@@ -33,6 +33,7 @@ Partial Class Charge_Cash
         'txt_cashs
         '
         Me.txt_cashs.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_cashs.ForeColor = System.Drawing.Color.FromArgb(CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer))
         Me.txt_cashs.Location = New System.Drawing.Point(7, 24)
         Me.txt_cashs.Name = "txt_cashs"
         Me.txt_cashs.Size = New System.Drawing.Size(285, 29)
@@ -42,7 +43,7 @@ Partial Class Charge_Cash
         '
         Me.lbl_cr.AutoSize = True
         Me.lbl_cr.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_cr.ForeColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.lbl_cr.ForeColor = System.Drawing.Color.FromArgb(CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer))
         Me.lbl_cr.Location = New System.Drawing.Point(3, 0)
         Me.lbl_cr.Name = "lbl_cr"
         Me.lbl_cr.Size = New System.Drawing.Size(115, 21)
@@ -53,7 +54,7 @@ Partial Class Charge_Cash
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer))
         Me.Label1.Location = New System.Drawing.Point(3, 56)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(80, 21)
@@ -64,7 +65,7 @@ Partial Class Charge_Cash
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer))
         Me.Label2.Location = New System.Drawing.Point(147, 56)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(65, 21)
@@ -74,8 +75,8 @@ Partial Class Charge_Cash
         'lbl_totalP
         '
         Me.lbl_totalP.BackColor = System.Drawing.Color.White
-        Me.lbl_totalP.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_totalP.ForeColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.lbl_totalP.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_totalP.ForeColor = System.Drawing.Color.FromArgb(CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer))
         Me.lbl_totalP.Location = New System.Drawing.Point(7, 80)
         Me.lbl_totalP.Name = "lbl_totalP"
         Me.lbl_totalP.Size = New System.Drawing.Size(138, 29)
@@ -85,8 +86,8 @@ Partial Class Charge_Cash
         'lbl_change
         '
         Me.lbl_change.BackColor = System.Drawing.Color.White
-        Me.lbl_change.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_change.ForeColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.lbl_change.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_change.ForeColor = System.Drawing.Color.FromArgb(CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer))
         Me.lbl_change.Location = New System.Drawing.Point(154, 80)
         Me.lbl_change.Name = "lbl_change"
         Me.lbl_change.Size = New System.Drawing.Size(138, 29)
@@ -97,6 +98,7 @@ Partial Class Charge_Cash
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.Controls.Add(Me.lbl_change)
         Me.Controls.Add(Me.lbl_totalP)
         Me.Controls.Add(Me.Label2)

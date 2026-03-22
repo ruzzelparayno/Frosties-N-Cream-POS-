@@ -43,7 +43,7 @@ Partial Class fgtPass
         '
         'Panel9
         '
-        Me.Panel9.BackColor = System.Drawing.Color.White
+        Me.Panel9.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.Panel9.Controls.Add(Me.Panel11)
         Me.Panel9.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel9.Location = New System.Drawing.Point(0, 23)
@@ -54,7 +54,7 @@ Partial Class fgtPass
         '
         'Panel11
         '
-        Me.Panel11.BackColor = System.Drawing.Color.White
+        Me.Panel11.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.Panel11.Controls.Add(Me.SiticoneTextBox4)
         Me.Panel11.Controls.Add(Me.SiticoneLabel5)
         Me.Panel11.Controls.Add(Me.SiticoneTextBox3)
@@ -123,7 +123,7 @@ Partial Class fgtPass
         Me.SiticoneTextBox4.ShadowBlur = 10
         Me.SiticoneTextBox4.ShadowColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.SiticoneTextBox4.Size = New System.Drawing.Size(326, 47)
-        Me.SiticoneTextBox4.SolidBorderColor = System.Drawing.Color.LightSlateGray
+        Me.SiticoneTextBox4.SolidBorderColor = System.Drawing.Color.Transparent
         Me.SiticoneTextBox4.SolidBorderFocusColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(77, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.SiticoneTextBox4.SolidBorderHoverColor = System.Drawing.Color.Gray
         Me.SiticoneTextBox4.SolidFillColor = System.Drawing.Color.White
@@ -138,6 +138,7 @@ Partial Class fgtPass
         Me.SiticoneLabel5.AutoSize = True
         Me.SiticoneLabel5.BackColor = System.Drawing.Color.Transparent
         Me.SiticoneLabel5.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.SiticoneLabel5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.SiticoneLabel5.Location = New System.Drawing.Point(7, 101)
         Me.SiticoneLabel5.Name = "SiticoneLabel5"
         Me.SiticoneLabel5.Size = New System.Drawing.Size(121, 21)
@@ -196,8 +197,8 @@ Partial Class fgtPass
         Me.SiticoneTextBox3.ShadowBlur = 10
         Me.SiticoneTextBox3.ShadowColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.SiticoneTextBox3.Size = New System.Drawing.Size(326, 47)
-        Me.SiticoneTextBox3.SolidBorderColor = System.Drawing.Color.LightSlateGray
-        Me.SiticoneTextBox3.SolidBorderFocusColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(77, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.SiticoneTextBox3.SolidBorderColor = System.Drawing.Color.Transparent
+        Me.SiticoneTextBox3.SolidBorderFocusColor = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(235, Byte), Integer))
         Me.SiticoneTextBox3.SolidBorderHoverColor = System.Drawing.Color.Gray
         Me.SiticoneTextBox3.SolidFillColor = System.Drawing.Color.White
         Me.SiticoneTextBox3.TabIndex = 28
@@ -211,6 +212,7 @@ Partial Class fgtPass
         Me.SiticoneLabel3.AutoSize = True
         Me.SiticoneLabel3.BackColor = System.Drawing.Color.Transparent
         Me.SiticoneLabel3.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.SiticoneLabel3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.SiticoneLabel3.Location = New System.Drawing.Point(9, 181)
         Me.SiticoneLabel3.Name = "SiticoneLabel3"
         Me.SiticoneLabel3.Size = New System.Drawing.Size(148, 21)
@@ -284,6 +286,7 @@ Partial Class fgtPass
         Me.SiticoneLabel1.AutoSize = True
         Me.SiticoneLabel1.BackColor = System.Drawing.Color.Transparent
         Me.SiticoneLabel1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.SiticoneLabel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.SiticoneLabel1.Location = New System.Drawing.Point(8, 101)
         Me.SiticoneLabel1.Name = "SiticoneLabel1"
         Me.SiticoneLabel1.Size = New System.Drawing.Size(149, 21)
@@ -294,7 +297,9 @@ Partial Class fgtPass
         'SiticoneLabel4
         '
         Me.SiticoneLabel4.BackColor = System.Drawing.Color.Transparent
+        Me.SiticoneLabel4.Cursor = System.Windows.Forms.Cursors.Hand
         Me.SiticoneLabel4.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SiticoneLabel4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.SiticoneLabel4.Location = New System.Drawing.Point(10, 340)
         Me.SiticoneLabel4.Name = "SiticoneLabel4"
         Me.SiticoneLabel4.Size = New System.Drawing.Size(334, 30)
@@ -326,7 +331,8 @@ Partial Class fgtPass
         Me.SiticoneButton1.CornerRadiusBottomRight = 5
         Me.SiticoneButton1.CornerRadiusTopLeft = 5
         Me.SiticoneButton1.CornerRadiusTopRight = 5
-        Me.SiticoneButton1.CustomCursor = System.Windows.Forms.Cursors.Default
+        Me.SiticoneButton1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.SiticoneButton1.CustomCursor = System.Windows.Forms.Cursors.Hand
         Me.SiticoneButton1.DisabledTextColor = System.Drawing.Color.FromArgb(CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.SiticoneButton1.EnableLongPress = False
         Me.SiticoneButton1.EnablePressAnimation = True
@@ -446,6 +452,7 @@ Partial Class fgtPass
         Me.SiticoneLabel2.AutoSize = True
         Me.SiticoneLabel2.BackColor = System.Drawing.Color.Transparent
         Me.SiticoneLabel2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.SiticoneLabel2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.SiticoneLabel2.Location = New System.Drawing.Point(8, 101)
         Me.SiticoneLabel2.Name = "SiticoneLabel2"
         Me.SiticoneLabel2.Size = New System.Drawing.Size(53, 21)
@@ -454,9 +461,10 @@ Partial Class fgtPass
         '
         'Label2
         '
+        Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.Label2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 25.0!, System.Drawing.FontStyle.Bold)
-        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(74, Byte), Integer), CType(CType(144, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.Label2.Location = New System.Drawing.Point(0, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(340, 56)
@@ -466,7 +474,7 @@ Partial Class fgtPass
         '
         'Panel8
         '
-        Me.Panel8.BackColor = System.Drawing.Color.White
+        Me.Panel8.BackColor = System.Drawing.Color.Transparent
         Me.Panel8.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel8.Location = New System.Drawing.Point(0, 0)
         Me.Panel8.Name = "Panel8"
@@ -476,7 +484,7 @@ Partial Class fgtPass
         '
         'Panel10
         '
-        Me.Panel10.BackColor = System.Drawing.Color.White
+        Me.Panel10.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.Panel10.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Panel10.Location = New System.Drawing.Point(0, 475)
         Me.Panel10.Name = "Panel10"
@@ -488,6 +496,7 @@ Partial Class fgtPass
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.Transparent
         Me.Controls.Add(Me.Panel9)
         Me.Controls.Add(Me.Panel8)
         Me.Controls.Add(Me.Panel10)

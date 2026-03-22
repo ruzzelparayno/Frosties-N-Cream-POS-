@@ -24,6 +24,7 @@ Partial Class LoginPass
     Private Sub InitializeComponent()
         Me.Panel9 = New System.Windows.Forms.Panel()
         Me.Panel11 = New System.Windows.Forms.Panel()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.SiticoneLabel4 = New SiticoneNetFrameworkUI.SiticoneLabel()
         Me.SiticoneButton1 = New SiticoneNetFrameworkUI.SiticoneButton()
         Me.SiticoneTextBox2 = New SiticoneNetFrameworkUI.SiticoneTextBox()
@@ -33,14 +34,13 @@ Partial Class LoginPass
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel8 = New System.Windows.Forms.Panel()
         Me.Panel10 = New System.Windows.Forms.Panel()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.Panel9.SuspendLayout()
         Me.Panel11.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel9
         '
-        Me.Panel9.BackColor = System.Drawing.Color.White
+        Me.Panel9.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.Panel9.Controls.Add(Me.Panel11)
         Me.Panel9.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel9.Location = New System.Drawing.Point(0, 23)
@@ -51,7 +51,7 @@ Partial Class LoginPass
         '
         'Panel11
         '
-        Me.Panel11.BackColor = System.Drawing.Color.White
+        Me.Panel11.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.Panel11.Controls.Add(Me.CheckBox1)
         Me.Panel11.Controls.Add(Me.SiticoneLabel4)
         Me.Panel11.Controls.Add(Me.SiticoneButton1)
@@ -66,10 +66,21 @@ Partial Class LoginPass
         Me.Panel11.Size = New System.Drawing.Size(340, 360)
         Me.Panel11.TabIndex = 0
         '
+        'CheckBox1
+        '
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Location = New System.Drawing.Point(312, 223)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(15, 14)
+        Me.CheckBox1.TabIndex = 25
+        Me.CheckBox1.UseVisualStyleBackColor = True
+        '
         'SiticoneLabel4
         '
         Me.SiticoneLabel4.BackColor = System.Drawing.Color.Transparent
+        Me.SiticoneLabel4.Cursor = System.Windows.Forms.Cursors.Hand
         Me.SiticoneLabel4.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SiticoneLabel4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.SiticoneLabel4.Location = New System.Drawing.Point(10, 340)
         Me.SiticoneLabel4.Name = "SiticoneLabel4"
         Me.SiticoneLabel4.Size = New System.Drawing.Size(334, 30)
@@ -81,7 +92,7 @@ Partial Class LoginPass
         '
         Me.SiticoneButton1.AccessibleDescription = "The default button control that accept input though the mouse, touch and keyboard" &
     ""
-        Me.SiticoneButton1.AccessibleName = "LOGIN"
+        Me.SiticoneButton1.AccessibleName = "Login"
         Me.SiticoneButton1.AutoSizeBasedOnText = False
         Me.SiticoneButton1.BackColor = System.Drawing.Color.Transparent
         Me.SiticoneButton1.BadgeBackColor = System.Drawing.Color.Blue
@@ -101,7 +112,8 @@ Partial Class LoginPass
         Me.SiticoneButton1.CornerRadiusBottomRight = 5
         Me.SiticoneButton1.CornerRadiusTopLeft = 5
         Me.SiticoneButton1.CornerRadiusTopRight = 5
-        Me.SiticoneButton1.CustomCursor = System.Windows.Forms.Cursors.Default
+        Me.SiticoneButton1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.SiticoneButton1.CustomCursor = System.Windows.Forms.Cursors.Hand
         Me.SiticoneButton1.DisabledTextColor = System.Drawing.Color.FromArgb(CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.SiticoneButton1.EnableLongPress = False
         Me.SiticoneButton1.EnablePressAnimation = True
@@ -143,13 +155,13 @@ Partial Class LoginPass
         Me.SiticoneButton1.RippleOpacity = 0.3!
         Me.SiticoneButton1.RippleRadiusMultiplier = 0.6!
         Me.SiticoneButton1.ShadowBlur = 5
-        Me.SiticoneButton1.ShadowColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.SiticoneButton1.ShadowColor = System.Drawing.Color.Transparent
         Me.SiticoneButton1.ShadowOffset = New System.Drawing.Point(2, 2)
         Me.SiticoneButton1.ShakeDuration = 500
         Me.SiticoneButton1.ShakeIntensity = 5
         Me.SiticoneButton1.Size = New System.Drawing.Size(325, 50)
         Me.SiticoneButton1.TabIndex = 23
-        Me.SiticoneButton1.Text = "LOGIN"
+        Me.SiticoneButton1.Text = "Login"
         Me.SiticoneButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.SiticoneButton1.TextColor = System.Drawing.Color.WhiteSmoke
         Me.SiticoneButton1.TooltipText = Nothing
@@ -164,10 +176,10 @@ Partial Class LoginPass
         Me.SiticoneTextBox2.BackColor = System.Drawing.Color.Transparent
         Me.SiticoneTextBox2.BlinkCount = 3
         Me.SiticoneTextBox2.BlinkShadow = False
-        Me.SiticoneTextBox2.BorderColor1 = System.Drawing.Color.LightSlateGray
-        Me.SiticoneTextBox2.BorderColor2 = System.Drawing.Color.LightSlateGray
-        Me.SiticoneTextBox2.BorderFocusColor1 = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(77, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.SiticoneTextBox2.BorderFocusColor2 = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(77, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.SiticoneTextBox2.BorderColor1 = System.Drawing.Color.Transparent
+        Me.SiticoneTextBox2.BorderColor2 = System.Drawing.Color.Transparent
+        Me.SiticoneTextBox2.BorderFocusColor1 = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(235, Byte), Integer))
+        Me.SiticoneTextBox2.BorderFocusColor2 = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(235, Byte), Integer))
         Me.SiticoneTextBox2.BorderSize = 2
         Me.SiticoneTextBox2.CanShake = True
         Me.SiticoneTextBox2.ContinuousBlink = False
@@ -190,25 +202,25 @@ Partial Class LoginPass
         Me.SiticoneTextBox2.FillColor2 = System.Drawing.Color.White
         Me.SiticoneTextBox2.Font = New System.Drawing.Font("Segoe UI", 12.0!)
         Me.SiticoneTextBox2.ForeColor = System.Drawing.Color.DimGray
-        Me.SiticoneTextBox2.HoverBorderColor1 = System.Drawing.Color.Gray
-        Me.SiticoneTextBox2.HoverBorderColor2 = System.Drawing.Color.Gray
+        Me.SiticoneTextBox2.HoverBorderColor1 = System.Drawing.Color.White
+        Me.SiticoneTextBox2.HoverBorderColor2 = System.Drawing.Color.White
         Me.SiticoneTextBox2.IsEnabled = True
         Me.SiticoneTextBox2.Location = New System.Drawing.Point(10, 208)
         Me.SiticoneTextBox2.Name = "SiticoneTextBox2"
         Me.SiticoneTextBox2.PlaceholderColor = System.Drawing.Color.Gray
         Me.SiticoneTextBox2.PlaceholderText = "Password"
-        Me.SiticoneTextBox2.ReadOnlyBorderColor1 = System.Drawing.Color.LightGray
-        Me.SiticoneTextBox2.ReadOnlyBorderColor2 = System.Drawing.Color.LightGray
-        Me.SiticoneTextBox2.ReadOnlyFillColor1 = System.Drawing.Color.WhiteSmoke
-        Me.SiticoneTextBox2.ReadOnlyFillColor2 = System.Drawing.Color.WhiteSmoke
+        Me.SiticoneTextBox2.ReadOnlyBorderColor1 = System.Drawing.Color.Transparent
+        Me.SiticoneTextBox2.ReadOnlyBorderColor2 = System.Drawing.Color.Transparent
+        Me.SiticoneTextBox2.ReadOnlyFillColor1 = System.Drawing.Color.Transparent
+        Me.SiticoneTextBox2.ReadOnlyFillColor2 = System.Drawing.Color.Transparent
         Me.SiticoneTextBox2.ReadOnlyPlaceholderColor = System.Drawing.Color.DarkGray
-        Me.SiticoneTextBox2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(77, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.SiticoneTextBox2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.SiticoneTextBox2.ShadowAnimationDuration = 1
         Me.SiticoneTextBox2.ShadowBlur = 10
         Me.SiticoneTextBox2.ShadowColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.SiticoneTextBox2.Size = New System.Drawing.Size(326, 47)
-        Me.SiticoneTextBox2.SolidBorderColor = System.Drawing.Color.LightSlateGray
-        Me.SiticoneTextBox2.SolidBorderFocusColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(77, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.SiticoneTextBox2.SolidBorderColor = System.Drawing.Color.Transparent
+        Me.SiticoneTextBox2.SolidBorderFocusColor = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(235, Byte), Integer))
         Me.SiticoneTextBox2.SolidBorderHoverColor = System.Drawing.Color.Gray
         Me.SiticoneTextBox2.SolidFillColor = System.Drawing.Color.White
         Me.SiticoneTextBox2.TabIndex = 22
@@ -221,6 +233,7 @@ Partial Class LoginPass
         Me.SiticoneLabel3.AutoSize = True
         Me.SiticoneLabel3.BackColor = System.Drawing.Color.Transparent
         Me.SiticoneLabel3.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.SiticoneLabel3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.SiticoneLabel3.Location = New System.Drawing.Point(10, 184)
         Me.SiticoneLabel3.Name = "SiticoneLabel3"
         Me.SiticoneLabel3.Size = New System.Drawing.Size(82, 21)
@@ -235,10 +248,10 @@ Partial Class LoginPass
         Me.SiticoneTextBox1.BackColor = System.Drawing.Color.Transparent
         Me.SiticoneTextBox1.BlinkCount = 3
         Me.SiticoneTextBox1.BlinkShadow = False
-        Me.SiticoneTextBox1.BorderColor1 = System.Drawing.Color.LightSlateGray
-        Me.SiticoneTextBox1.BorderColor2 = System.Drawing.Color.LightSlateGray
-        Me.SiticoneTextBox1.BorderFocusColor1 = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(77, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.SiticoneTextBox1.BorderFocusColor2 = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(77, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.SiticoneTextBox1.BorderColor1 = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.SiticoneTextBox1.BorderColor2 = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.SiticoneTextBox1.BorderFocusColor1 = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(235, Byte), Integer))
+        Me.SiticoneTextBox1.BorderFocusColor2 = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(235, Byte), Integer))
         Me.SiticoneTextBox1.BorderSize = 2
         Me.SiticoneTextBox1.CanShake = True
         Me.SiticoneTextBox1.ContinuousBlink = False
@@ -261,10 +274,10 @@ Partial Class LoginPass
         Me.SiticoneTextBox1.FillColor2 = System.Drawing.Color.White
         Me.SiticoneTextBox1.Font = New System.Drawing.Font("Segoe UI", 12.0!)
         Me.SiticoneTextBox1.ForeColor = System.Drawing.Color.DimGray
-        Me.SiticoneTextBox1.HoverBorderColor1 = System.Drawing.Color.Gray
-        Me.SiticoneTextBox1.HoverBorderColor2 = System.Drawing.Color.Gray
+        Me.SiticoneTextBox1.HoverBorderColor1 = System.Drawing.Color.White
+        Me.SiticoneTextBox1.HoverBorderColor2 = System.Drawing.Color.White
         Me.SiticoneTextBox1.IsEnabled = True
-        Me.SiticoneTextBox1.Location = New System.Drawing.Point(10, 125)
+        Me.SiticoneTextBox1.Location = New System.Drawing.Point(9, 125)
         Me.SiticoneTextBox1.Name = "SiticoneTextBox1"
         Me.SiticoneTextBox1.PlaceholderColor = System.Drawing.Color.Gray
         Me.SiticoneTextBox1.PlaceholderText = "Username"
@@ -278,8 +291,8 @@ Partial Class LoginPass
         Me.SiticoneTextBox1.ShadowBlur = 10
         Me.SiticoneTextBox1.ShadowColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.SiticoneTextBox1.Size = New System.Drawing.Size(326, 47)
-        Me.SiticoneTextBox1.SolidBorderColor = System.Drawing.Color.LightSlateGray
-        Me.SiticoneTextBox1.SolidBorderFocusColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(77, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.SiticoneTextBox1.SolidBorderColor = System.Drawing.Color.Transparent
+        Me.SiticoneTextBox1.SolidBorderFocusColor = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(235, Byte), Integer))
         Me.SiticoneTextBox1.SolidBorderHoverColor = System.Drawing.Color.Gray
         Me.SiticoneTextBox1.SolidFillColor = System.Drawing.Color.White
         Me.SiticoneTextBox1.TabIndex = 20
@@ -292,6 +305,7 @@ Partial Class LoginPass
         Me.SiticoneLabel2.AutoSize = True
         Me.SiticoneLabel2.BackColor = System.Drawing.Color.Transparent
         Me.SiticoneLabel2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.SiticoneLabel2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.SiticoneLabel2.Location = New System.Drawing.Point(10, 101)
         Me.SiticoneLabel2.Name = "SiticoneLabel2"
         Me.SiticoneLabel2.Size = New System.Drawing.Size(87, 21)
@@ -300,8 +314,10 @@ Partial Class LoginPass
         '
         'Label2
         '
+        Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.Label2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 25.0!, System.Drawing.FontStyle.Bold)
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.Label2.Location = New System.Drawing.Point(0, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(340, 56)
@@ -311,7 +327,7 @@ Partial Class LoginPass
         '
         'Panel8
         '
-        Me.Panel8.BackColor = System.Drawing.Color.White
+        Me.Panel8.BackColor = System.Drawing.Color.Transparent
         Me.Panel8.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel8.Location = New System.Drawing.Point(0, 0)
         Me.Panel8.Name = "Panel8"
@@ -321,7 +337,7 @@ Partial Class LoginPass
         '
         'Panel10
         '
-        Me.Panel10.BackColor = System.Drawing.Color.White
+        Me.Panel10.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.Panel10.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Panel10.Location = New System.Drawing.Point(0, 403)
         Me.Panel10.Name = "Panel10"
@@ -329,20 +345,11 @@ Partial Class LoginPass
         Me.Panel10.Size = New System.Drawing.Size(360, 19)
         Me.Panel10.TabIndex = 20
         '
-        'CheckBox1
-        '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(312, 223)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox1.TabIndex = 25
-        Me.CheckBox1.UseVisualStyleBackColor = True
-        '
         'LoginPass
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.DimGray
+        Me.BackColor = System.Drawing.Color.Transparent
         Me.Controls.Add(Me.Panel9)
         Me.Controls.Add(Me.Panel8)
         Me.Controls.Add(Me.Panel10)

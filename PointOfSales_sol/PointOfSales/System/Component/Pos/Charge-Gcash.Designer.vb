@@ -34,7 +34,7 @@ Partial Class Charge_Gcash
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer))
         Me.Label2.Location = New System.Drawing.Point(147, 56)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(65, 21)
@@ -45,7 +45,7 @@ Partial Class Charge_Gcash
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer))
         Me.Label1.Location = New System.Drawing.Point(3, 56)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(80, 21)
@@ -64,7 +64,7 @@ Partial Class Charge_Gcash
         '
         Me.lbl_cr.AutoSize = True
         Me.lbl_cr.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_cr.ForeColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.lbl_cr.ForeColor = System.Drawing.Color.FromArgb(CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer))
         Me.lbl_cr.Location = New System.Drawing.Point(3, 0)
         Me.lbl_cr.Name = "lbl_cr"
         Me.lbl_cr.Size = New System.Drawing.Size(176, 21)
@@ -94,6 +94,7 @@ Partial Class Charge_Gcash
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.Controls.Add(Me.lbl_change)
         Me.Controls.Add(Me.txt_TotalP)
         Me.Controls.Add(Me.Label2)

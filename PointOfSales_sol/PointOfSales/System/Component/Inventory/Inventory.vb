@@ -21,7 +21,7 @@ Public Class Inventory
         SiticoneButton1.ButtonBackColor = Color.White
         SiticoneButton1.TextColor = Color.FromArgb(74, 144, 226)
 
-        ShowControl(New CategoryContent())
+        Guna2Category.ShowDialog()
     End Sub
 
     Private Sub SiticoneButton1_Click(sender As Object, e As EventArgs) Handles SiticoneButton1.Click

@@ -221,7 +221,7 @@ Partial Class Inventory
     End Sub
 
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents btnCategory As SiticoneNetFrameworkUI.SiticoneButton
     Friend WithEvents SiticoneButton1 As SiticoneNetFrameworkUI.SiticoneButton
     Friend WithEvents Panel2 As Panel
+    Friend WithEvents btnCategory As SiticoneButton
 End Class

@@ -103,7 +103,7 @@ Public Class AccountContent
         SiticoneButton1.Hide()
     End Sub
 
-    Private Sub SiticoneButton1_Click(sender As Object, e As EventArgs) Handles SiticoneButton1.Click
+    Private Sub SiticoneButton1_Click(sender As Object, e As EventArgs)
         Try
             conn.Open()
 

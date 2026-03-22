@@ -8,54 +8,95 @@ Public Class TransactionContent
     Private Sub TransactionContent_load(sender As Object, e As EventArgs) Handles MyBase.Load
         LoadTransactions()
     End Sub
-    Public Sub LoadTransactions()
+    ' Add this inside your TransactionContent class
+
+    ' Update LoadTransactions to accept an optional filter parameter
+    Public Sub LoadTransactions(Optional ByVal filter As String = "")
         Try
-            ' Open the database connection
             conn.Open()
 
-            ' Query to fetch transaction details including Status, ordered by most recent SaleDate
+            ' Base query
             Dim query As String = "
-        SELECT 
-            TicketNumber, 
-            ProductName, 
-            SaleDate, 
-            Subtotal, 
-            DiscountType, 
-            Vat, 
-            TotalAmount, 
-            Status 
-        FROM sales 
-        ORDER BY SaleDate DESC;
-    "
+            SELECT 
+                TicketNumber, 
+                ProductName, 
+                SaleDate, 
+                Subtotal, 
+                DiscountType, 
+                Vat, 
+                TotalAmount, 
+                Status 
+            FROM sales 
+            WHERE 1=1
+        "
 
-            ' Execute the query and fill the DataTable
+            ' Add filtering if search text is provided
+            If filter <> "" Then
+                query &= " AND (ProductName LIKE @filter OR TicketNumber LIKE @filter OR SaleDate LIKE @filter)"
+            End If
+
+            query &= " ORDER BY SaleDate DESC"
+
             Dim cmd As New MySqlCommand(query, conn)
+            If filter <> "" Then
+                cmd.Parameters.AddWithValue("@filter", "%" & filter & "%")
+            End If
+
             Dim adapter As New MySqlDataAdapter(cmd)
             dt = New DataTable()
             adapter.Fill(dt)
 
-            ' Bind the data to the DataGridView
-            dgv_transactions.DataSource = dt
-            dgv_transactions.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
-            dgv_transactions.ReadOnly = True
+
+            Guna2DataGridView1.DataSource = dt
+            Guna2DataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
+            Guna2DataGridView1.ReadOnly = True
+            If Guna2DataGridView1.Columns.Contains("Ticketnumber") Then
+                Guna2DataGridView1.Columns("Ticketnumber").AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells
+
+            End If
+            If Guna2DataGridView1.Columns.Contains("ProductName") Then
+                Guna2DataGridView1.Columns("ProductName").AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
+            End If
+            If Guna2DataGridView1.Columns.Contains("SaleDate") Then
+                Guna2DataGridView1.Columns("SaleDate").AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells
+            End If
+            If Guna2DataGridView1.Columns.Contains("Subtotal") Then
+                Guna2DataGridView1.Columns("Subtotal").AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells
+            End If
+            If Guna2DataGridView1.Columns.Contains("DiscountType") Then
+                Guna2DataGridView1.Columns("DiscountType").AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells
+            End If
+            If Guna2DataGridView1.Columns.Contains("Vat") Then
+                Guna2DataGridView1.Columns("Vat").AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells
+            End If
+            If Guna2DataGridView1.Columns.Contains("TotalAmount") Then
+                Guna2DataGridView1.Columns("TotalAmount").AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells
+            End If
+            If Guna2DataGridView1.Columns.Contains("Status") Then
+                Guna2DataGridView1.Columns("Status").AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells
+            End If
 
         Catch ex As Exception
             MessageBox.Show("Error loading transactions: " & ex.Message)
-
         Finally
-            ' Ensure the connection is closed even if an error occurs
             conn.Close()
         End Try
-
     End Sub
 
+    ' Add this event handler for SiticoneButtonTextbox1 text change
+    Private Sub SiticoneButtonTextbox1_TextChanged(sender As Object, e As EventArgs) Handles SiticoneButtonTextbox1.TextChanged
+        ' Pass the search text to LoadTransactions
+        LoadTransactions(SiticoneButtonTextbox1.Text.Trim())
+    End Sub
+
+
     'Show ProductName in tooltip when hovering
-    Private Sub dgv_transactions_CellMouseEnter(sender As Object, e As DataGridViewCellEventArgs) 
+    Private Sub Guna2DataGridView1_CellMouseEnter(sender As Object, e As DataGridViewCellEventArgs)
         If e.RowIndex >= 0 AndAlso e.ColumnIndex >= 0 Then
-            If dgv_transactions.Columns(e.ColumnIndex).Name = "ProductName" Then
-                Dim cellValue = dgv_transactions.Rows(e.RowIndex).Cells(e.ColumnIndex).Value
+            If Guna2DataGridView1.Columns(e.ColumnIndex).Name = "ProductName" Then
+                Dim cellValue = Guna2DataGridView1.Rows(e.RowIndex).Cells(e.ColumnIndex).Value
                 If cellValue IsNot Nothing Then
-                    dgv_transactions.Rows(e.RowIndex).Cells(e.ColumnIndex).ToolTipText = cellValue.ToString
+                    Guna2DataGridView1.Rows(e.RowIndex).Cells(e.ColumnIndex).ToolTipText = cellValue.ToString
                 End If
             End If
         End If
@@ -89,11 +130,68 @@ Public Class TransactionContent
     End Function
 
 
-    Private Sub dgv_transactions_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) 
+    Private Sub dgv_transactions_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs)
+
+    End Sub
+
+
+    ' NEW FUNCTION: Get total refunded amount
+    Private Function GetTotalRefunded() As Decimal
+        Dim totalRefund As Decimal = 0D
+        Try
+            Using conn As New MySqlConnection(connectionString)
+                conn.Open()
+                Dim query As String = "SELECT IFNULL(SUM(TotalAmount),0) FROM sales WHERE Status='Refunded'"
+                Using cmd As New MySqlCommand(query, conn)
+                    Dim result = cmd.ExecuteScalar()
+                    If result IsNot Nothing AndAlso result IsNot DBNull.Value Then
+                        totalRefund = Convert.ToDecimal(result)
+                    End If
+                End Using
+            End Using
+        Catch ex As Exception
+            MessageBox.Show("Error calculating total refunded amount: " & ex.Message)
+        End Try
+        Return totalRefund
+    End Function
+    Private Sub RestoreStockForTicket(ticketNumber As String)
+        Try
+            Using c As New MySqlConnection(connectionString)
+                c.Open()
+                ' Find all items for that ticket (only those that were completed)
+                Dim q As String = "SELECT ProductName, Quantity FROM sales WHERE TicketNumber = @TicketNumber AND Status = 'Completed'"
+                Using cmd As New MySqlCommand(q, c)
+                    cmd.Parameters.AddWithValue("@TicketNumber", ticketNumber)
+                    Using reader = cmd.ExecuteReader()
+                        Dim toRestore As New List(Of (String, Integer))
+                        While reader.Read()
+                            Dim pname = reader("ProductName").ToString()
+                            Dim qty = If(IsDBNull(reader("Quantity")), 0, Convert.ToInt32(reader("Quantity")))
+                            If qty > 0 Then toRestore.Add((pname, qty))
+                        End While
+                        reader.Close()
+
+                        ' Update product stock for each item
+                        For Each pair In toRestore
+                            Using upd As New MySqlCommand("UPDATE products SET StockQuantity = StockQuantity + @qty WHERE ProductName = @pname", c)
+                                upd.Parameters.AddWithValue("@qty", pair.Item2)
+                                upd.Parameters.AddWithValue("@pname", pair.Item1)
+                                upd.ExecuteNonQuery()
+                            End Using
+                        Next
+                    End Using
+                End Using
+            End Using
+        Catch ex As Exception
+            MessageBox.Show("Error restoring stock for ticket: " & ex.Message, "DB Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Sub
+
+    Private Sub Guna2DataGridView1_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs)
         If e.RowIndex < 0 Then Exit Sub
 
         ' ✅ Get selected row data
-        Dim selectedRow = dgv_transactions.Rows(e.RowIndex)
+        Dim selectedRow = Guna2DataGridView1.Rows(e.RowIndex)
         Dim ticketNum = selectedRow.Cells("TicketNumber").Value.ToString()
         Dim productName = selectedRow.Cells("ProductName").Value.ToString().Trim()
         Dim subtotal = selectedRow.Cells("Subtotal").Value.ToString()
@@ -169,58 +267,4 @@ Public Class TransactionContent
             MessageBox.Show("Refund applied and stock restored successfully.", "Refund", MessageBoxButtons.OK, MessageBoxIcon.Information)
         End If
     End Sub
-
-
-    ' NEW FUNCTION: Get total refunded amount
-    Private Function GetTotalRefunded() As Decimal
-        Dim totalRefund As Decimal = 0D
-        Try
-            Using conn As New MySqlConnection(connectionString)
-                conn.Open()
-                Dim query As String = "SELECT IFNULL(SUM(TotalAmount),0) FROM sales WHERE Status='Refunded'"
-                Using cmd As New MySqlCommand(query, conn)
-                    Dim result = cmd.ExecuteScalar()
-                    If result IsNot Nothing AndAlso result IsNot DBNull.Value Then
-                        totalRefund = Convert.ToDecimal(result)
-                    End If
-                End Using
-            End Using
-        Catch ex As Exception
-            MessageBox.Show("Error calculating total refunded amount: " & ex.Message)
-        End Try
-        Return totalRefund
-    End Function
-    Private Sub RestoreStockForTicket(ticketNumber As String)
-        Try
-            Using c As New MySqlConnection(connectionString)
-                c.Open()
-                ' Find all items for that ticket (only those that were completed)
-                Dim q As String = "SELECT ProductName, Quantity FROM sales WHERE TicketNumber = @TicketNumber AND Status = 'Completed'"
-                Using cmd As New MySqlCommand(q, c)
-                    cmd.Parameters.AddWithValue("@TicketNumber", ticketNumber)
-                    Using reader = cmd.ExecuteReader()
-                        Dim toRestore As New List(Of (String, Integer))
-                        While reader.Read()
-                            Dim pname = reader("ProductName").ToString()
-                            Dim qty = If(IsDBNull(reader("Quantity")), 0, Convert.ToInt32(reader("Quantity")))
-                            If qty > 0 Then toRestore.Add((pname, qty))
-                        End While
-                        reader.Close()
-
-                        ' Update product stock for each item
-                        For Each pair In toRestore
-                            Using upd As New MySqlCommand("UPDATE products SET StockQuantity = StockQuantity + @qty WHERE ProductName = @pname", c)
-                                upd.Parameters.AddWithValue("@qty", pair.Item2)
-                                upd.Parameters.AddWithValue("@pname", pair.Item1)
-                                upd.ExecuteNonQuery()
-                            End Using
-                        Next
-                    End Using
-                End Using
-            End Using
-        Catch ex As Exception
-            MessageBox.Show("Error restoring stock for ticket: " & ex.Message, "DB Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        End Try
-    End Sub
-
 End Class

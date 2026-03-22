@@ -4,7 +4,7 @@ Imports System.Text 'eto yung bago
 Imports MySql.Data.MySqlClient
 Imports SiticoneNetFrameworkUI
 Public Class LoginPass
-
+    Public Shared currentUsername As String = ""
     ' MySQL connection string to XAMPP
     Dim conn As New MySqlConnection("server=localhost;userid=root;password=;database=pos")
 
@@ -22,8 +22,8 @@ Public Class LoginPass
 
     Private Sub ShowControl(uc As UserControl)
         uc.Dock = DockStyle.Fill
-        Login.SiticoneDragPanel1.Controls.Clear()
-        Login.SiticoneDragPanel1.Controls.Add(uc)
+        Login.Panel8.Controls.Clear()
+        Login.Panel8.Controls.Add(uc)
 
     End Sub
 
@@ -65,11 +65,14 @@ Public Class LoginPass
                 Dim role As String = reader("role").ToString().ToLower()
 
                 MessageBox.Show("Login successful!" & vbCrLf & "Role: " & role, "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
-
+                LoginPass.currentUsername = username
                 If role = "admin" Then
                     Dashboard.Show()
-                    Me.Hide()
+                    Login.Hide()
                     'MessageBox.Show("Access denied. Only admin is allowed.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                Else
+                    CashierDashboard.Show()
+                    Login.Hide()
                 End If
             Else
                 MessageBox.Show("Invalid username or password.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)

@@ -22,6 +22,7 @@ Partial Class Charge
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.lbl_totalpaid = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.cb_employee = New System.Windows.Forms.CheckBox()
@@ -34,6 +35,7 @@ Partial Class Charge
         Me.SiticoneRadioButton2 = New SiticoneNetFrameworkUI.SiticoneRadioButton()
         Me.SiticoneFlatPanel1 = New SiticoneNetFrameworkUI.SiticoneFlatPanel()
         Me.SiticoneButton1 = New SiticoneNetFrameworkUI.SiticoneButton()
+        Me.Guna2AnimateWindow1 = New Guna.UI2.WinForms.Guna2AnimateWindow(Me.components)
         Me.Panel1.SuspendLayout()
         Me.SiticoneFlatPanel1.SuspendLayout()
         Me.SuspendLayout()
@@ -238,7 +240,7 @@ Partial Class Charge
         '
         'SiticoneFlatPanel1
         '
-        Me.SiticoneFlatPanel1.BackColor = System.Drawing.Color.DarkGray
+        Me.SiticoneFlatPanel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.SiticoneFlatPanel1.Controls.Add(Me.lbl_totalpaid)
         Me.SiticoneFlatPanel1.Location = New System.Drawing.Point(40, 135)
         Me.SiticoneFlatPanel1.MinimumSize = New System.Drawing.Size(20, 20)
@@ -323,10 +325,15 @@ Partial Class Charge
         Me.SiticoneButton1.UseAdvancedRendering = True
         Me.SiticoneButton1.UseParticles = False
         '
+        'Guna2AnimateWindow1
+        '
+        Me.Guna2AnimateWindow1.TargetForm = Me
+        '
         'Charge
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(375, 484)
         Me.Controls.Add(Me.SiticoneButton1)
         Me.Controls.Add(Me.SiticoneFlatPanel1)
@@ -361,4 +368,5 @@ Partial Class Charge
     Friend WithEvents SiticoneRadioButton2 As SiticoneNetFrameworkUI.SiticoneRadioButton
     Friend WithEvents SiticoneFlatPanel1 As SiticoneNetFrameworkUI.SiticoneFlatPanel
     Friend WithEvents SiticoneButton1 As SiticoneNetFrameworkUI.SiticoneButton
+    Friend WithEvents Guna2AnimateWindow1 As Guna.UI2.WinForms.Guna2AnimateWindow
 End Class

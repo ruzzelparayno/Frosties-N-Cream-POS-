@@ -24,6 +24,8 @@ Public Class Dashboard
         ContentPanel.AddContentToView("Account", New AccountContent())
         ContentPanel.AddContentToView("Logout", New LogoutContent())
 
+
+
     End Sub
 
     ' ✅ Display a UserControl inside the main content area
@@ -45,7 +47,16 @@ Public Class Dashboard
     End Sub
 
     ' ✅ Optional: remove or use this event properly
-    Private Sub ContentPanel_Paint(sender As Object, e As PaintEventArgs) Handles ContentPanel.Paint
+    Private Sub ContentPanel_Paint(sender As Object, e As PaintEventArgs)
         ' Avoid placing logic here unless you're doing custom drawing
+    End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        Label1.Text = DateTime.Now.ToString("MMMM dd, yyyy hh:mm:ss tt")
+    End Sub
+
+    Private Sub SiticoneNavbar1_SelectedItemChanged(sender As Object, e As SiticoneNavbar.NavBarSelectionEventArgs)
+
+
     End Sub
 End Class

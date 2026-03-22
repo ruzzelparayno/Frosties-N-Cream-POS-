@@ -1,20 +1,29 @@
 ﻿Imports System.Globalization
 Imports System.IO
+Imports Guna.Charts.WinForms
 Imports MySql.Data.MySqlClient
+
 
 Public Class DashboardContent
     Private connectionString As String = "server=localhost;userid=root;password=;database=pos;"
 
+    ' ✅ Shared instance for cross-dashboard access
+    Public Shared Instance As DashboardContent
+
     Private Sub DashboardContent_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Instance = Me
         AdjustLayout()
-        LoadWeeklySales()
-        LoadLowStockProducts()
-        LoadTodayOrders()
-        LoadTodayGrossSales()
-        LoadTop5BestSellers()
-        SiticoneBarChart1.BackColor = Color.Transparent
+        RefreshDashboard()
+        LoadWeeklySales_GunaChart()
+
     End Sub
 
+    ' ✅ Auto-refresh when control becomes visible (e.g., switching panels)
+    Private Sub DashboardContent_VisibleChanged(sender As Object, e As EventArgs) Handles Me.VisibleChanged
+        If Me.Visible Then
+            RefreshDashboard()
+        End If
+    End Sub
 
     Private Sub DashboardContent_Resize(sender As Object, e As EventArgs) Handles Me.Resize
         AdjustLayout()
@@ -37,69 +46,40 @@ Public Class DashboardContent
 
         If isMaximized Then
             Panel2.Size = New Size(758, 175)
-
             Label2.Font = New Font(Label2.Font.FontFamily, 20, Label2.Font.Style)
             Label3.Font = New Font(Label3.Font.FontFamily, 60, Label3.Font.Style)
             Label5.Font = New Font(Label5.Font.FontFamily, 20, Label5.Font.Style)
             Label4.Font = New Font(Label4.Font.FontFamily, 60, Label4.Font.Style)
             Label7.Font = New Font(Label7.Font.FontFamily, 20, Label7.Font.Style)
+
+            Label1.Font = New Font(Label1.Font.FontFamily, 20, Label1.Font.Style)
+            Label6.Font = New Font(Label6.Font.FontFamily, 20, Label6.Font.Style)
+            Label8.Font = New Font(Label8.Font.FontFamily, 20, Label8.Font.Style)
+            Label9.Font = New Font(Label9.Font.FontFamily, 20, Label9.Font.Style)
+            Label10.Font = New Font(Label10.Font.FontFamily, 20, Label10.Font.Style)
+
+            FlowLayoutPanel2.Padding = New Padding(85, FlowLayoutPanel2.Padding.Top, FlowLayoutPanel2.Padding.Right, FlowLayoutPanel2.Padding.Bottom)
         Else
             Panel2.Size = New Size(758, 125)
-
             Label2.Font = New Font(Label2.Font.FontFamily, 12, Label2.Font.Style)
             Label3.Font = New Font(Label3.Font.FontFamily, 40, Label3.Font.Style)
             Label5.Font = New Font(Label5.Font.FontFamily, 12, Label5.Font.Style)
             Label4.Font = New Font(Label4.Font.FontFamily, 40, Label4.Font.Style)
             Label7.Font = New Font(Label7.Font.FontFamily, 12, Label7.Font.Style)
+
+            Label1.Font = New Font(Label1.Font.FontFamily, 12, Label1.Font.Style)
+            Label6.Font = New Font(Label6.Font.FontFamily, 12, Label6.Font.Style)
+            Label8.Font = New Font(Label8.Font.FontFamily, 12, Label8.Font.Style)
+            Label9.Font = New Font(Label9.Font.FontFamily, 12, Label9.Font.Style)
+            Label10.Font = New Font(Label10.Font.FontFamily, 12, Label10.Font.Style)
+
+            FlowLayoutPanel2.Padding = New Padding(0, FlowLayoutPanel2.Padding.Top, FlowLayoutPanel2.Padding.Right, FlowLayoutPanel2.Padding.Bottom)
         End If
     End Sub
 
-    ' =======================
-    '  📊 WEEKLY SALES
-    ' =======================
-    Private Sub LoadWeeklySales()
-        Try
-            Dim query As String = "
-                SELECT 
-                    day_names.DayName,
-                    IFNULL(SUM(s.TotalAmount), 0) AS Revenue
-                FROM (
-                    SELECT 'Mon' AS DayName, 2 AS DayOfWeek UNION
-                    SELECT 'Tue', 3 UNION
-                    SELECT 'Wed', 4 UNION
-                    SELECT 'Thu', 5 UNION
-                    SELECT 'Fri', 6 UNION
-                    SELECT 'Sat', 7 UNION
-                    SELECT 'Sun', 1
-                ) AS day_names
-                LEFT JOIN sales s ON DAYOFWEEK(s.SaleDate) = day_names.DayOfWeek
-                    AND YEARWEEK(s.SaleDate, 1) = YEARWEEK(CURDATE(), 1)
-                GROUP BY day_names.DayName, day_names.DayOfWeek
-                ORDER BY day_names.DayOfWeek;
-            "
-
-            Using conn As New MySqlConnection(connectionString)
-                conn.Open()
-                Using cmd As New MySqlCommand(query, conn)
-                    Dim adapter As New MySqlDataAdapter(cmd)
-                    Dim table As New DataTable()
-                    adapter.Fill(table)
-
-                    table.Columns("DayName").ColumnName = "Month"
-                    table.Columns("Revenue").ColumnName = "Revenue"
-
-                    SiticoneBarChart1.DataSource = table
-                    SiticoneBarChart1.LabelMember = "Month"
-                    SiticoneBarChart1.ValueMember = "Revenue"
-                End Using
-            End Using
-        Catch ex As Exception
-            MessageBox.Show("Error loading weekly sales: " & ex.Message)
-        End Try
-    End Sub
 
     ' =======================
-    '  ⚠️ LOW STOCK PRODUCTS
+    ' ⚠️ LOW STOCK PRODUCTS
     ' =======================
     Public Sub LoadLowStockProducts()
         Try
@@ -132,42 +112,46 @@ Public Class DashboardContent
                             End If
 
                             Dim productPanel As New Panel With {
-                                .Width = 70,
-                                .Height = 75,
-                                .BackColor = Color.Transparent,
-                                .Margin = New Padding(3),
-                                .BorderStyle = BorderStyle.FixedSingle
+                                .Width = 143,
+                                .Height = 160,
+                                .BackColor = Color.FromArgb(217, 220, 235),
+                                .Margin = New Padding(3)
                             }
 
                             Dim pic As New PictureBox With {
-                                .Width = 60,
-                                .Height = 35,
+                                .Width = 64,
+                                .Height = 54,
                                 .SizeMode = PictureBoxSizeMode.Zoom,
                                 .Image = productImage,
+                                .Dock = DockStyle.Fill,
                                 .Top = 4,
                                 .Left = 5
                             }
 
                             Dim lblName As New Label With {
                                 .AutoSize = False,
-                                .TextAlign = ContentAlignment.MiddleCenter,
-                                .Font = New Font("Segoe UI", 6, FontStyle.Bold),
+                                .TextAlign = ContentAlignment.TopCenter,
+                                .Font = New Font("Segoe UI", 12, FontStyle.Bold),
                                 .Text = pname,
-                                .Width = 60,
-                                .Top = 42,
-                                .Left = 5,
-                                .ForeColor = Color.White
+                                .Width = 89,
+                                .Height = 30,
+                                .Top = 5,
+                                .Dock = DockStyle.Top,
+                                .Left = 170,
+                                .ForeColor = Color.FromArgb(75, 75, 75)
                             }
 
                             Dim lblStock As New Label With {
                                 .AutoSize = False,
                                 .TextAlign = ContentAlignment.MiddleCenter,
-                                .Font = New Font("Segoe UI", 6, FontStyle.Regular),
-                                .Text = "Stock: " & stockQty,
-                                .Width = 60,
-                                .Top = 55,
-                                .Left = 5,
-                                .ForeColor = Color.White
+                                .Font = New Font("Segoe UI", 9, FontStyle.Bold),
+                                .Text = stockQty & " QTY",
+                                .Width = 89,
+                                .Height = 30,
+                                .Top = 5,
+                                .Dock = DockStyle.Bottom,
+                                .Left = 160,
+                                .ForeColor = Color.FromArgb(75, 75, 75)
                             }
 
                             If stockQty <= 5 Then
@@ -177,7 +161,7 @@ Public Class DashboardContent
                             productPanel.Controls.Add(pic)
                             productPanel.Controls.Add(lblName)
                             productPanel.Controls.Add(lblStock)
-                            FlowLayoutPanel1.Controls.Add(productPanel)
+                            FlowLayoutPanel2.Controls.Add(productPanel)
                         End While
                     End Using
                 End Using
@@ -188,104 +172,109 @@ Public Class DashboardContent
     End Sub
 
     ' =======================
-    '  📦 TOP 5 BEST SELLERS
+    ' 📦 TOP 5 BEST SELLERS (3 PER ROW)
     ' =======================
-    ' 🔹 Load Top 5 Best Sellers into FlowLayoutPanel2
     Private Sub LoadTop5BestSellers()
-        Try
-            FlowLayoutPanel2.Controls.Clear()
+        'Try
+        '    FlowLayoutPanel2.Controls.Clear()
 
-            Using conn As New MySqlConnection(connectionString)
-                conn.Open()
+        '    ' ✅ Force 3 per row
+        '    FlowLayoutPanel2.WrapContents = True
+        '    FlowLayoutPanel2.FlowDirection = FlowDirection.LeftToRight
+        '    FlowLayoutPanel2.AutoScroll = False
+        '    FlowLayoutPanel2.Padding = New Padding(10)
+        '    FlowLayoutPanel2.Width = 3 * 110 + 50 ' each 110px + padding spacing
 
-                Dim query As String = "
-                SELECT 
-                    s.ProductName, 
-                    SUM(s.Quantity) AS TotalSold,
-                    p.ProductImage
-                FROM sales s
-                INNER JOIN products p ON s.ProductName = p.ProductName
-                GROUP BY s.ProductName
-                ORDER BY TotalSold DESC
-                LIMIT 5;
-            "
+        '    Using conn As New MySqlConnection(connectionString)
+        '        conn.Open()
 
-                Using cmd As New MySqlCommand(query, conn)
-                    Using reader As MySqlDataReader = cmd.ExecuteReader()
-                        While reader.Read()
-                            Dim pname As String = reader("ProductName").ToString()
-                            Dim totalSold As Integer = Convert.ToInt32(reader("TotalSold"))
-                            Dim productImage As Image = Nothing
+        '        Dim query As String = "
+        '            SELECT 
+        '                s.ProductName, 
+        '                SUM(s.Quantity) AS TotalSold,
+        '                p.ProductImage
+        '            FROM sales s
+        '            INNER JOIN products p ON s.ProductName = p.ProductName
+        '            GROUP BY s.ProductName
+        '            ORDER BY TotalSold DESC
+        '            LIMIT 5;
+        '        "
 
-                            If Not IsDBNull(reader("ProductImage")) Then
-                                Dim imgBytes() As Byte = DirectCast(reader("ProductImage"), Byte())
-                                If imgBytes IsNot Nothing AndAlso imgBytes.Length > 0 Then
-                                    Using ms As New MemoryStream(imgBytes)
-                                        productImage = Image.FromStream(ms)
-                                    End Using
-                                End If
-                            End If
+        '        Using cmd As New MySqlCommand(query, conn)
+        '            Using reader As MySqlDataReader = cmd.ExecuteReader()
+        '                Dim count As Integer = 0
+        '                Dim currentRowPanel As FlowLayoutPanel = Nothing
 
-                            ' 🔹 Create product display panel
-                            Dim productPanel As New Panel With {
-                            .Width = 100,
-                            .Height = 100,
-                            .BackColor = Color.FromArgb(45, 45, 48),
-                            .Margin = New Padding(5),
-                            .BorderStyle = BorderStyle.FixedSingle
-                        }
+        '                While reader.Read()
+        '                    Dim pname As String = reader("ProductName").ToString()
+        '                    Dim totalSold As Integer = Convert.ToInt32(reader("TotalSold"))
+        '                    Dim productImage As Image = Nothing
 
-                            ' 🔹 Picture
-                            Dim pic As New PictureBox With {
-                            .Width = 90,
-                            .Height = 55,
-                            .SizeMode = PictureBoxSizeMode.Zoom,
-                            .Image = productImage,
-                            .Top = 5,
-                            .Left = 5
-                        }
+        '                    If Not IsDBNull(reader("ProductImage")) Then
+        '                        Dim imgBytes() As Byte = DirectCast(reader("ProductImage"), Byte())
+        '                        If imgBytes IsNot Nothing AndAlso imgBytes.Length > 0 Then
+        '                            Using ms As New MemoryStream(imgBytes)
+        '                                productImage = Image.FromStream(ms)
+        '                            End Using
+        '                        End If
+        '                    End If
 
-                            ' 🔹 Product name label
-                            Dim lblName As New Label With {
-                            .AutoSize = False,
-                            .TextAlign = ContentAlignment.MiddleCenter,
-                            .Font = New Font("Segoe UI", 7, FontStyle.Bold),
-                            .Text = pname,
-                            .Width = 90,
-                            .Top = 63,
-                            .Left = 5,
-                            .ForeColor = Color.White
-                        }
+        '                    Dim productPanel As New Panel With {
+        '                        .Width = 100,
+        '                        .Height = 100,
+        '                        .BackColor = Color.FromArgb(217, 220, 235),
+        '                        .Margin = New Padding(5),
+        '                        .BorderStyle = BorderStyle.FixedSingle
+        '                    }
 
-                            ' 🔹 Total sold label
-                            Dim lblSold As New Label With {
-                            .AutoSize = False,
-                            .TextAlign = ContentAlignment.MiddleCenter,
-                            .Font = New Font("Segoe UI", 7, FontStyle.Regular),
-                            .Text = "Sold: " & totalSold,
-                            .Width = 90,
-                            .Top = 80,
-                            .Left = 5,
-                            .ForeColor = Color.LightGray
-                        }
+        '                    Dim pic As New PictureBox With {
+        '                        .Width = 90,
+        '                        .Height = 55,
+        '                        .SizeMode = PictureBoxSizeMode.Zoom,
+        '                        .Image = productImage,
+        '                        .Top = 5,
+        '                        .Left = 5
+        '                    }
 
-                            productPanel.Controls.Add(pic)
-                            productPanel.Controls.Add(lblName)
-                            productPanel.Controls.Add(lblSold)
-                            FlowLayoutPanel2.Controls.Add(productPanel)
-                        End While
-                    End Using
-                End Using
-            End Using
+        '                    Dim lblName As New Label With {
+        '                        .AutoSize = False,
+        '                        .TextAlign = ContentAlignment.MiddleCenter,
+        '                        .Font = New Font("Segoe UI", 7, FontStyle.Bold),
+        '                        .Text = pname,
+        '                        .Width = 90,
+        '                        .Top = 63,
+        '                        .Left = 5,
+        '                        .ForeColor = Color.FromArgb(75, 75, 75)
+        '                    }
 
-        Catch ex As Exception
-            MessageBox.Show("Error loading top 5 best sellers: " & ex.Message)
-        End Try
+        '                    Dim lblSold As New Label With {
+        '                        .AutoSize = False,
+        '                        .TextAlign = ContentAlignment.MiddleCenter,
+        '                        .Font = New Font("Segoe UI", 7, FontStyle.Regular),
+        '                        .Text = "Sold: " & totalSold,
+        '                        .Width = 90,
+        '                        .Top = 80,
+        '                        .Left = 5,
+        '                        .ForeColor = Color.FromArgb(75, 75, 75)
+        '                    }
+
+        '                    productPanel.Controls.Add(pic)
+        '                    productPanel.Controls.Add(lblName)
+        '                    productPanel.Controls.Add(lblSold)
+        '                    FlowLayoutPanel2.Controls.Add(productPanel)
+
+        '                    count += 1
+        '                End While
+        '            End Using
+        '        End Using
+        '    End Using
+        'Catch ex As Exception
+        '    MessageBox.Show("Error loading top 5 best sellers: " & ex.Message)
+        'End Try
     End Sub
 
-
     ' =======================
-    '  🧾 ORDERS + SALES
+    ' 🧾 ORDERS + SALES
     ' =======================
     Private Sub LoadTodayOrders()
         Try
@@ -320,23 +309,110 @@ Public Class DashboardContent
                     Label4.Text = totalSales.ToString("N2", CultureInfo.InvariantCulture)
                 End Using
             End Using
+
+            ' 🔹 Adjust font size based on text length
+            AdjustGrossSalesFont()
+
         Catch ex As Exception
             MessageBox.Show("Error loading today's gross sales: " & ex.Message)
         End Try
     End Sub
 
     ' =======================
-    '  🔁 REFRESH DASHBOARD
+    ' 🔁 REFRESH DASHBOARD
     ' =======================
     Public Sub RefreshDashboard()
         Try
-            LoadWeeklySales()
             LoadLowStockProducts()
             LoadTodayOrders()
             LoadTodayGrossSales()
             LoadTop5BestSellers()
+            LoadWeeklySales_GunaChart()
         Catch ex As Exception
             MessageBox.Show("Error refreshing dashboard: " & ex.Message)
         End Try
     End Sub
+
+
+    ' =======================
+    ' 📊 WEEKLY SALES
+    ' =======================
+
+    Private Sub LoadWeeklySales_GunaChart()
+        Try
+            Dim query As String = "
+            SELECT 
+                day_names.DayName,
+                IFNULL(SUM(s.TotalAmount), 0) AS Revenue
+            FROM (
+                SELECT 'Mon' AS DayName, 2 AS DayOfWeek UNION
+                SELECT 'Tue', 3 UNION
+                SELECT 'Wed', 4 UNION
+                SELECT 'Thu', 5 UNION
+                SELECT 'Fri', 6 UNION
+                SELECT 'Sat', 7 UNION
+                SELECT 'Sun', 1
+            ) AS day_names
+            LEFT JOIN sales s 
+                ON DAYOFWEEK(s.SaleDate) = day_names.DayOfWeek
+                AND YEARWEEK(s.SaleDate, 1) = YEARWEEK(CURDATE(), 1)
+            GROUP BY day_names.DayName, day_names.DayOfWeek
+            ORDER BY day_names.DayOfWeek;
+        "
+
+            ' 🔹 Prepare chart
+            GunaChart1.Datasets.Clear()
+
+            Dim dataset As New Guna.Charts.WinForms.GunaBarDataset()
+            dataset.Label = "Weekly Sales"
+            dataset.FillColors.Add(Color.FromArgb(100, 149, 237)) ' Cornflower Blue
+
+            Using conn As New MySqlConnection("server=localhost;userid=root;password=;database=pos;")
+                conn.Open()
+                Using cmd As New MySqlCommand(query, conn)
+                    Using reader As MySqlDataReader = cmd.ExecuteReader()
+                        While reader.Read()
+                            Dim dayName As String = reader("DayName").ToString()
+                            Dim revenue As Decimal = Convert.ToDecimal(reader("Revenue"))
+
+                            ' Add label and value
+                            dataset.DataPoints.Add(dayName, revenue)
+                        End While
+                    End Using
+                End Using
+            End Using
+
+            ' 🔹 Add dataset to chart
+            GunaChart1.Datasets.Add(dataset)
+
+            ' 🔹 Chart appearance customization
+            GunaChart1.YAxes.GridLines.Display = True
+            GunaChart1.YAxes.Ticks.ForeColor = Color.FromArgb(75, 75, 75)
+            GunaChart1.XAxes.Ticks.ForeColor = Color.FromArgb(75, 75, 75)
+            GunaChart1.Legend.LabelForeColor = Color.FromArgb(75, 75, 75)
+            GunaChart1.Title.ForeColor = Color.FromArgb(75, 75, 75)
+            GunaChart1.Update()
+
+        Catch ex As Exception
+            MessageBox.Show("Error loading weekly sales: " & ex.Message)
+        End Try
+    End Sub
+    ' =======================
+    ' 🔧 ADJUST FONT SIZE BASED ON LENGTH
+    ' =======================
+    Private Sub AdjustGrossSalesFont()
+        ' Remove formatting characters to count only digits
+        Dim numericText As String = Label4.Text.Replace(",", "").Replace(".", "")
+        If numericText.Length >= 9 Then
+            Label4.Font = New Font(Label4.Font.FontFamily, 8, Label4.Font.Style)
+        Else
+            ' Reset to default size depending on form state
+            If Me.Parent IsNot Nothing AndAlso Me.Parent.FindForm() IsNot Nothing AndAlso Me.Parent.FindForm().WindowState = FormWindowState.Maximized Then
+                Label4.Font = New Font(Label4.Font.FontFamily, 60, Label4.Font.Style)
+            Else
+                Label4.Font = New Font(Label4.Font.FontFamily, 40, Label4.Font.Style)
+            End If
+        End If
+    End Sub
+
 End Class

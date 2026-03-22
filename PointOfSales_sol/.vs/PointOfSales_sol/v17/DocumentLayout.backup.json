@@ -1,10 +1,20 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Project\\POS version 5-20251107T134343Z-1-001\\POS version 5\\POS version 5.1\\PointOfSales_sol\\",
+  "WorkspaceRootPath": "D:\\latest\\POS version 5.5\\POS version 5.5\\PointOfSales_sol\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|d:\\project\\pos version 5-20251107t134343z-1-001\\pos version 5\\pos version 5.1\\pointofsales_sol\\pointofsales\\system\\component\\shift\\shiftcontent.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "AbsoluteMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|d:\\latest\\pos version 5.5\\pos version 5.5\\pointofsales_sol\\pointofsales\\system\\component\\shift\\shiftcontent.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|solutionrelative:pointofsales\\system\\component\\shift\\shiftcontent.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|PointOfSales||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|d:\\latest\\pos version 5.5\\pos version 5.5\\pointofsales_sol\\pointofsales\\system\\component\\shift\\shiftcontent.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|solutionrelative:pointofsales\\system\\component\\shift\\shiftcontent.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|d:\\latest\\pos version 5.5\\pos version 5.5\\pointofsales_sol\\pointofsales\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|8998e48e-b89a-4034-b66e-353d8c1fdc2e"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +24,44 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ShiftContent.vb",
+              "DocumentMoniker": "D:\\latest\\POS version 5.5\\POS version 5.5\\PointOfSales_sol\\PointOfSales\\System\\Component\\Shift\\ShiftContent.vb",
+              "RelativeDocumentMoniker": "PointOfSales\\System\\Component\\Shift\\ShiftContent.vb",
+              "ToolTip": "D:\\latest\\POS version 5.5\\POS version 5.5\\PointOfSales_sol\\PointOfSales\\System\\Component\\Shift\\ShiftContent.vb*",
+              "RelativeToolTip": "PointOfSales\\System\\Component\\Shift\\ShiftContent.vb*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-20T09:04:32.911Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "ShiftContent.vb [Design]",
-              "DocumentMoniker": "D:\\Project\\POS version 5-20251107T134343Z-1-001\\POS version 5\\POS version 5.1\\PointOfSales_sol\\PointOfSales\\System\\Component\\Shift\\ShiftContent.vb",
+              "DocumentMoniker": "D:\\latest\\POS version 5.5\\POS version 5.5\\PointOfSales_sol\\PointOfSales\\System\\Component\\Shift\\ShiftContent.vb",
               "RelativeDocumentMoniker": "PointOfSales\\System\\Component\\Shift\\ShiftContent.vb",
-              "ToolTip": "D:\\Project\\POS version 5-20251107T134343Z-1-001\\POS version 5\\POS version 5.1\\PointOfSales_sol\\PointOfSales\\System\\Component\\Shift\\ShiftContent.vb [Design]",
-              "RelativeToolTip": "PointOfSales\\System\\Component\\Shift\\ShiftContent.vb [Design]",
+              "ToolTip": "D:\\latest\\POS version 5.5\\POS version 5.5\\PointOfSales_sol\\PointOfSales\\System\\Component\\Shift\\ShiftContent.vb [Design]*",
+              "RelativeToolTip": "PointOfSales\\System\\Component\\Shift\\ShiftContent.vb [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-11-08T08:06:12.255Z",
+              "WhenOpened": "2025-11-20T08:49:34.014Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PointOfSales",
+              "DocumentMoniker": "D:\\latest\\POS version 5.5\\POS version 5.5\\PointOfSales_sol\\PointOfSales\\PointOfSales.vbproj",
+              "RelativeDocumentMoniker": "PointOfSales\\PointOfSales.vbproj",
+              "ToolTip": "D:\\latest\\POS version 5.5\\POS version 5.5\\PointOfSales_sol\\PointOfSales\\PointOfSales.vbproj*",
+              "RelativeToolTip": "PointOfSales\\PointOfSales.vbproj*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-19T17:01:43.74Z",
+              "EditorCaption": ""
             }
           ]
         }

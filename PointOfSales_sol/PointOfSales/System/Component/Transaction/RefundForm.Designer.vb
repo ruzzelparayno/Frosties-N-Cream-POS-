@@ -22,9 +22,13 @@ Partial Class RefundForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.SiticoneDragPanel1 = New SiticoneNetFrameworkUI.SiticoneDragPanel()
+        Me.BtnSave = New SiticoneNetFrameworkUI.SiticoneButton()
+        Me.SiticoneButton3 = New SiticoneNetFrameworkUI.SiticoneButton()
+        Me.Guna2AnimateWindow1 = New Guna.UI2.WinForms.Guna2AnimateWindow(Me.components)
+        Me.SiticonePanel1 = New SiticoneNetFrameworkUI.SiticonePanel()
         Me.lbl_getsubtotal = New System.Windows.Forms.Label()
         Me.lbl_gettotal = New System.Windows.Forms.Label()
         Me.lbl_getvat = New System.Windows.Forms.Label()
@@ -35,10 +39,8 @@ Partial Class RefundForm
         Me.lbl_getproducts = New System.Windows.Forms.Label()
         Me.lbl_MOP = New System.Windows.Forms.Label()
         Me.lbl_getticket = New System.Windows.Forms.Label()
-        Me.BtnSave = New SiticoneNetFrameworkUI.SiticoneButton()
-        Me.SiticoneButton3 = New SiticoneNetFrameworkUI.SiticoneButton()
         Me.Panel1.SuspendLayout()
-        Me.SiticoneDragPanel1.SuspendLayout()
+        Me.SiticonePanel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -62,130 +64,6 @@ Partial Class RefundForm
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Refund"
         '
-        'SiticoneDragPanel1
-        '
-        Me.SiticoneDragPanel1.BorderColor = System.Drawing.Color.Black
-        Me.SiticoneDragPanel1.BottomLeftRadius = 10
-        Me.SiticoneDragPanel1.BottomRightRadius = 10
-        Me.SiticoneDragPanel1.Controls.Add(Me.lbl_getsubtotal)
-        Me.SiticoneDragPanel1.Controls.Add(Me.lbl_gettotal)
-        Me.SiticoneDragPanel1.Controls.Add(Me.lbl_getvat)
-        Me.SiticoneDragPanel1.Controls.Add(Me.Label4)
-        Me.SiticoneDragPanel1.Controls.Add(Me.Label3)
-        Me.SiticoneDragPanel1.Controls.Add(Me.Label2)
-        Me.SiticoneDragPanel1.Controls.Add(Me.lbl_getprice)
-        Me.SiticoneDragPanel1.Controls.Add(Me.lbl_getproducts)
-        Me.SiticoneDragPanel1.Controls.Add(Me.lbl_MOP)
-        Me.SiticoneDragPanel1.Controls.Add(Me.lbl_getticket)
-        Me.SiticoneDragPanel1.FillColor = System.Drawing.Color.White
-        Me.SiticoneDragPanel1.Location = New System.Drawing.Point(52, 97)
-        Me.SiticoneDragPanel1.Name = "SiticoneDragPanel1"
-        Me.SiticoneDragPanel1.Padding = New System.Windows.Forms.Padding(5)
-        Me.SiticoneDragPanel1.Size = New System.Drawing.Size(378, 378)
-        Me.SiticoneDragPanel1.TabIndex = 1
-        Me.SiticoneDragPanel1.TopLeftRadius = 10
-        Me.SiticoneDragPanel1.TopRightRadius = 10
-        '
-        'lbl_getsubtotal
-        '
-        Me.lbl_getsubtotal.AutoSize = True
-        Me.lbl_getsubtotal.BackColor = System.Drawing.Color.White
-        Me.lbl_getsubtotal.Location = New System.Drawing.Point(312, 269)
-        Me.lbl_getsubtotal.Name = "lbl_getsubtotal"
-        Me.lbl_getsubtotal.Size = New System.Drawing.Size(10, 13)
-        Me.lbl_getsubtotal.TabIndex = 9
-        Me.lbl_getsubtotal.Text = "."
-        '
-        'lbl_gettotal
-        '
-        Me.lbl_gettotal.AutoSize = True
-        Me.lbl_gettotal.BackColor = System.Drawing.Color.White
-        Me.lbl_gettotal.Location = New System.Drawing.Point(312, 307)
-        Me.lbl_gettotal.Name = "lbl_gettotal"
-        Me.lbl_gettotal.Size = New System.Drawing.Size(10, 13)
-        Me.lbl_gettotal.TabIndex = 8
-        Me.lbl_gettotal.Text = "."
-        '
-        'lbl_getvat
-        '
-        Me.lbl_getvat.AutoSize = True
-        Me.lbl_getvat.BackColor = System.Drawing.Color.White
-        Me.lbl_getvat.Location = New System.Drawing.Point(312, 229)
-        Me.lbl_getvat.Name = "lbl_getvat"
-        Me.lbl_getvat.Size = New System.Drawing.Size(10, 13)
-        Me.lbl_getvat.TabIndex = 7
-        Me.lbl_getvat.Text = "."
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.BackColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(27, 307)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(31, 13)
-        Me.Label4.TabIndex = 6
-        Me.Label4.Text = "Total"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(27, 269)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(46, 13)
-        Me.Label3.TabIndex = 5
-        Me.Label3.Text = "Subtotal"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(27, 229)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(28, 13)
-        Me.Label2.TabIndex = 4
-        Me.Label2.Text = "VAT"
-        '
-        'lbl_getprice
-        '
-        Me.lbl_getprice.AutoSize = True
-        Me.lbl_getprice.BackColor = System.Drawing.Color.White
-        Me.lbl_getprice.Location = New System.Drawing.Point(312, 95)
-        Me.lbl_getprice.Name = "lbl_getprice"
-        Me.lbl_getprice.Size = New System.Drawing.Size(10, 13)
-        Me.lbl_getprice.TabIndex = 3
-        Me.lbl_getprice.Text = "."
-        '
-        'lbl_getproducts
-        '
-        Me.lbl_getproducts.AutoSize = True
-        Me.lbl_getproducts.BackColor = System.Drawing.Color.White
-        Me.lbl_getproducts.Location = New System.Drawing.Point(27, 95)
-        Me.lbl_getproducts.Name = "lbl_getproducts"
-        Me.lbl_getproducts.Size = New System.Drawing.Size(10, 13)
-        Me.lbl_getproducts.TabIndex = 2
-        Me.lbl_getproducts.Text = "."
-        '
-        'lbl_MOP
-        '
-        Me.lbl_MOP.AutoSize = True
-        Me.lbl_MOP.BackColor = System.Drawing.Color.White
-        Me.lbl_MOP.Location = New System.Drawing.Point(165, 15)
-        Me.lbl_MOP.Name = "lbl_MOP"
-        Me.lbl_MOP.Size = New System.Drawing.Size(10, 13)
-        Me.lbl_MOP.TabIndex = 1
-        Me.lbl_MOP.Text = "."
-        '
-        'lbl_getticket
-        '
-        Me.lbl_getticket.AutoSize = True
-        Me.lbl_getticket.BackColor = System.Drawing.Color.White
-        Me.lbl_getticket.Location = New System.Drawing.Point(27, 28)
-        Me.lbl_getticket.Name = "lbl_getticket"
-        Me.lbl_getticket.Size = New System.Drawing.Size(10, 13)
-        Me.lbl_getticket.TabIndex = 0
-        Me.lbl_getticket.Text = "."
-        '
         'BtnSave
         '
         Me.BtnSave.AccessibleDescription = "The default button control that accept input though the mouse, touch and keyboard" &
@@ -198,7 +76,7 @@ Partial Class RefundForm
         Me.BtnSave.BadgeFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
         Me.BtnSave.BadgeValue = 0
         Me.BtnSave.BadgeValueForeColor = System.Drawing.Color.White
-        Me.BtnSave.BorderColor = System.Drawing.Color.Transparent
+        Me.BtnSave.BorderColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(120, Byte), Integer))
         Me.BtnSave.BorderWidth = 2
         Me.BtnSave.ButtonBackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(120, Byte), Integer))
         Me.BtnSave.ButtonImage = Nothing
@@ -227,9 +105,9 @@ Partial Class RefundForm
         Me.BtnSave.GradientColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.BtnSave.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical
         Me.BtnSave.HintText = Nothing
-        Me.BtnSave.HoverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.BtnSave.HoverBackColor = System.Drawing.Color.White
         Me.BtnSave.HoverFontStyle = System.Drawing.FontStyle.Regular
-        Me.BtnSave.HoverTextColor = System.Drawing.Color.Black
+        Me.BtnSave.HoverTextColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(120, Byte), Integer))
         Me.BtnSave.HoverTransitionDuration = 250
         Me.BtnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.BtnSave.ImagePadding = 5
@@ -279,7 +157,7 @@ Partial Class RefundForm
         Me.SiticoneButton3.BadgeFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
         Me.SiticoneButton3.BadgeValue = 0
         Me.SiticoneButton3.BadgeValueForeColor = System.Drawing.Color.White
-        Me.SiticoneButton3.BorderColor = System.Drawing.Color.Transparent
+        Me.SiticoneButton3.BorderColor = System.Drawing.Color.FromArgb(CType(CType(74, Byte), Integer), CType(CType(144, Byte), Integer), CType(CType(226, Byte), Integer))
         Me.SiticoneButton3.BorderWidth = 2
         Me.SiticoneButton3.ButtonBackColor = System.Drawing.Color.FromArgb(CType(CType(74, Byte), Integer), CType(CType(144, Byte), Integer), CType(CType(226, Byte), Integer))
         Me.SiticoneButton3.ButtonImage = Nothing
@@ -308,9 +186,9 @@ Partial Class RefundForm
         Me.SiticoneButton3.GradientColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.SiticoneButton3.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical
         Me.SiticoneButton3.HintText = Nothing
-        Me.SiticoneButton3.HoverBackColor = System.Drawing.Color.FromArgb(CType(CType(74, Byte), Integer), CType(CType(144, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.SiticoneButton3.HoverBackColor = System.Drawing.Color.White
         Me.SiticoneButton3.HoverFontStyle = System.Drawing.FontStyle.Regular
-        Me.SiticoneButton3.HoverTextColor = System.Drawing.Color.Black
+        Me.SiticoneButton3.HoverTextColor = System.Drawing.Color.FromArgb(CType(CType(74, Byte), Integer), CType(CType(144, Byte), Integer), CType(CType(226, Byte), Integer))
         Me.SiticoneButton3.HoverTransitionDuration = 250
         Me.SiticoneButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.SiticoneButton3.ImagePadding = 5
@@ -327,7 +205,7 @@ Partial Class RefundForm
         Me.SiticoneButton3.ParticleColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
         Me.SiticoneButton3.ParticleCount = 15
         Me.SiticoneButton3.PressAnimationScale = 0.97!
-        Me.SiticoneButton3.PressedBackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(120, Byte), Integer))
+        Me.SiticoneButton3.PressedBackColor = System.Drawing.Color.Transparent
         Me.SiticoneButton3.PressedFontStyle = System.Drawing.FontStyle.Regular
         Me.SiticoneButton3.PressTransitionDuration = 150
         Me.SiticoneButton3.ReadOnlyTextColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer))
@@ -348,12 +226,184 @@ Partial Class RefundForm
         Me.SiticoneButton3.UseAdvancedRendering = True
         Me.SiticoneButton3.UseParticles = False
         '
+        'Guna2AnimateWindow1
+        '
+        Me.Guna2AnimateWindow1.TargetForm = Me
+        '
+        'SiticonePanel1
+        '
+        Me.SiticonePanel1.AcrylicTintColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.SiticonePanel1.BackColor = System.Drawing.Color.Transparent
+        Me.SiticonePanel1.BorderAlignment = System.Drawing.Drawing2D.PenAlignment.Center
+        Me.SiticonePanel1.BorderDashPattern = Nothing
+        Me.SiticonePanel1.BorderGradientEndColor = System.Drawing.Color.Purple
+        Me.SiticonePanel1.BorderGradientStartColor = System.Drawing.Color.Blue
+        Me.SiticonePanel1.BorderThickness = 2.0!
+        Me.SiticonePanel1.Controls.Add(Me.lbl_getsubtotal)
+        Me.SiticonePanel1.Controls.Add(Me.lbl_gettotal)
+        Me.SiticonePanel1.Controls.Add(Me.lbl_getvat)
+        Me.SiticonePanel1.Controls.Add(Me.Label4)
+        Me.SiticonePanel1.Controls.Add(Me.Label3)
+        Me.SiticonePanel1.Controls.Add(Me.Label2)
+        Me.SiticonePanel1.Controls.Add(Me.lbl_getprice)
+        Me.SiticonePanel1.Controls.Add(Me.lbl_getproducts)
+        Me.SiticonePanel1.Controls.Add(Me.lbl_MOP)
+        Me.SiticonePanel1.Controls.Add(Me.lbl_getticket)
+        Me.SiticonePanel1.CornerRadiusBottomLeft = 10.0!
+        Me.SiticonePanel1.CornerRadiusBottomRight = 10.0!
+        Me.SiticonePanel1.CornerRadiusTopLeft = 10.0!
+        Me.SiticonePanel1.CornerRadiusTopRight = 10.0!
+        Me.SiticonePanel1.EnableAcrylicEffect = False
+        Me.SiticonePanel1.EnableMicaEffect = False
+        Me.SiticonePanel1.EnableRippleEffect = False
+        Me.SiticonePanel1.FillColor = System.Drawing.Color.White
+        Me.SiticonePanel1.GradientColors = New System.Drawing.Color() {System.Drawing.Color.White, System.Drawing.Color.LightGray, System.Drawing.Color.Gray}
+        Me.SiticonePanel1.GradientPositions = New Single() {0!, 0.5!, 1.0!}
+        Me.SiticonePanel1.Location = New System.Drawing.Point(45, 91)
+        Me.SiticonePanel1.Name = "SiticonePanel1"
+        Me.SiticonePanel1.PatternStyle = System.Drawing.Drawing2D.HatchStyle.LargeGrid
+        Me.SiticonePanel1.RippleAlpha = 50
+        Me.SiticonePanel1.RippleAlphaDecrement = 3
+        Me.SiticonePanel1.RippleColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.SiticonePanel1.RippleMaxSize = 600.0!
+        Me.SiticonePanel1.RippleSpeed = 15.0!
+        Me.SiticonePanel1.ShowBorder = True
+        Me.SiticonePanel1.Size = New System.Drawing.Size(393, 363)
+        Me.SiticonePanel1.TabIndex = 19
+        Me.SiticonePanel1.TabStop = True
+        Me.SiticonePanel1.TrackSystemTheme = False
+        Me.SiticonePanel1.UseBorderGradient = False
+        Me.SiticonePanel1.UseMultiGradient = False
+        Me.SiticonePanel1.UsePatternTexture = False
+        Me.SiticonePanel1.UseRadialGradient = False
+        '
+        'lbl_getsubtotal
+        '
+        Me.lbl_getsubtotal.AutoSize = True
+        Me.lbl_getsubtotal.BackColor = System.Drawing.Color.White
+        Me.lbl_getsubtotal.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_getsubtotal.ForeColor = System.Drawing.Color.FromArgb(CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.lbl_getsubtotal.Location = New System.Drawing.Point(334, 283)
+        Me.lbl_getsubtotal.Name = "lbl_getsubtotal"
+        Me.lbl_getsubtotal.Size = New System.Drawing.Size(13, 21)
+        Me.lbl_getsubtotal.TabIndex = 19
+        Me.lbl_getsubtotal.Text = "."
+        '
+        'lbl_gettotal
+        '
+        Me.lbl_gettotal.AutoSize = True
+        Me.lbl_gettotal.BackColor = System.Drawing.Color.White
+        Me.lbl_gettotal.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_gettotal.ForeColor = System.Drawing.Color.FromArgb(CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.lbl_gettotal.Location = New System.Drawing.Point(334, 321)
+        Me.lbl_gettotal.Name = "lbl_gettotal"
+        Me.lbl_gettotal.Size = New System.Drawing.Size(13, 21)
+        Me.lbl_gettotal.TabIndex = 18
+        Me.lbl_gettotal.Text = "."
+        '
+        'lbl_getvat
+        '
+        Me.lbl_getvat.AutoSize = True
+        Me.lbl_getvat.BackColor = System.Drawing.Color.White
+        Me.lbl_getvat.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_getvat.ForeColor = System.Drawing.Color.FromArgb(CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.lbl_getvat.Location = New System.Drawing.Point(334, 243)
+        Me.lbl_getvat.Name = "lbl_getvat"
+        Me.lbl_getvat.Size = New System.Drawing.Size(13, 21)
+        Me.lbl_getvat.TabIndex = 17
+        Me.lbl_getvat.Text = "."
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.White
+        Me.Label4.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.Label4.Location = New System.Drawing.Point(49, 321)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(42, 21)
+        Me.Label4.TabIndex = 16
+        Me.Label4.Text = "Total"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.White
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.Label3.Location = New System.Drawing.Point(49, 283)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(68, 21)
+        Me.Label3.TabIndex = 15
+        Me.Label3.Text = "Subtotal"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.White
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.Label2.Location = New System.Drawing.Point(49, 243)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(36, 21)
+        Me.Label2.TabIndex = 14
+        Me.Label2.Text = "VAT"
+        '
+        'lbl_getprice
+        '
+        Me.lbl_getprice.AutoSize = True
+        Me.lbl_getprice.BackColor = System.Drawing.Color.White
+        Me.lbl_getprice.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_getprice.ForeColor = System.Drawing.Color.FromArgb(CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.lbl_getprice.Location = New System.Drawing.Point(334, 109)
+        Me.lbl_getprice.Name = "lbl_getprice"
+        Me.lbl_getprice.Size = New System.Drawing.Size(13, 21)
+        Me.lbl_getprice.TabIndex = 13
+        Me.lbl_getprice.Text = "."
+        '
+        'lbl_getproducts
+        '
+        Me.lbl_getproducts.AutoSize = True
+        Me.lbl_getproducts.BackColor = System.Drawing.Color.White
+        Me.lbl_getproducts.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_getproducts.ForeColor = System.Drawing.Color.FromArgb(CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.lbl_getproducts.Location = New System.Drawing.Point(49, 109)
+        Me.lbl_getproducts.Name = "lbl_getproducts"
+        Me.lbl_getproducts.Size = New System.Drawing.Size(13, 21)
+        Me.lbl_getproducts.TabIndex = 12
+        Me.lbl_getproducts.Text = "."
+        '
+        'lbl_MOP
+        '
+        Me.lbl_MOP.AutoSize = True
+        Me.lbl_MOP.BackColor = System.Drawing.Color.White
+        Me.lbl_MOP.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_MOP.ForeColor = System.Drawing.Color.FromArgb(CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.lbl_MOP.Location = New System.Drawing.Point(187, 29)
+        Me.lbl_MOP.Name = "lbl_MOP"
+        Me.lbl_MOP.Size = New System.Drawing.Size(13, 21)
+        Me.lbl_MOP.TabIndex = 11
+        Me.lbl_MOP.Text = "."
+        '
+        'lbl_getticket
+        '
+        Me.lbl_getticket.AutoSize = True
+        Me.lbl_getticket.BackColor = System.Drawing.Color.White
+        Me.lbl_getticket.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_getticket.ForeColor = System.Drawing.Color.FromArgb(CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.lbl_getticket.Location = New System.Drawing.Point(49, 42)
+        Me.lbl_getticket.Name = "lbl_getticket"
+        Me.lbl_getticket.Size = New System.Drawing.Size(13, 21)
+        Me.lbl_getticket.TabIndex = 10
+        Me.lbl_getticket.Text = "."
+        '
         'RefundForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(484, 562)
-        Me.Controls.Add(Me.SiticoneDragPanel1)
+        Me.Controls.Add(Me.SiticonePanel1)
         Me.Controls.Add(Me.SiticoneButton3)
         Me.Controls.Add(Me.BtnSave)
         Me.Controls.Add(Me.Panel1)
@@ -363,17 +413,18 @@ Partial Class RefundForm
         Me.Text = "RefundForm"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        Me.SiticoneDragPanel1.ResumeLayout(False)
-        Me.SiticoneDragPanel1.PerformLayout()
+        Me.SiticonePanel1.ResumeLayout(False)
+        Me.SiticonePanel1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Label1 As Label
-    Friend WithEvents SiticoneDragPanel1 As SiticoneNetFrameworkUI.SiticoneDragPanel
     Friend WithEvents BtnSave As SiticoneNetFrameworkUI.SiticoneButton
     Friend WithEvents SiticoneButton3 As SiticoneNetFrameworkUI.SiticoneButton
+    Friend WithEvents Guna2AnimateWindow1 As Guna.UI2.WinForms.Guna2AnimateWindow
+    Friend WithEvents SiticonePanel1 As SiticonePanel
     Friend WithEvents lbl_getsubtotal As Label
     Friend WithEvents lbl_gettotal As Label
     Friend WithEvents lbl_getvat As Label
