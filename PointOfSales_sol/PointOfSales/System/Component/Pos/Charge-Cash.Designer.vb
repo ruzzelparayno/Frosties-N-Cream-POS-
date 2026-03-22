@@ -25,9 +25,9 @@ Partial Class Charge_Cash
         Me.txt_cashs = New System.Windows.Forms.TextBox()
         Me.lbl_cr = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.lbl_totalP = New System.Windows.Forms.Label()
+        Me.lbl_change = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'txt_cashs
@@ -60,14 +60,6 @@ Partial Class Charge_Cash
         Me.Label1.TabIndex = 14
         Me.Label1.Text = "Total Paid"
         '
-        'TextBox1
-        '
-        Me.TextBox1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(7, 80)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(138, 29)
-        Me.TextBox1.TabIndex = 15
-        '
         'Label2
         '
         Me.Label2.AutoSize = True
@@ -79,21 +71,35 @@ Partial Class Charge_Cash
         Me.Label2.TabIndex = 16
         Me.Label2.Text = "Change"
         '
-        'TextBox2
+        'lbl_totalP
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(151, 80)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(141, 29)
-        Me.TextBox2.TabIndex = 17
+        Me.lbl_totalP.BackColor = System.Drawing.Color.White
+        Me.lbl_totalP.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_totalP.ForeColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.lbl_totalP.Location = New System.Drawing.Point(7, 80)
+        Me.lbl_totalP.Name = "lbl_totalP"
+        Me.lbl_totalP.Size = New System.Drawing.Size(138, 29)
+        Me.lbl_totalP.TabIndex = 18
+        Me.lbl_totalP.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lbl_change
+        '
+        Me.lbl_change.BackColor = System.Drawing.Color.White
+        Me.lbl_change.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_change.ForeColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.lbl_change.Location = New System.Drawing.Point(154, 80)
+        Me.lbl_change.Name = "lbl_change"
+        Me.lbl_change.Size = New System.Drawing.Size(138, 29)
+        Me.lbl_change.TabIndex = 19
+        Me.lbl_change.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Charge_Cash
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.lbl_change)
+        Me.Controls.Add(Me.lbl_totalP)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txt_cashs)
         Me.Controls.Add(Me.lbl_cr)
@@ -106,7 +112,7 @@ Partial Class Charge_Cash
     Friend WithEvents txt_cashs As TextBox
     Friend WithEvents lbl_cr As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents lbl_totalP As Label
+    Friend WithEvents lbl_change As Label
 End Class

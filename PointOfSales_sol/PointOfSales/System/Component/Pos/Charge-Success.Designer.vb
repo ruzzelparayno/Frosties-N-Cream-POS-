@@ -177,8 +177,8 @@ Partial Class Charge_Success
         'PictureBox1
         '
         Me.PictureBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox1.Image = Global.PointOfSales.My.Resources.Resources.Payment_Success
-        Me.PictureBox1.Location = New System.Drawing.Point(156, 63)
+        Me.PictureBox1.Image = Global.PointOfSales.My.Resources.Resources.success
+        Me.PictureBox1.Location = New System.Drawing.Point(137, 63)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(92, 74)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage

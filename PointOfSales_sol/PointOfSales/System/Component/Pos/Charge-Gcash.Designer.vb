@@ -22,21 +22,13 @@ Partial Class Charge_Gcash
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.txt_cashs = New System.Windows.Forms.TextBox()
+        Me.txt_ref = New System.Windows.Forms.TextBox()
         Me.lbl_cr = New System.Windows.Forms.Label()
+        Me.lbl_change = New System.Windows.Forms.Label()
+        Me.txt_TotalP = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(151, 80)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(141, 29)
-        Me.TextBox2.TabIndex = 23
         '
         'Label2
         '
@@ -49,14 +41,6 @@ Partial Class Charge_Gcash
         Me.Label2.TabIndex = 22
         Me.Label2.Text = "Change"
         '
-        'TextBox1
-        '
-        Me.TextBox1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(7, 80)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(138, 29)
-        Me.TextBox1.TabIndex = 21
-        '
         'Label1
         '
         Me.Label1.AutoSize = True
@@ -68,13 +52,13 @@ Partial Class Charge_Gcash
         Me.Label1.TabIndex = 20
         Me.Label1.Text = "Total Paid"
         '
-        'txt_cashs
+        'txt_ref
         '
-        Me.txt_cashs.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_cashs.Location = New System.Drawing.Point(7, 24)
-        Me.txt_cashs.Name = "txt_cashs"
-        Me.txt_cashs.Size = New System.Drawing.Size(285, 29)
-        Me.txt_cashs.TabIndex = 19
+        Me.txt_ref.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_ref.Location = New System.Drawing.Point(7, 24)
+        Me.txt_ref.Name = "txt_ref"
+        Me.txt_ref.Size = New System.Drawing.Size(285, 29)
+        Me.txt_ref.TabIndex = 19
         '
         'lbl_cr
         '
@@ -87,15 +71,34 @@ Partial Class Charge_Gcash
         Me.lbl_cr.TabIndex = 18
         Me.lbl_cr.Text = "Entery referral number"
         '
+        'lbl_change
+        '
+        Me.lbl_change.BackColor = System.Drawing.Color.White
+        Me.lbl_change.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_change.ForeColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.lbl_change.Location = New System.Drawing.Point(150, 76)
+        Me.lbl_change.Name = "lbl_change"
+        Me.lbl_change.Size = New System.Drawing.Size(138, 29)
+        Me.lbl_change.TabIndex = 24
+        Me.lbl_change.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'txt_TotalP
+        '
+        Me.txt_TotalP.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_TotalP.Location = New System.Drawing.Point(3, 77)
+        Me.txt_TotalP.Name = "txt_TotalP"
+        Me.txt_TotalP.Size = New System.Drawing.Size(141, 29)
+        Me.txt_TotalP.TabIndex = 23
+        '
         'Charge_Gcash
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.lbl_change)
+        Me.Controls.Add(Me.txt_TotalP)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.txt_cashs)
+        Me.Controls.Add(Me.txt_ref)
         Me.Controls.Add(Me.lbl_cr)
         Me.Name = "Charge_Gcash"
         Me.Size = New System.Drawing.Size(295, 161)
@@ -103,11 +106,10 @@ Partial Class Charge_Gcash
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents txt_cashs As TextBox
+    Friend WithEvents txt_ref As TextBox
     Friend WithEvents lbl_cr As Label
+    Friend WithEvents lbl_change As Label
+    Friend WithEvents txt_TotalP As TextBox
 End Class

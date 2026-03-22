@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class edit
+Partial Class Edit
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -26,7 +26,6 @@ Partial Class edit
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Edit))
         Me.lbl_getproductname = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.btn_editsave = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.SiticoneImageButton1 = New SiticoneNetFrameworkUI.SiticoneImageButton()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -56,15 +55,6 @@ Partial Class edit
         Me.Label2.Size = New System.Drawing.Size(70, 21)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Quantity"
-        '
-        'btn_editsave
-        '
-        Me.btn_editsave.Location = New System.Drawing.Point(39, 289)
-        Me.btn_editsave.Name = "btn_editsave"
-        Me.btn_editsave.Size = New System.Drawing.Size(314, 25)
-        Me.btn_editsave.TabIndex = 6
-        Me.btn_editsave.Text = "Save"
-        Me.btn_editsave.UseVisualStyleBackColor = True
         '
         'Panel1
         '
@@ -97,6 +87,7 @@ Partial Class edit
         Me.SiticoneImageButton1.CornerRadiusBottomRight = 16.0!
         Me.SiticoneImageButton1.CornerRadiusTopLeft = 16.0!
         Me.SiticoneImageButton1.CornerRadiusTopRight = 16.0!
+        Me.SiticoneImageButton1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.SiticoneImageButton1.ForeColor = System.Drawing.Color.Transparent
         Me.SiticoneImageButton1.ImageDown = Nothing
         Me.SiticoneImageButton1.ImageHover = Nothing
@@ -265,7 +256,7 @@ Partial Class edit
         Me.SiticoneUpDown1.UseGradient = False
         Me.SiticoneUpDown1.Value = New Decimal(New Integer() {0, 0, 0, 0})
         '
-        'edit
+        'Edit
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -275,11 +266,10 @@ Partial Class edit
         Me.Controls.Add(Me.SiticoneButton1)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.btn_editsave)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.lbl_getproductname)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "edit"
+        Me.Name = "Edit"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "edit"
         Me.Panel1.ResumeLayout(False)
@@ -291,7 +281,6 @@ Partial Class edit
     End Sub
     Friend WithEvents lbl_getproductname As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents btn_editsave As Button
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Label1 As Label

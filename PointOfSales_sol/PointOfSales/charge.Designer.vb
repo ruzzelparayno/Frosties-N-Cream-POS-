@@ -23,19 +23,16 @@ Partial Class Charge
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.lbl_totalpaid = New System.Windows.Forms.Label()
-        Me.lbl_change = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.cb_employee = New System.Windows.Forms.CheckBox()
         Me.cb_pwd = New System.Windows.Forms.CheckBox()
         Me.cb_senior = New System.Windows.Forms.CheckBox()
-        Me.btn_charge = New System.Windows.Forms.Button()
-        Me.PD_BeginPrint = New System.Drawing.Printing.PrintDocument()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.SiticoneImageButton1 = New SiticoneNetFrameworkUI.SiticoneImageButton()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.SiticoneRadioButton1 = New SiticoneNetFrameworkUI.SiticoneRadioButton()
         Me.SiticoneRadioButton2 = New SiticoneNetFrameworkUI.SiticoneRadioButton()
         Me.SiticoneFlatPanel1 = New SiticoneNetFrameworkUI.SiticoneFlatPanel()
-        Me.SiticoneImageButton1 = New SiticoneNetFrameworkUI.SiticoneImageButton()
         Me.SiticoneButton1 = New SiticoneNetFrameworkUI.SiticoneButton()
         Me.Panel1.SuspendLayout()
         Me.SiticoneFlatPanel1.SuspendLayout()
@@ -49,15 +46,6 @@ Partial Class Charge
         Me.lbl_totalpaid.Size = New System.Drawing.Size(10, 13)
         Me.lbl_totalpaid.TabIndex = 10
         Me.lbl_totalpaid.Text = "."
-        '
-        'lbl_change
-        '
-        Me.lbl_change.AutoSize = True
-        Me.lbl_change.Location = New System.Drawing.Point(296, 103)
-        Me.lbl_change.Name = "lbl_change"
-        Me.lbl_change.Size = New System.Drawing.Size(10, 13)
-        Me.lbl_change.TabIndex = 11
-        Me.lbl_change.Text = "."
         '
         'Label4
         '
@@ -103,18 +91,6 @@ Partial Class Charge
         Me.cb_senior.Text = "Senior Citizen"
         Me.cb_senior.UseVisualStyleBackColor = True
         '
-        'btn_charge
-        '
-        Me.btn_charge.Location = New System.Drawing.Point(299, 349)
-        Me.btn_charge.Name = "btn_charge"
-        Me.btn_charge.Size = New System.Drawing.Size(64, 30)
-        Me.btn_charge.TabIndex = 16
-        Me.btn_charge.Text = "Charge"
-        Me.btn_charge.UseVisualStyleBackColor = True
-        '
-        'PD_BeginPrint
-        '
-        '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
@@ -125,6 +101,45 @@ Partial Class Charge
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(375, 57)
         Me.Panel1.TabIndex = 17
+        '
+        'SiticoneImageButton1
+        '
+        Me.SiticoneImageButton1.AnimationSpeed = 0.15!
+        Me.SiticoneImageButton1.BackColor = System.Drawing.Color.Transparent
+        Me.SiticoneImageButton1.BackgroundFillColor = System.Drawing.Color.Transparent
+        Me.SiticoneImageButton1.BadgeAnimationEnabled = True
+        Me.SiticoneImageButton1.BadgeAnimationSpeed = 0.15!
+        Me.SiticoneImageButton1.BadgeColor = System.Drawing.Color.Red
+        Me.SiticoneImageButton1.BadgeFont = New System.Drawing.Font("Segoe UI", 8.0!, System.Drawing.FontStyle.Bold)
+        Me.SiticoneImageButton1.BadgePosition = SiticoneNetFrameworkUI.BadgePositionExt.TopRight
+        Me.SiticoneImageButton1.BadgeTextColor = System.Drawing.Color.White
+        Me.SiticoneImageButton1.BadgeValue = 0
+        Me.SiticoneImageButton1.BorderColor = System.Drawing.Color.Transparent
+        Me.SiticoneImageButton1.BorderThickness = 2
+        Me.SiticoneImageButton1.CanBeep = True
+        Me.SiticoneImageButton1.CanShake = True
+        Me.SiticoneImageButton1.CornerRadiusBottomLeft = 16.0!
+        Me.SiticoneImageButton1.CornerRadiusBottomRight = 16.0!
+        Me.SiticoneImageButton1.CornerRadiusTopLeft = 16.0!
+        Me.SiticoneImageButton1.CornerRadiusTopRight = 16.0!
+        Me.SiticoneImageButton1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.SiticoneImageButton1.ForeColor = System.Drawing.Color.Transparent
+        Me.SiticoneImageButton1.ImageDown = Nothing
+        Me.SiticoneImageButton1.ImageHover = Nothing
+        Me.SiticoneImageButton1.ImageNormal = Global.PointOfSales.My.Resources.Resources.Back_To
+        Me.SiticoneImageButton1.ImageSizing = SiticoneNetFrameworkUI.ImageSizingMode.Zoom
+        Me.SiticoneImageButton1.IsReadOnly = False
+        Me.SiticoneImageButton1.Location = New System.Drawing.Point(35, 11)
+        Me.SiticoneImageButton1.MakeRadial = True
+        Me.SiticoneImageButton1.Name = "SiticoneImageButton1"
+        Me.SiticoneImageButton1.PlaceholderImage = Nothing
+        Me.SiticoneImageButton1.RippleColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.SiticoneImageButton1.RippleEnabled = True
+        Me.SiticoneImageButton1.Size = New System.Drawing.Size(35, 35)
+        Me.SiticoneImageButton1.SpringEffectEnabled = True
+        Me.SiticoneImageButton1.TabIndex = 12
+        Me.SiticoneImageButton1.Text = "SiticoneImageButton1"
+        Me.SiticoneImageButton1.TrackSystemTheme = False
         '
         'Label1
         '
@@ -231,44 +246,6 @@ Partial Class Charge
         Me.SiticoneFlatPanel1.Size = New System.Drawing.Size(295, 190)
         Me.SiticoneFlatPanel1.TabIndex = 20
         '
-        'SiticoneImageButton1
-        '
-        Me.SiticoneImageButton1.AnimationSpeed = 0.15!
-        Me.SiticoneImageButton1.BackColor = System.Drawing.Color.Transparent
-        Me.SiticoneImageButton1.BackgroundFillColor = System.Drawing.Color.Transparent
-        Me.SiticoneImageButton1.BadgeAnimationEnabled = True
-        Me.SiticoneImageButton1.BadgeAnimationSpeed = 0.15!
-        Me.SiticoneImageButton1.BadgeColor = System.Drawing.Color.Red
-        Me.SiticoneImageButton1.BadgeFont = New System.Drawing.Font("Segoe UI", 8.0!, System.Drawing.FontStyle.Bold)
-        Me.SiticoneImageButton1.BadgePosition = SiticoneNetFrameworkUI.BadgePositionExt.TopRight
-        Me.SiticoneImageButton1.BadgeTextColor = System.Drawing.Color.White
-        Me.SiticoneImageButton1.BadgeValue = 0
-        Me.SiticoneImageButton1.BorderColor = System.Drawing.Color.Transparent
-        Me.SiticoneImageButton1.BorderThickness = 2
-        Me.SiticoneImageButton1.CanBeep = True
-        Me.SiticoneImageButton1.CanShake = True
-        Me.SiticoneImageButton1.CornerRadiusBottomLeft = 16.0!
-        Me.SiticoneImageButton1.CornerRadiusBottomRight = 16.0!
-        Me.SiticoneImageButton1.CornerRadiusTopLeft = 16.0!
-        Me.SiticoneImageButton1.CornerRadiusTopRight = 16.0!
-        Me.SiticoneImageButton1.ForeColor = System.Drawing.Color.Transparent
-        Me.SiticoneImageButton1.ImageDown = Nothing
-        Me.SiticoneImageButton1.ImageHover = Nothing
-        Me.SiticoneImageButton1.ImageNormal = Global.PointOfSales.My.Resources.Resources.Back_To
-        Me.SiticoneImageButton1.ImageSizing = SiticoneNetFrameworkUI.ImageSizingMode.Zoom
-        Me.SiticoneImageButton1.IsReadOnly = False
-        Me.SiticoneImageButton1.Location = New System.Drawing.Point(35, 11)
-        Me.SiticoneImageButton1.MakeRadial = True
-        Me.SiticoneImageButton1.Name = "SiticoneImageButton1"
-        Me.SiticoneImageButton1.PlaceholderImage = Nothing
-        Me.SiticoneImageButton1.RippleColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.SiticoneImageButton1.RippleEnabled = True
-        Me.SiticoneImageButton1.Size = New System.Drawing.Size(35, 35)
-        Me.SiticoneImageButton1.SpringEffectEnabled = True
-        Me.SiticoneImageButton1.TabIndex = 12
-        Me.SiticoneImageButton1.Text = "SiticoneImageButton1"
-        Me.SiticoneImageButton1.TrackSystemTheme = False
-        '
         'SiticoneButton1
         '
         Me.SiticoneButton1.AccessibleDescription = "The default button control that accept input though the mouse, touch and keyboard" &
@@ -356,12 +333,10 @@ Partial Class Charge
         Me.Controls.Add(Me.SiticoneRadioButton2)
         Me.Controls.Add(Me.SiticoneRadioButton1)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.btn_charge)
         Me.Controls.Add(Me.cb_senior)
         Me.Controls.Add(Me.cb_pwd)
         Me.Controls.Add(Me.cb_employee)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.lbl_change)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Charge"
         Me.Text = "charge"
@@ -374,13 +349,10 @@ Partial Class Charge
 
     End Sub
     Friend WithEvents lbl_totalpaid As Label
-    Friend WithEvents lbl_change As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents cb_employee As CheckBox
     Friend WithEvents cb_pwd As CheckBox
     Friend WithEvents cb_senior As CheckBox
-    Friend WithEvents btn_charge As Button
-    Friend WithEvents PD_BeginPrint As Printing.PrintDocument
     Friend WithEvents Panel1 As Panel
     Friend WithEvents SiticoneImageButton1 As SiticoneNetFrameworkUI.SiticoneImageButton
     Friend WithEvents Label1 As Label

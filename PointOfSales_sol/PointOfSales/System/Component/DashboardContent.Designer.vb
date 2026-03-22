@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class DashboardContent
     Inherits System.Windows.Forms.UserControl
 
     'UserControl overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,11 +20,9 @@ Partial Class DashboardContent
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(DashboardContent))
-        Dim BarChartTheme1 As SiticoneNetFrameworkUI.SiticoneBarChart.BarChartTheme = New SiticoneNetFrameworkUI.SiticoneBarChart.BarChartTheme()
-        Dim PieChartTheme1 As SiticoneNetFrameworkUI.SiticonePieChart.PieChartTheme = New SiticoneNetFrameworkUI.SiticonePieChart.PieChartTheme()
+        Dim BarChartTheme3 As SiticoneNetFrameworkUI.SiticoneBarChart.BarChartTheme = New SiticoneNetFrameworkUI.SiticoneBarChart.BarChartTheme()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.SiticonePanel4 = New SiticoneNetFrameworkUI.SiticonePanel()
@@ -34,10 +32,7 @@ Partial Class DashboardContent
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.SiticonePanel1 = New SiticoneNetFrameworkUI.SiticonePanel()
-        Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.SiticonePanel3 = New SiticoneNetFrameworkUI.SiticonePanel()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
@@ -48,18 +43,14 @@ Partial Class DashboardContent
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.Panel8 = New System.Windows.Forms.Panel()
-        Me.SiticonePieChart1 = New SiticoneNetFrameworkUI.SiticonePieChart()
         Me.Panel9 = New System.Windows.Forms.Panel()
         Me.Label8 = New System.Windows.Forms.Label()
+        Me.FlowLayoutPanel2 = New System.Windows.Forms.FlowLayoutPanel()
         Me.Panel2.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.SiticonePanel4.SuspendLayout()
         Me.SiticonePanel2.SuspendLayout()
         Me.SiticonePanel1.SuspendLayout()
-        Me.TableLayoutPanel3.SuspendLayout()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SiticonePanel3.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
         Me.Panel4.SuspendLayout()
@@ -145,9 +136,9 @@ Partial Class DashboardContent
         Me.Label2.ForeColor = System.Drawing.Color.White
         Me.Label2.Location = New System.Drawing.Point(11, 10)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(151, 21)
+        Me.Label2.Size = New System.Drawing.Size(60, 21)
         Me.Label2.TabIndex = 10
-        Me.Label2.Text = "Low Stock Product"
+        Me.Label2.Text = "Orders"
         '
         'Label3
         '
@@ -216,11 +207,11 @@ Partial Class DashboardContent
         '
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.Transparent
-        Me.Label4.Font = New System.Drawing.Font("Segoe UI Black", 40.0!, System.Drawing.FontStyle.Bold)
+        Me.Label4.Font = New System.Drawing.Font("Segoe UI Black", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
         Me.Label4.Location = New System.Drawing.Point(3, 38)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(250, 72)
+        Me.Label4.Size = New System.Drawing.Size(226, 65)
         Me.Label4.TabIndex = 9
         Me.Label4.Text = "1,600.00"
         '
@@ -233,7 +224,7 @@ Partial Class DashboardContent
         Me.SiticonePanel1.BorderGradientEndColor = System.Drawing.Color.DimGray
         Me.SiticonePanel1.BorderGradientStartColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(60, Byte), Integer))
         Me.SiticonePanel1.BorderThickness = 2.0!
-        Me.SiticonePanel1.Controls.Add(Me.TableLayoutPanel3)
+        Me.SiticonePanel1.Controls.Add(Me.FlowLayoutPanel1)
         Me.SiticonePanel1.Controls.Add(Me.Label7)
         Me.SiticonePanel1.CornerRadiusBottomLeft = 16.0!
         Me.SiticonePanel1.CornerRadiusBottomRight = 16.0!
@@ -264,56 +255,13 @@ Partial Class DashboardContent
         Me.SiticonePanel1.UsePatternTexture = False
         Me.SiticonePanel1.UseRadialGradient = False
         '
-        'TableLayoutPanel3
+        'FlowLayoutPanel1
         '
-        Me.TableLayoutPanel3.BackColor = System.Drawing.Color.Transparent
-        Me.TableLayoutPanel3.ColumnCount = 5
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel3.Controls.Add(Me.PictureBox3, 2, 0)
-        Me.TableLayoutPanel3.Controls.Add(Me.PictureBox2, 1, 0)
-        Me.TableLayoutPanel3.Controls.Add(Me.PictureBox1, 0, 0)
-        Me.TableLayoutPanel3.Location = New System.Drawing.Point(15, 37)
-        Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
-        Me.TableLayoutPanel3.RowCount = 2
-        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel3.Size = New System.Drawing.Size(222, 72)
-        Me.TableLayoutPanel3.TabIndex = 11
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(91, 3)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(38, 30)
-        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox3.TabIndex = 2
-        Me.PictureBox3.TabStop = False
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(47, 3)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(38, 30)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 1
-        Me.PictureBox2.TabStop = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(3, 3)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(38, 30)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
+        Me.FlowLayoutPanel1.Location = New System.Drawing.Point(5, 34)
+        Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
+        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(243, 69)
+        Me.FlowLayoutPanel1.TabIndex = 11
+        Me.FlowLayoutPanel1.WrapContents = False
         '
         'Label7
         '
@@ -407,23 +355,24 @@ Partial Class DashboardContent
         'SiticoneBarChart1
         '
         Me.SiticoneBarChart1.AutoSize = True
-        Me.SiticoneBarChart1.BackColor = System.Drawing.SystemColors.Control
+        Me.SiticoneBarChart1.BackColor = System.Drawing.Color.Transparent
         Me.SiticoneBarChart1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.SiticoneBarChart1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.SiticoneBarChart1.ForeColor = System.Drawing.Color.White
-        Me.SiticoneBarChart1.LabelMember = "Month"
+        Me.SiticoneBarChart1.LabelMember = "Week"
         Me.SiticoneBarChart1.Location = New System.Drawing.Point(30, 30)
         Me.SiticoneBarChart1.Name = "SiticoneBarChart1"
+        Me.SiticoneBarChart1.ShowValueOnBar = False
         Me.SiticoneBarChart1.Size = New System.Drawing.Size(320, 395)
         Me.SiticoneBarChart1.TabIndex = 2
-        BarChartTheme1.AxisLabelColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer))
-        BarChartTheme1.BackColor = System.Drawing.SystemColors.Control
-        BarChartTheme1.BarColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(43, Byte), Integer), CType(CType(226, Byte), Integer))
-        BarChartTheme1.BarHighlightColor = System.Drawing.Color.FromArgb(CType(CType(179, Byte), Integer), CType(CType(157, Byte), Integer), CType(CType(219, Byte), Integer))
-        BarChartTheme1.GridColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        BarChartTheme1.Name = "Royal Purple"
-        BarChartTheme1.ValueLabelColor = System.Drawing.Color.Black
-        Me.SiticoneBarChart1.Theme = BarChartTheme1
+        BarChartTheme3.AxisLabelColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer))
+        BarChartTheme3.BackColor = System.Drawing.SystemColors.Control
+        BarChartTheme3.BarColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(204, Byte), Integer))
+        BarChartTheme3.BarHighlightColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(246, Byte), Integer))
+        BarChartTheme3.GridColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        BarChartTheme3.Name = "Default Blue"
+        BarChartTheme3.ValueLabelColor = System.Drawing.Color.Black
+        Me.SiticoneBarChart1.Theme = BarChartTheme3
         Me.SiticoneBarChart1.ValueMember = "Revenue"
         '
         'Panel6
@@ -461,32 +410,13 @@ Partial Class DashboardContent
         'Panel8
         '
         Me.Panel8.BackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(84, Byte), Integer))
-        Me.Panel8.Controls.Add(Me.SiticonePieChart1)
+        Me.Panel8.Controls.Add(Me.FlowLayoutPanel2)
         Me.Panel8.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel8.Location = New System.Drawing.Point(0, 72)
         Me.Panel8.Name = "Panel8"
         Me.Panel8.Padding = New System.Windows.Forms.Padding(30)
         Me.Panel8.Size = New System.Drawing.Size(381, 455)
         Me.Panel8.TabIndex = 5
-        '
-        'SiticonePieChart1
-        '
-        Me.SiticonePieChart1.AutoSize = True
-        Me.SiticonePieChart1.BackColor = System.Drawing.SystemColors.Control
-        Me.SiticonePieChart1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.SiticonePieChart1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.SiticonePieChart1.LabelMember = "Category"
-        Me.SiticonePieChart1.Location = New System.Drawing.Point(30, 30)
-        Me.SiticonePieChart1.Name = "SiticonePieChart1"
-        Me.SiticonePieChart1.Size = New System.Drawing.Size(321, 395)
-        Me.SiticonePieChart1.TabIndex = 1
-        PieChartTheme1.BackColor = System.Drawing.SystemColors.Control
-        PieChartTheme1.BorderColor = System.Drawing.Color.White
-        PieChartTheme1.Name = "Ocean"
-        PieChartTheme1.SliceColors = Nothing
-        PieChartTheme1.TextColor = System.Drawing.Color.Black
-        Me.SiticonePieChart1.Theme = PieChartTheme1
-        Me.SiticonePieChart1.ValueMember = "Amount"
         '
         'Panel9
         '
@@ -510,6 +440,15 @@ Partial Class DashboardContent
         Me.Label8.TabIndex = 1
         Me.Label8.Text = "Top 5 Item Sales"
         '
+        'FlowLayoutPanel2
+        '
+        Me.FlowLayoutPanel2.AutoSize = True
+        Me.FlowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.FlowLayoutPanel2.Location = New System.Drawing.Point(30, 30)
+        Me.FlowLayoutPanel2.Name = "FlowLayoutPanel2"
+        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(321, 395)
+        Me.FlowLayoutPanel2.TabIndex = 2
+        '
         'DashboardContent
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -526,10 +465,6 @@ Partial Class DashboardContent
         Me.SiticonePanel2.PerformLayout()
         Me.SiticonePanel1.ResumeLayout(False)
         Me.SiticonePanel1.PerformLayout()
-        Me.TableLayoutPanel3.ResumeLayout(False)
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SiticonePanel3.ResumeLayout(False)
         Me.TableLayoutPanel2.ResumeLayout(False)
         Me.Panel4.ResumeLayout(False)
@@ -557,19 +492,16 @@ Partial Class DashboardContent
     Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
     Friend WithEvents Panel4 As Panel
     Friend WithEvents Panel5 As Panel
-    Friend WithEvents SiticoneBarChart1 As SiticoneNetFrameworkUI.SiticoneBarChart
     Friend WithEvents Panel6 As Panel
     Friend WithEvents Label1 As Label
     Friend WithEvents Panel7 As Panel
     Friend WithEvents Panel8 As Panel
-    Friend WithEvents SiticonePieChart1 As SiticoneNetFrameworkUI.SiticonePieChart
     Friend WithEvents Panel9 As Panel
     Friend WithEvents Label8 As Label
     Friend WithEvents SiticonePanel4 As SiticoneNetFrameworkUI.SiticonePanel
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents TableLayoutPanel3 As TableLayoutPanel
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents PictureBox3 As PictureBox
-    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents SiticoneBarChart1 As SiticoneNetFrameworkUI.SiticoneBarChart
+    Friend WithEvents FlowLayoutPanel1 As FlowLayoutPanel
+    Friend WithEvents FlowLayoutPanel2 As FlowLayoutPanel
 End Class
