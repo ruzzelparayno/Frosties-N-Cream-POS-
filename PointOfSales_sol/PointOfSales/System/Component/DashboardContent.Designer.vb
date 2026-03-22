@@ -34,8 +34,11 @@ Partial Class DashboardContent
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.SiticonePanel1 = New SiticoneNetFrameworkUI.SiticonePanel()
+        Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.SiticonePanel3 = New SiticoneNetFrameworkUI.SiticonePanel()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.Panel4 = New System.Windows.Forms.Panel()
@@ -53,6 +56,10 @@ Partial Class DashboardContent
         Me.SiticonePanel4.SuspendLayout()
         Me.SiticonePanel2.SuspendLayout()
         Me.SiticonePanel1.SuspendLayout()
+        Me.TableLayoutPanel3.SuspendLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SiticonePanel3.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
         Me.Panel4.SuspendLayout()
@@ -201,9 +208,9 @@ Partial Class DashboardContent
         Me.Label5.ForeColor = System.Drawing.Color.White
         Me.Label5.Location = New System.Drawing.Point(11, 10)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(151, 21)
+        Me.Label5.Size = New System.Drawing.Size(92, 21)
         Me.Label5.TabIndex = 10
-        Me.Label5.Text = "Low Stock Product"
+        Me.Label5.Text = "Gross sales"
         '
         'Label4
         '
@@ -213,9 +220,9 @@ Partial Class DashboardContent
         Me.Label4.ForeColor = System.Drawing.Color.White
         Me.Label4.Location = New System.Drawing.Point(3, 38)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(94, 72)
+        Me.Label4.Size = New System.Drawing.Size(250, 72)
         Me.Label4.TabIndex = 9
-        Me.Label4.Text = "50"
+        Me.Label4.Text = "1,600.00"
         '
         'SiticonePanel1
         '
@@ -226,8 +233,8 @@ Partial Class DashboardContent
         Me.SiticonePanel1.BorderGradientEndColor = System.Drawing.Color.DimGray
         Me.SiticonePanel1.BorderGradientStartColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(60, Byte), Integer))
         Me.SiticonePanel1.BorderThickness = 2.0!
+        Me.SiticonePanel1.Controls.Add(Me.TableLayoutPanel3)
         Me.SiticonePanel1.Controls.Add(Me.Label7)
-        Me.SiticonePanel1.Controls.Add(Me.Label6)
         Me.SiticonePanel1.CornerRadiusBottomLeft = 16.0!
         Me.SiticonePanel1.CornerRadiusBottomRight = 16.0!
         Me.SiticonePanel1.CornerRadiusTopLeft = 16.0!
@@ -257,6 +264,57 @@ Partial Class DashboardContent
         Me.SiticonePanel1.UsePatternTexture = False
         Me.SiticonePanel1.UseRadialGradient = False
         '
+        'TableLayoutPanel3
+        '
+        Me.TableLayoutPanel3.BackColor = System.Drawing.Color.Transparent
+        Me.TableLayoutPanel3.ColumnCount = 5
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel3.Controls.Add(Me.PictureBox3, 2, 0)
+        Me.TableLayoutPanel3.Controls.Add(Me.PictureBox2, 1, 0)
+        Me.TableLayoutPanel3.Controls.Add(Me.PictureBox1, 0, 0)
+        Me.TableLayoutPanel3.Location = New System.Drawing.Point(15, 37)
+        Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
+        Me.TableLayoutPanel3.RowCount = 2
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel3.Size = New System.Drawing.Size(222, 72)
+        Me.TableLayoutPanel3.TabIndex = 11
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
+        Me.PictureBox3.Location = New System.Drawing.Point(91, 3)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(38, 30)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox3.TabIndex = 2
+        Me.PictureBox3.TabStop = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(47, 3)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(38, 30)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox2.TabIndex = 1
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(3, 3)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(38, 30)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
+        '
         'Label7
         '
         Me.Label7.AutoSize = True
@@ -267,18 +325,6 @@ Partial Class DashboardContent
         Me.Label7.Size = New System.Drawing.Size(151, 21)
         Me.Label7.TabIndex = 10
         Me.Label7.Text = "Low Stock Product"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.BackColor = System.Drawing.Color.Transparent
-        Me.Label6.Font = New System.Drawing.Font("Segoe UI Black", 40.0!, System.Drawing.FontStyle.Bold)
-        Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(3, 38)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(94, 72)
-        Me.Label6.TabIndex = 9
-        Me.Label6.Text = "50"
         '
         'SiticonePanel3
         '
@@ -480,6 +526,10 @@ Partial Class DashboardContent
         Me.SiticonePanel2.PerformLayout()
         Me.SiticonePanel1.ResumeLayout(False)
         Me.SiticonePanel1.PerformLayout()
+        Me.TableLayoutPanel3.ResumeLayout(False)
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SiticonePanel3.ResumeLayout(False)
         Me.TableLayoutPanel2.ResumeLayout(False)
         Me.Panel4.ResumeLayout(False)
@@ -503,7 +553,6 @@ Partial Class DashboardContent
     Friend WithEvents Label4 As Label
     Friend WithEvents SiticonePanel1 As SiticoneNetFrameworkUI.SiticonePanel
     Friend WithEvents Label7 As Label
-    Friend WithEvents Label6 As Label
     Friend WithEvents SiticonePanel3 As SiticoneNetFrameworkUI.SiticonePanel
     Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
     Friend WithEvents Panel4 As Panel
@@ -519,4 +568,8 @@ Partial Class DashboardContent
     Friend WithEvents SiticonePanel4 As SiticoneNetFrameworkUI.SiticonePanel
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
+    Friend WithEvents TableLayoutPanel3 As TableLayoutPanel
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents PictureBox2 As PictureBox
 End Class

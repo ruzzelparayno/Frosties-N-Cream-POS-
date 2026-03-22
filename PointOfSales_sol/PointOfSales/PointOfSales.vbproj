@@ -260,6 +260,24 @@
     <Compile Include="System\Component\Logout\LogoutContent.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="System\Component\Pos\Charge-Cash.Designer.vb">
+      <DependentUpon>Charge-Cash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="System\Component\Pos\Charge-Cash.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="System\Component\Pos\Charge-Gcash.Designer.vb">
+      <DependentUpon>Charge-Gcash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="System\Component\Pos\Charge-Gcash.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="System\Component\Pos\Charge-Success.Designer.vb">
+      <DependentUpon>Charge-Success.vb</DependentUpon>
+    </Compile>
+    <Compile Include="System\Component\Pos\Charge-Success.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="System\Component\Pos\PosControl.Designer.vb">
       <DependentUpon>PosControl.vb</DependentUpon>
     </Compile>
@@ -364,6 +382,15 @@
     <EmbeddedResource Include="System\Component\Logout\LogoutContent.resx">
       <DependentUpon>LogoutContent.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="System\Component\Pos\Charge-Cash.resx">
+      <DependentUpon>Charge-Cash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\Component\Pos\Charge-Gcash.resx">
+      <DependentUpon>Charge-Gcash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\Component\Pos\Charge-Success.resx">
+      <DependentUpon>Charge-Success.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="System\Component\Pos\PosControl.resx">
       <DependentUpon>PosControl.vb</DependentUpon>
     </EmbeddedResource>
@@ -456,6 +483,17 @@
   <ItemGroup>
     <None Include="Resources\Users.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Back To.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Payment Success.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Plus.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

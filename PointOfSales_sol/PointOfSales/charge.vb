@@ -32,6 +32,8 @@ Public Class Charge
         lbl_change.Text = "₱0.00"
         lbl_ref.Hide()
         txt_reference.Hide()
+
+
     End Sub
 
     ' 🔹 Recursive label finder
@@ -73,7 +75,7 @@ Public Class Charge
         lbl_totalpaid.Text = "₱" & Math.Round(subtotal, 2).ToString("N2")
     End Sub
 
-    Private Sub rb_gcash_CheckedChanged(sender As Object, e As EventArgs) Handles rb_gcash.CheckedChanged
+    Private Sub rb_gcash_CheckedChanged(sender As Object, e As EventArgs)
         lbl_cr.Hide()
         lbl_ref.Show()
         txt_reference.Show()
@@ -82,7 +84,7 @@ Public Class Charge
         lbl_change.Text = "₱0.00"
     End Sub
 
-    Private Sub rb_cash_CheckedChanged(sender As Object, e As EventArgs) Handles rb_cash.CheckedChanged
+    Private Sub rb_cash_CheckedChanged(sender As Object, e As EventArgs)
         lbl_ref.Hide()
         lbl_cr.Show()
         txt_reference.Hide()
@@ -104,7 +106,7 @@ Public Class Charge
         CalculateChange()
     End Sub
 
-    Private Sub txt_cashs_TextChanged(sender As Object, e As EventArgs) Handles txt_cashs.TextChanged
+    Private Sub txt_cashs_TextChanged(sender As Object, e As EventArgs)
         CalculateChange()
     End Sub
 
@@ -454,4 +456,15 @@ Public Class Charge
         PD.DefaultPageSettings.PaperSize = New PaperSize("Custom", 300, longpaper)
     End Sub
 
+    Private Sub txt_reference_TextChanged(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub lbl_ref_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Label3_Click(sender As Object, e As EventArgs)
+
+    End Sub
 End Class

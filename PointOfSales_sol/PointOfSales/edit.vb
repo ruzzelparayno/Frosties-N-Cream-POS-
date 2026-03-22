@@ -10,20 +10,21 @@
 
     Private Sub Edit_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' Default quantity validation
+
         If Not IsNumeric(lbl_quantity.Text) OrElse Val(lbl_quantity.Text) <= 0 Then
             lbl_quantity.Text = "1"
         End If
     End Sub
 
     ' 🔹 Add Quantity
-    Private Sub lbl_add_Click(sender As Object, e As EventArgs) Handles lbl_add.Click
+    Private Sub lbl_add_Click(sender As Object, e As EventArgs)
         Dim qty As Integer = Val(lbl_quantity.Text)
         qty += 1
         lbl_quantity.Text = qty.ToString()
     End Sub
 
     ' 🔹 Minus Quantity
-    Private Sub lbl_minus_Click(sender As Object, e As EventArgs) Handles lbl_minus.Click
+    Private Sub lbl_minus_Click(sender As Object, e As EventArgs)
         Dim qty As Integer = Val(lbl_quantity.Text)
         If qty > 1 Then qty -= 1
         lbl_quantity.Text = qty.ToString()

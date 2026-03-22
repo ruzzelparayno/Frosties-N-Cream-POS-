@@ -474,3 +474,32 @@ C:\Users\User\Downloads\Latest System1\PointOfSales_sol\PointOfSales\obj\Debug\P
 C:\Users\User\Downloads\Latest System1\PointOfSales_sol\PointOfSales\obj\Debug\PointOfSales.exe
 C:\Users\User\Downloads\Latest System1\PointOfSales_sol\PointOfSales\obj\Debug\PointOfSales.xml
 C:\Users\User\Downloads\Latest System1\PointOfSales_sol\PointOfSales\obj\Debug\PointOfSales.pdb
+C:\Users\Zaii\Desktop\0\POS version 3\PointOfSales_sol\PointOfSales\obj\Debug\PointOfSales.vbproj.AssemblyReference.cache
+C:\Users\Zaii\Desktop\0\POS version 3\PointOfSales_sol\PointOfSales\obj\Debug\PointOfSales.exe.config
+C:\Users\Zaii\Desktop\0\POS version 3\PointOfSales_sol\PointOfSales\obj\Debug\PointOfSales.xml
+C:\Users\Zaii\Desktop\0\POS version 3\PointOfSales_sol\PointOfSales\obj\Debug\PointOfSales.pdb
+C:\Users\Zaii\Desktop\0\POS version 3\PointOfSales_sol\PointOfSales\obj\Debug\PointOfSales.Charge.resources
+C:\Users\Zaii\Desktop\0\POS version 3\PointOfSales_sol\PointOfSales\obj\Debug\PointOfSales.edit.resources
+C:\Users\Zaii\Desktop\0\POS version 3\PointOfSales_sol\PointOfSales\obj\Debug\PointOfSales.Login.resources
+C:\Users\Zaii\Desktop\0\POS version 3\PointOfSales_sol\PointOfSales\obj\Debug\PointOfSales.fgtPass.resources
+C:\Users\Zaii\Desktop\0\POS version 3\PointOfSales_sol\PointOfSales\obj\Debug\PointOfSales.LoginPass.resources
+C:\Users\Zaii\Desktop\0\POS version 3\PointOfSales_sol\PointOfSales\obj\Debug\PointOfSales.Resources.resources
+C:\Users\Zaii\Desktop\0\POS version 3\PointOfSales_sol\PointOfSales\obj\Debug\PointOfSales.CashierDashboard.resources
+C:\Users\Zaii\Desktop\0\POS version 3\PointOfSales_sol\PointOfSales\obj\Debug\PointOfSales.AccountContent.resources
+C:\Users\Zaii\Desktop\0\POS version 3\PointOfSales_sol\PointOfSales\obj\Debug\PointOfSales.DashboardContent.resources
+C:\Users\Zaii\Desktop\0\POS version 3\PointOfSales_sol\PointOfSales\obj\Debug\PointOfSales.CategoryContent.resources
+C:\Users\Zaii\Desktop\0\POS version 3\PointOfSales_sol\PointOfSales\obj\Debug\PointOfSales.Inventory.resources
+C:\Users\Zaii\Desktop\0\POS version 3\PointOfSales_sol\PointOfSales\obj\Debug\PointOfSales.ProductContent.resources
+C:\Users\Zaii\Desktop\0\POS version 3\PointOfSales_sol\PointOfSales\obj\Debug\PointOfSales.LogoutContent.resources
+C:\Users\Zaii\Desktop\0\POS version 3\PointOfSales_sol\PointOfSales\obj\Debug\PointOfSales.PosControl.resources
+C:\Users\Zaii\Desktop\0\POS version 3\PointOfSales_sol\PointOfSales\obj\Debug\PointOfSales.SalesContent.resources
+C:\Users\Zaii\Desktop\0\POS version 3\PointOfSales_sol\PointOfSales\obj\Debug\PointOfSales.CashManagementControll.resources
+C:\Users\Zaii\Desktop\0\POS version 3\PointOfSales_sol\PointOfSales\obj\Debug\PointOfSales.ClosingShiftContent.resources
+C:\Users\Zaii\Desktop\0\POS version 3\PointOfSales_sol\PointOfSales\obj\Debug\PointOfSales.OpenShift.resources
+C:\Users\Zaii\Desktop\0\POS version 3\PointOfSales_sol\PointOfSales\obj\Debug\PointOfSales.ShiftContent.resources
+C:\Users\Zaii\Desktop\0\POS version 3\PointOfSales_sol\PointOfSales\obj\Debug\PointOfSales.RefundForm.resources
+C:\Users\Zaii\Desktop\0\POS version 3\PointOfSales_sol\PointOfSales\obj\Debug\PointOfSales.TransactionContent.resources
+C:\Users\Zaii\Desktop\0\POS version 3\PointOfSales_sol\PointOfSales\obj\Debug\PointOfSales.UserContent.resources
+C:\Users\Zaii\Desktop\0\POS version 3\PointOfSales_sol\PointOfSales\obj\Debug\PointOfSales.Dashboard.resources
+C:\Users\Zaii\Desktop\0\POS version 3\PointOfSales_sol\PointOfSales\obj\Debug\PointOfSales.vbproj.GenerateResource.cache
+C:\Users\Zaii\Desktop\0\POS version 3\PointOfSales_sol\PointOfSales\obj\Debug\PointOfSales.vbproj.CoreCompileInputs.cache
